@@ -1,0 +1,73 @@
+syntax = "proto2";
+package dmScriptDoc;
+
+option java_package = "com.dynamo.scriptdoc.proto";
+option java_outer_classname = "ScriptDoc";
+
+message Parameter
+{
+    required string name = 1;
+    required string doc = 2;
+    repeated string types = 3;
+}
+
+message Member
+{
+    required string name = 1;
+    required string doc = 2;
+    required string type = 3;
+}
+
+message ReturnValue
+{
+    required string name = 1;
+    required string doc = 2;
+    repeated string types = 3;
+}
+
+enum Type
+{
+    FUNCTION = 0;
+    VARIABLE = 1;
+    MESSAGE = 2;
+    NAMESPACE = 3;
+    PROPERTY = 4;
+    PACKAGE = 5;
+    STRUCT = 6;
+    MACRO = 7;
+    ENUM = 8;
+    TYPEDEF = 9;
+    CLASS = 10;
+}
+
+message Element
+{
+    required Type type = 1;
+    required string name = 2;
+    required string brief = 3;
+    required string description = 4;
+    repeated ReturnValue returnvalues = 5;
+    repeated Parameter parameters = 6;
+    optional string examples = 7 [default=""];
+    optional string replaces = 8 [default=""];
+    optional string error = 9 [default=""];
+    repeated Member tparams = 10;
+    repeated Member members = 11;
+    repeated string notes = 12;
+}
+
+message Info
+{
+    required string namespace = 1;
+    required string name = 2;
+    required string brief = 3;
+    required string description = 4;
+    required string path = 5;
+    required string file = 6;
+}
+
+message Document
+{
+    repeated Element elements = 1;
+    optional Info info = 2;
+}

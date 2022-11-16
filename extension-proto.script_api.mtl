@@ -1,4 +1,4 @@
-- name: proto
+- name: ddf
   type: table
   desc: Compile and use protobuf messages from Lua
   members:
@@ -7,7 +7,7 @@
 
 #*****************************************************************************************************
 
-    - name: encode_{{name_lower}}
+    - name: encode_{{package_lower}}_{{name_lower}}
       type: function
       parameters:
       - name: msg
@@ -16,7 +16,7 @@
       - name: msg
         type: string
 
-    - name: decode_{{name_lower}}
+    - name: decode_{{package_lower}}_{{name_lower}}
       type: function
       parameters:
       - name: msg
@@ -32,7 +32,7 @@
 #*****************************************************************************************************
 
 {{#values}}
-    - name: {{name_upper}}_{{name}}
+    - name: {{type_cpp_upper}}_{{name}}
       type: number
 {{/values}}
 {{/enums}}

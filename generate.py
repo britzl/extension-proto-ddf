@@ -13,18 +13,17 @@ from sys import platform
 
 BASE_DIR = str(pathlib.Path(__file__).parent.resolve())
 
-EXTENSION_DIR_ROOT = BASE_DIR + "/extension-proto"
+EXTENSION_DIR_ROOT = BASE_DIR + "/ddf"
 EXTENSION_DIR_SRC = EXTENSION_DIR_ROOT + "/src"
 EXTENSION_DIR_HEADERS = EXTENSION_DIR_ROOT + "/include"
 EXTENSION_DIR_JSON = EXTENSION_DIR_ROOT + "/json"
 
 EXTENSION_PROTO_JSON = EXTENSION_DIR_ROOT + "/json/proto.json"
 EXTENSION_PROTO_CPP = EXTENSION_DIR_SRC + "/proto.cpp"
-EXTENSION_PROTO_API = EXTENSION_DIR_ROOT + "/api/extension-proto.script_api"
+EXTENSION_PROTO_API = EXTENSION_DIR_ROOT + "/api/ddf.script_api"
 
 PLUGINS_DIR = BASE_DIR + "/plugins"
 PROTO_DIR = "./proto"
-PROTO_INCLUDES_DIR = "./proto_includes"
 
 
 def call(args):
@@ -87,7 +86,7 @@ def get_protoc_gen_json():
 	return PLUGINS_DIR + "/protoc-gen-json.py"
 
 def generate_extension():
-	j = json.load(open("extension-proto/json/proto.json"))
+	j = json.load(open("ddf/json/proto.json"))
 
 	with open("extension-proto.cpp.mtl", 'r') as f:
 		extension_proto_mtl = f.read()
@@ -101,7 +100,7 @@ def generate_json():
 		get_protoc(),
 		"--plugin=protoc-gen-json=" + get_protoc_gen_json(),
 		"--json_out=" + EXTENSION_DIR_JSON,
-		"--proto_path={} --proto_path={}".format(PROTO_DIR, PROTO_INCLUDES_DIR),
+		"--proto_path={}".format(PROTO_DIR),
 	]
 	call(" ".join(args + find_all_proto_files(PROTO_DIR)))
 
@@ -113,10 +112,11 @@ def generate_c():
 		get_protoc(),
 		"--plugin=protoc-gen-c=" + get_protoc_gen_c(),
 		"--c_out=" + EXTENSION_DIR_SRC,
-		"--proto_path={} --proto_path={}".format(PROTO_DIR, PROTO_INCLUDES_DIR),
+		"--proto_path={}".format(PROTO_DIR),
 	]
 	call(" ".join(args + find_all_proto_files(PROTO_DIR)))
 	move_extension_includes()
+
 
 
 def generate_proto_cpp():

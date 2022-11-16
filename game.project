@@ -9,7 +9,8 @@ width = 640
 height = 1136
 
 [project]
-title = extension-proto
+title = extension-proto-ddf
 
 [library]
-include_dirs = extension-proto
+include_dirs = ddf
+

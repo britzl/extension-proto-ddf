@@ -1,0 +1,5081 @@
+- name: ddf
+  type: table
+  desc: Compile and use protobuf messages from Lua
+  members:
+
+
+#*****************************************************************************************************
+
+    - name: encode_dmmath_point3
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmath_point3
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmath_vector3
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmath_vector3
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmath_vector4
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmath_vector4
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmath_quat
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmath_quat
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmath_transform
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmath_transform
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmath_matrix4
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmath_matrix4
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_gamepadmodifier_t
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_gamepadmodifier_t
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_gamepadmapentry
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_gamepadmapentry
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_gamepadmap
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_gamepadmap
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_gamepadmaps
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_gamepadmaps
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_keytrigger
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_keytrigger
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_mousetrigger
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_mousetrigger
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_gamepadtrigger
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_gamepadtrigger
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_touchtrigger
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_touchtrigger
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_texttrigger
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_texttrigger
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dminputddf_inputbinding
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dminputddf_inputbinding
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_renderprototypedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_renderprototypedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf.renderprototypedesc_materialdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf.renderprototypedesc_materialdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_drawtext
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_drawtext
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_drawdebugtext
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_drawdebugtext
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_drawline
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_drawline
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_windowresized
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_windowresized
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_resize
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_resize
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_clearcolor
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_clearcolor
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_displayprofilequalifier
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_displayprofilequalifier
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_displayprofile
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_displayprofile
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_displayprofiles
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_displayprofiles
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_fontdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_fontdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_fontmap
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_fontmap
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf.fontmap_glyph
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf.fontmap_glyph
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf_materialdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf_materialdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf.materialdesc_constant
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf.materialdesc_constant
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrenderddf.materialdesc_sampler
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrenderddf.materialdesc_sampler
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmscriptddf_luaref
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmscriptddf_luaref
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmsystemddf_exit
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmsystemddf_exit
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmsystemddf_toggleprofile
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmsystemddf_toggleprofile
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmsystemddf_togglephysicsdebug
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmsystemddf_togglephysicsdebug
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmsystemddf_startrecord
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmsystemddf_startrecord
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmsystemddf_stoprecord
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmsystemddf_stoprecord
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmsystemddf_reboot
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmsystemddf_reboot
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmsystemddf_setvsync
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmsystemddf_setvsync
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmsystemddf_setupdatefrequency
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmsystemddf_setupdatefrequency
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmscriptdoc_parameter
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmscriptdoc_parameter
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmscriptdoc_member
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmscriptdoc_member
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmscriptdoc_returnvalue
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmscriptdoc_returnvalue
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmscriptdoc_element
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmscriptdoc_element
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmscriptdoc_info
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmscriptdoc_info
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmscriptdoc_document
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmscriptdoc_document
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmhttpddf_stophttp
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmhttpddf_stophttp
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmhttpddf_httprequest
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmhttpddf_httprequest
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmhttpddf_httpresponse
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmhttpddf_httpresponse
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmluaddf_luasource
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmluaddf_luasource
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_bone
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_bone
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_ik
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_ik
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_skeleton
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_skeleton
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_animationtrack
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_animationtrack
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_eventkey
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_eventkey
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_eventtrack
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_eventtrack
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_riganimation
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_riganimation
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_animationset
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_animationset
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_animationinstancedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_animationinstancedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_animationsetdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_animationsetdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_mesh
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_mesh
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_model
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_model
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_meshset
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_meshset
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmrigddf_rigscene
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmrigddf_rigscene
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmodelddf_modeldesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmodelddf_modeldesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmodelddf_model
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmodelddf_model
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmodelddf_resetconstant
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmodelddf_resetconstant
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmodelddf_settexture
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmodelddf_settexture
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmodelddf_modelplayanimation
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmodelddf_modelplayanimation
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmodelddf_modelcancelanimation
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmodelddf_modelcancelanimation
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmodelddf_modelanimationdone
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmodelddf_modelanimationdone
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmmeshddf_meshdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmmeshddf_meshdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_labeldesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_labeldesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_settext
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_settext
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_convexhull
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_convexhull
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_cue
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_cue
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_animation
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_animation
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_tileset
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_tileset
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_tilecell
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_tilecell
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_tilelayer
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_tilelayer
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_tilegrid
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_tilegrid
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_settile
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_settile
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setconstanttilemap
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setconstanttilemap
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_resetconstanttilemap
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_resetconstanttilemap
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_atlasimage
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_atlasimage
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_atlasanimation
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_atlasanimation
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_atlas
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_atlas
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmbufferddf_streamdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmbufferddf_streamdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmbufferddf_bufferdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmbufferddf_bufferdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmsoundddf_sounddesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmsoundddf_sounddesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesysddf_cameradesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesysddf_cameradesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesysddf_setcamera
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesysddf_setcamera
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesysddf_acquirecamerafocus
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesysddf_acquirecamerafocus
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesysddf_releasecamerafocus
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesysddf_releasecamerafocus
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_spritedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_spritedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_playanimation
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_playanimation
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_animationdone
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_animationdone
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setfliphorizontal
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setfliphorizontal
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setflipvertical
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setflipvertical
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_texturesetanimation
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_texturesetanimation
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_spritegeometry
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_spritegeometry
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_textureset
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_textureset
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_convexshape
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_convexshape
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_collisionshape
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_collisionshape
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf.collisionshape_shape
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf.collisionshape_shape
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_collisionobjectdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_collisionobjectdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_applyforce
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_applyforce
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_collisionresponse
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_collisionresponse
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_contactpointresponse
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_contactpointresponse
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_triggerresponse
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_triggerresponse
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_requestraycast
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_requestraycast
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_raycastresponse
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_raycastresponse
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_raycastmissed
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_raycastmissed
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_requestvelocity
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_requestvelocity
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_velocityresponse
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_velocityresponse
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_setgridshapehull
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_setgridshapehull
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmphysicsddf_enablegridshapelayer
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmphysicsddf_enablegridshapelayer
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_factorydesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_factorydesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_collectionfactorydesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_collectionfactorydesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_create
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_create
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_collectionproxydesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_collectionproxydesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_settimestep
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_settimestep
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_lightdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_lightdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setlight
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setlight
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setviewprojection
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setviewprojection
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_playsound
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_playsound
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_stopsound
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_stopsound
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_pausesound
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_pausesound
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_sounddone
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_sounddone
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setgain
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setgain
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setpan
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setpan
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setspeed
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setspeed
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_playparticlefx
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_playparticlefx
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_stopparticlefx
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_stopparticlefx
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setconstantparticlefx
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setconstantparticlefx
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_resetconstantparticlefx
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_resetconstantparticlefx
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setconstant
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setconstant
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_resetconstant
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_resetconstant
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgamesystemddf_setscale
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgamesystemddf_setscale
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf_nodedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf_nodedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf_scenedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf_scenedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf.scenedesc_fontdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf.scenedesc_fontdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf.scenedesc_texturedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf.scenedesc_texturedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf.scenedesc_layerdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf.scenedesc_layerdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf.scenedesc_layoutdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf.scenedesc_layoutdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf.scenedesc_spinescenedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf.scenedesc_spinescenedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf.scenedesc_resourcedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf.scenedesc_resourcedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf.scenedesc_particlefxdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf.scenedesc_particlefxdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmguiddf_layoutchanged
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmguiddf_layoutchanged
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmliveupdateddf_hashdigest
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmliveupdateddf_hashdigest
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmliveupdateddf_manifestheader
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmliveupdateddf_manifestheader
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmliveupdateddf_resourceentry
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmliveupdateddf_resourceentry
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmliveupdateddf_manifestdata
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmliveupdateddf_manifestdata
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmliveupdateddf_manifestfile
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmliveupdateddf_manifestfile
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmresourceddf_reload
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmresourceddf_reload
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics_cubemap
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics_cubemap
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics_textureimage
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics_textureimage
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics.textureimage_image
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics.textureimage_image
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics_textureformatalternative
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics_textureformatalternative
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics_pathsettings
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics_pathsettings
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics_platformprofile
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics_platformprofile
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics_textureprofile
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics_textureprofile
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics_textureprofiles
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics_textureprofiles
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics_shaderdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics_shaderdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics.shaderdesc_resourcebinding
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics.shaderdesc_resourcebinding
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgraphics.shaderdesc_shader
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgraphics.shaderdesc_shader
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmpropertiesddf_propertydeclarationentry
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmpropertiesddf_propertydeclarationentry
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmpropertiesddf_propertydeclarations
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmpropertiesddf_propertydeclarations
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_propertydesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_propertydesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_componentdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_componentdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_embeddedcomponentdesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_embeddedcomponentdesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_prototypedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_prototypedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_componentpropertydesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_componentpropertydesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_componentypedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_componentypedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_instancedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_instancedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_embeddedinstancedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_embeddedinstancedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_instancepropertydesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_instancepropertydesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_collectioninstancedesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_collectioninstancedesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_collectiondesc
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_collectiondesc
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_acquireinputfocus
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_acquireinputfocus
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_releaseinputfocus
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_releaseinputfocus
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_requesttransform
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_requesttransform
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_transformresponse
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_transformresponse
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_setparent
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_setparent
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_enable
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_enable
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_disable
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_disable
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmgameobjectddf_scriptmessage
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmgameobjectddf_scriptmessage
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmluaddf_luamodule
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmluaddf_luamodule
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmengineddf_hideapp
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmengineddf_hideapp
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmengineddf_runscript
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmengineddf_runscript
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmparticleddf_splinepoint
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmparticleddf_splinepoint
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmparticleddf_modifier
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmparticleddf_modifier
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmparticleddf.modifier_property
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmparticleddf.modifier_property
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmparticleddf_emitter
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmparticleddf_emitter
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmparticleddf.emitter_property
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmparticleddf.emitter_property
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmparticleddf.emitter_particleproperty
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmparticleddf.emitter_particleproperty
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+#*****************************************************************************************************
+
+    - name: encode_dmparticleddf_particlefx
+      type: function
+      parameters:
+      - name: msg
+        type: table
+      returns:
+      - name: msg
+        type: string
+
+    - name: decode_dmparticleddf_particlefx
+      type: function
+      parameters:
+      - name: msg
+        type: string
+      returns:
+      - name: msg
+        type: table
+
+
+
+#*****************************************************************************************************
+
+    - name: DM_INPUT_DDF__KEY_KEY_SPACE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_EXCLAIM
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_QUOTEDBL
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_HASH
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_DOLLAR
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_AMPERSAND
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_QUOTE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_LPAREN
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_RPAREN
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_ASTERISK
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_PLUS
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_COMMA
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_MINUS
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_PERIOD
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_SLASH
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_0
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_1
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_2
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_3
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_4
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_5
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_6
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_7
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_8
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_9
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_COLON
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_SEMICOLON
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_LESS
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_EQUALS
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_GREATER
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_QUESTION
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_AT
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_A
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_B
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_C
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_D
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_E
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_G
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_H
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_I
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_J
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_K
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_L
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_M
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_N
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_O
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_P
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_Q
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_R
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_S
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_T
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_U
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_V
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_W
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_X
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_Y
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_Z
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_LBRACKET
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_BACKSLASH
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_RBRACKET
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_CARET
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_UNDERSCORE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_BACKQUOTE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_LBRACE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_PIPE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_RBRACE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_TILDE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_ESC
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F1
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F2
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F3
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F4
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F5
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F6
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F7
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F8
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F9
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F10
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F11
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_F12
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_UP
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_DOWN
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_LEFT
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_RIGHT
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_LSHIFT
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_RSHIFT
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_LCTRL
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_RCTRL
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_LALT
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_RALT
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_TAB
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_ENTER
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_BACKSPACE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_INSERT
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_DEL
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_PAGEUP
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_PAGEDOWN
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_HOME
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_END
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_0
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_1
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_2
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_3
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_4
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_5
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_6
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_7
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_8
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_9
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_DIVIDE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_MULTIPLY
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_SUBTRACT
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_ADD
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_DECIMAL
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_EQUAL
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_ENTER
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_KP_NUM_LOCK
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_CAPS_LOCK
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_SCROLL_LOCK
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_PAUSE
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_LSUPER
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_RSUPER
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_MENU
+      type: number
+    - name: DM_INPUT_DDF__KEY_KEY_BACK
+      type: number
+    - name: DM_INPUT_DDF__KEY_MAX_KEY_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_WHEEL_UP
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_WHEEL_DOWN
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_LEFT
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_MIDDLE
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_RIGHT
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_1
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_2
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_3
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_4
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_5
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_6
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_7
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MOUSE_BUTTON_8
+      type: number
+    - name: DM_INPUT_DDF__MOUSE_MAX_MOUSE_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LSTICK_LEFT
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LSTICK_RIGHT
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LSTICK_DOWN
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LSTICK_UP
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LSTICK_CLICK
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LTRIGGER
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LSHOULDER
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LPAD_LEFT
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LPAD_RIGHT
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LPAD_DOWN
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_LPAD_UP
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RSTICK_LEFT
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RSTICK_RIGHT
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RSTICK_DOWN
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RSTICK_UP
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RSTICK_CLICK
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RTRIGGER
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RSHOULDER
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RPAD_LEFT
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RPAD_RIGHT
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RPAD_DOWN
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RPAD_UP
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_START
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_BACK
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_GUIDE
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_CONNECTED
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_DISCONNECTED
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_GAMEPAD_RAW
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_MAX_GAMEPAD_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_INPUT_DDF__GAMEPAD_TYPE_GAMEPAD_TYPE_AXIS
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_TYPE_GAMEPAD_TYPE_BUTTON
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_TYPE_GAMEPAD_TYPE_HAT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_INPUT_DDF__GAMEPAD_MODIFIER_GAMEPAD_MODIFIER_NEGATE
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_MODIFIER_GAMEPAD_MODIFIER_SCALE
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_MODIFIER_GAMEPAD_MODIFIER_CLAMP
+      type: number
+    - name: DM_INPUT_DDF__GAMEPAD_MODIFIER_MAX_GAMEPAD_MODIFIER_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_INPUT_DDF__TOUCH_TOUCH_MULTI
+      type: number
+    - name: DM_INPUT_DDF__TOUCH_MAX_TOUCH_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_INPUT_DDF__TEXT_TEXT
+      type: number
+    - name: DM_INPUT_DDF__TEXT_MARKED_TEXT
+      type: number
+    - name: DM_INPUT_DDF__TEXT_MAX_TEXT_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_RENDER_DDF__FONT_TEXTURE_FORMAT_TYPE_BITMAP
+      type: number
+    - name: DM_RENDER_DDF__FONT_TEXTURE_FORMAT_TYPE_DISTANCE_FIELD
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_RENDER_DDF__FONT_RENDER_MODE_MODE_SINGLE_LAYER
+      type: number
+    - name: DM_RENDER_DDF__FONT_RENDER_MODE_MODE_MULTI_LAYER
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_USER
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_VIEWPROJ
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_WORLD
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_TEXTURE
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_VIEW
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_PROJECTION
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_NORMAL
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_WORLDVIEW
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_WORLDVIEWPROJ
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__CONSTANT_TYPE_CONSTANT_TYPE_USER_MATRIX4
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_RENDER_DDF__MATERIAL_DESC__VERTEX_SPACE_VERTEX_SPACE_WORLD
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__VERTEX_SPACE_VERTEX_SPACE_LOCAL
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_RENDER_DDF__MATERIAL_DESC__WRAP_MODE_WRAP_MODE_REPEAT
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__WRAP_MODE_WRAP_MODE_MIRRORED_REPEAT
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__WRAP_MODE_WRAP_MODE_CLAMP_TO_EDGE
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_RENDER_DDF__MATERIAL_DESC__FILTER_MODE_MIN_FILTER_MODE_MIN_NEAREST
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__FILTER_MODE_MIN_FILTER_MODE_MIN_LINEAR
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__FILTER_MODE_MIN_FILTER_MODE_MIN_NEAREST_MIPMAP_NEAREST
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__FILTER_MODE_MIN_FILTER_MODE_MIN_NEAREST_MIPMAP_LINEAR
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__FILTER_MODE_MIN_FILTER_MODE_MIN_LINEAR_MIPMAP_NEAREST
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__FILTER_MODE_MIN_FILTER_MODE_MIN_LINEAR_MIPMAP_LINEAR
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_RENDER_DDF__MATERIAL_DESC__FILTER_MODE_MAG_FILTER_MODE_MAG_NEAREST
+      type: number
+    - name: DM_RENDER_DDF__MATERIAL_DESC__FILTER_MODE_MAG_FILTER_MODE_MAG_LINEAR
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_SCRIPT_DOC__TYPE_FUNCTION
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_VARIABLE
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_MESSAGE
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_NAMESPACE
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_PROPERTY
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_PACKAGE
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_STRUCT
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_MACRO
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_ENUM
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_TYPEDEF
+      type: number
+    - name: DM_SCRIPT_DOC__TYPE_CLASS
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_RIG_DDF__INDEX_BUFFER_FORMAT_INDEXBUFFER_FORMAT_16
+      type: number
+    - name: DM_RIG_DDF__INDEX_BUFFER_FORMAT_INDEXBUFFER_FORMAT_32
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_MESH_DDF__MESH_DESC__PRIMITIVE_TYPE_PRIMITIVE_LINES
+      type: number
+    - name: DM_MESH_DDF__MESH_DESC__PRIMITIVE_TYPE_PRIMITIVE_TRIANGLES
+      type: number
+    - name: DM_MESH_DDF__MESH_DESC__PRIMITIVE_TYPE_PRIMITIVE_TRIANGLE_STRIP
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__BLEND_MODE_BLEND_MODE_ALPHA
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__BLEND_MODE_BLEND_MODE_ADD
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__BLEND_MODE_BLEND_MODE_MULT
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__BLEND_MODE_BLEND_MODE_SCREEN
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__PIVOT_PIVOT_CENTER
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__PIVOT_PIVOT_N
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__PIVOT_PIVOT_NE
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__PIVOT_PIVOT_E
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__PIVOT_PIVOT_SE
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__PIVOT_PIVOT_S
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__PIVOT_PIVOT_SW
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__PIVOT_PIVOT_W
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LABEL_DESC__PIVOT_PIVOT_NW
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_SYSTEM_DDF__PLAYBACK_PLAYBACK_NONE
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__PLAYBACK_PLAYBACK_ONCE_FORWARD
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__PLAYBACK_PLAYBACK_ONCE_BACKWARD
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__PLAYBACK_PLAYBACK_ONCE_PINGPONG
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__PLAYBACK_PLAYBACK_LOOP_FORWARD
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__PLAYBACK_PLAYBACK_LOOP_BACKWARD
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__PLAYBACK_PLAYBACK_LOOP_PINGPONG
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_TRIMMING_MODE_SPRITE_TRIM_MODE_OFF
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_TRIMMING_MODE_SPRITE_TRIM_MODE_4
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_TRIMMING_MODE_SPRITE_TRIM_MODE_5
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_TRIMMING_MODE_SPRITE_TRIM_MODE_6
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_TRIMMING_MODE_SPRITE_TRIM_MODE_7
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_TRIMMING_MODE_SPRITE_TRIM_MODE_8
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_SYSTEM_DDF__TILE_GRID__BLEND_MODE_BLEND_MODE_ALPHA
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__TILE_GRID__BLEND_MODE_BLEND_MODE_ADD
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__TILE_GRID__BLEND_MODE_BLEND_MODE_ADD_ALPHA
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__TILE_GRID__BLEND_MODE_BLEND_MODE_MULT
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__TILE_GRID__BLEND_MODE_BLEND_MODE_SCREEN
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_BUFFER_DDF__VALUE_TYPE_VALUE_TYPE_UINT8
+      type: number
+    - name: DM_BUFFER_DDF__VALUE_TYPE_VALUE_TYPE_UINT16
+      type: number
+    - name: DM_BUFFER_DDF__VALUE_TYPE_VALUE_TYPE_UINT32
+      type: number
+    - name: DM_BUFFER_DDF__VALUE_TYPE_VALUE_TYPE_UINT64
+      type: number
+    - name: DM_BUFFER_DDF__VALUE_TYPE_VALUE_TYPE_INT8
+      type: number
+    - name: DM_BUFFER_DDF__VALUE_TYPE_VALUE_TYPE_INT16
+      type: number
+    - name: DM_BUFFER_DDF__VALUE_TYPE_VALUE_TYPE_INT32
+      type: number
+    - name: DM_BUFFER_DDF__VALUE_TYPE_VALUE_TYPE_INT64
+      type: number
+    - name: DM_BUFFER_DDF__VALUE_TYPE_VALUE_TYPE_FLOAT32
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_DESC__BLEND_MODE_BLEND_MODE_ALPHA
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_DESC__BLEND_MODE_BLEND_MODE_ADD
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_DESC__BLEND_MODE_BLEND_MODE_ADD_ALPHA
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_DESC__BLEND_MODE_BLEND_MODE_MULT
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_DESC__BLEND_MODE_BLEND_MODE_SCREEN
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_DESC__SIZE_MODE_SIZE_MODE_MANUAL
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__SPRITE_DESC__SIZE_MODE_SIZE_MODE_AUTO
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PHYSICS_DDF__COLLISION_OBJECT_TYPE_COLLISION_OBJECT_TYPE_DYNAMIC
+      type: number
+    - name: DM_PHYSICS_DDF__COLLISION_OBJECT_TYPE_COLLISION_OBJECT_TYPE_KINEMATIC
+      type: number
+    - name: DM_PHYSICS_DDF__COLLISION_OBJECT_TYPE_COLLISION_OBJECT_TYPE_STATIC
+      type: number
+    - name: DM_PHYSICS_DDF__COLLISION_OBJECT_TYPE_COLLISION_OBJECT_TYPE_TRIGGER
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PHYSICS_DDF__CONVEX_SHAPE__TYPE_TYPE_SPHERE
+      type: number
+    - name: DM_PHYSICS_DDF__CONVEX_SHAPE__TYPE_TYPE_BOX
+      type: number
+    - name: DM_PHYSICS_DDF__CONVEX_SHAPE__TYPE_TYPE_CAPSULE
+      type: number
+    - name: DM_PHYSICS_DDF__CONVEX_SHAPE__TYPE_TYPE_HULL
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PHYSICS_DDF__COLLISION_SHAPE__TYPE_TYPE_SPHERE
+      type: number
+    - name: DM_PHYSICS_DDF__COLLISION_SHAPE__TYPE_TYPE_BOX
+      type: number
+    - name: DM_PHYSICS_DDF__COLLISION_SHAPE__TYPE_TYPE_CAPSULE
+      type: number
+    - name: DM_PHYSICS_DDF__COLLISION_SHAPE__TYPE_TYPE_HULL
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_SYSTEM_DDF__TIME_STEP_MODE_TIME_STEP_MODE_CONTINUOUS
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__TIME_STEP_MODE_TIME_STEP_MODE_DISCRETE
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_SYSTEM_DDF__LIGHT_TYPE_POINT
+      type: number
+    - name: DM_GAME_SYSTEM_DDF__LIGHT_TYPE_SPOT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__NODE_DESC__TYPE_TYPE_BOX
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__TYPE_TYPE_TEXT
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__TYPE_TYPE_PIE
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__TYPE_TYPE_TEMPLATE
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__TYPE_TYPE_SPINE
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__TYPE_TYPE_PARTICLEFX
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__TYPE_TYPE_CUSTOM
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__NODE_DESC__BLEND_MODE_BLEND_MODE_ALPHA
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__BLEND_MODE_BLEND_MODE_ADD
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__BLEND_MODE_BLEND_MODE_ADD_ALPHA
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__BLEND_MODE_BLEND_MODE_MULT
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__BLEND_MODE_BLEND_MODE_SCREEN
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__NODE_DESC__CLIPPING_MODE_CLIPPING_MODE_NONE
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__CLIPPING_MODE_CLIPPING_MODE_STENCIL
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__NODE_DESC__XANCHOR_XANCHOR_NONE
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__XANCHOR_XANCHOR_LEFT
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__XANCHOR_XANCHOR_RIGHT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__NODE_DESC__YANCHOR_YANCHOR_NONE
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__YANCHOR_YANCHOR_TOP
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__YANCHOR_YANCHOR_BOTTOM
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__NODE_DESC__PIVOT_PIVOT_CENTER
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__PIVOT_PIVOT_N
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__PIVOT_PIVOT_NE
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__PIVOT_PIVOT_E
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__PIVOT_PIVOT_SE
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__PIVOT_PIVOT_S
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__PIVOT_PIVOT_SW
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__PIVOT_PIVOT_W
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__PIVOT_PIVOT_NW
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__NODE_DESC__ADJUST_MODE_ADJUST_MODE_FIT
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__ADJUST_MODE_ADJUST_MODE_ZOOM
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__ADJUST_MODE_ADJUST_MODE_STRETCH
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__NODE_DESC__SIZE_MODE_SIZE_MODE_MANUAL
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__SIZE_MODE_SIZE_MODE_AUTO
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__NODE_DESC__PIE_BOUNDS_PIEBOUNDS_RECTANGLE
+      type: number
+    - name: DM_GUI_DDF__NODE_DESC__PIE_BOUNDS_PIEBOUNDS_ELLIPSE
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GUI_DDF__SCENE_DESC__ADJUST_REFERENCE_ADJUST_REFERENCE_LEGACY
+      type: number
+    - name: DM_GUI_DDF__SCENE_DESC__ADJUST_REFERENCE_ADJUST_REFERENCE_PARENT
+      type: number
+    - name: DM_GUI_DDF__SCENE_DESC__ADJUST_REFERENCE_ADJUST_REFERENCE_DISABLED
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_LIVE_UPDATE_DDF__HASH_ALGORITHM_HASH_UNKNOWN
+      type: number
+    - name: DM_LIVE_UPDATE_DDF__HASH_ALGORITHM_HASH_MD5
+      type: number
+    - name: DM_LIVE_UPDATE_DDF__HASH_ALGORITHM_HASH_SHA1
+      type: number
+    - name: DM_LIVE_UPDATE_DDF__HASH_ALGORITHM_HASH_SHA256
+      type: number
+    - name: DM_LIVE_UPDATE_DDF__HASH_ALGORITHM_HASH_SHA512
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_LIVE_UPDATE_DDF__SIGN_ALGORITHM_SIGN_UNKNOWN
+      type: number
+    - name: DM_LIVE_UPDATE_DDF__SIGN_ALGORITHM_SIGN_RSA
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_LIVE_UPDATE_DDF__RESOURCE_ENTRY_FLAG_BUNDLED
+      type: number
+    - name: DM_LIVE_UPDATE_DDF__RESOURCE_ENTRY_FLAG_EXCLUDED
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TYPE_TYPE_2D
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TYPE_TYPE_CUBEMAP
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__COMPRESSION_TYPE_COMPRESSION_TYPE_DEFAULT
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__COMPRESSION_TYPE_COMPRESSION_TYPE_WEBP
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__COMPRESSION_TYPE_COMPRESSION_TYPE_WEBP_LOSSY
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__COMPRESSION_TYPE_COMPRESSION_TYPE_BASIS_UASTC
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__COMPRESSION_TYPE_COMPRESSION_TYPE_BASIS_ETC1S
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__COMPRESSION_FLAGS_COMPRESSION_FLAG_ALPHA_CLEAN
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_LUMINANCE
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGB
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGBA
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGB_PVRTC_2BPPV1
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGB_PVRTC_4BPPV1
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGBA_PVRTC_2BPPV1
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGBA_PVRTC_4BPPV1
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGB_ETC1
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGB_16BPP
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGBA_16BPP
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_LUMINANCE_ALPHA
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGBA_ETC2
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGBA_ASTC_4x4
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGB_BC1
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGBA_BC3
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_R_BC4
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RG_BC5
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_IMAGE__TEXTURE_FORMAT_TEXTURE_FORMAT_RGBA_BC7
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GRAPHICS__TEXTURE_FORMAT_ALTERNATIVE__COMPRESSION_LEVEL_FAST
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_FORMAT_ALTERNATIVE__COMPRESSION_LEVEL_NORMAL
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_FORMAT_ALTERNATIVE__COMPRESSION_LEVEL_HIGH
+      type: number
+    - name: DM_GRAPHICS__TEXTURE_FORMAT_ALTERNATIVE__COMPRESSION_LEVEL_BEST
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GRAPHICS__PLATFORM_PROFILE__OS_OS_ID_GENERIC
+      type: number
+    - name: DM_GRAPHICS__PLATFORM_PROFILE__OS_OS_ID_WINDOWS
+      type: number
+    - name: DM_GRAPHICS__PLATFORM_PROFILE__OS_OS_ID_OSX
+      type: number
+    - name: DM_GRAPHICS__PLATFORM_PROFILE__OS_OS_ID_LINUX
+      type: number
+    - name: DM_GRAPHICS__PLATFORM_PROFILE__OS_OS_ID_IOS
+      type: number
+    - name: DM_GRAPHICS__PLATFORM_PROFILE__OS_OS_ID_ANDROID
+      type: number
+    - name: DM_GRAPHICS__PLATFORM_PROFILE__OS_OS_ID_WEB
+      type: number
+    - name: DM_GRAPHICS__PLATFORM_PROFILE__OS_OS_ID_SWITCH
+      type: number
+    - name: DM_GRAPHICS__PLATFORM_PROFILE__OS_OS_ID_PS4
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GRAPHICS__SHADER_DESC__LANGUAGE_LANGUAGE_GLSL_SM120
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__LANGUAGE_LANGUAGE_GLSL_SM140
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__LANGUAGE_LANGUAGE_GLES_SM100
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__LANGUAGE_LANGUAGE_GLES_SM300
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__LANGUAGE_LANGUAGE_SPIRV
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_UNKNOWN
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_INT
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_UINT
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_FLOAT
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_VEC2
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_VEC3
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_VEC4
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_MAT2
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_MAT3
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_MAT4
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_SAMPLER2D
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_SAMPLER3D
+      type: number
+    - name: DM_GRAPHICS__SHADER_DESC__SHADER_DATA_TYPE_SHADER_TYPE_SAMPLER_CUBE
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_GAME_OBJECT_DDF__PROPERTY_TYPE_PROPERTY_TYPE_NUMBER
+      type: number
+    - name: DM_GAME_OBJECT_DDF__PROPERTY_TYPE_PROPERTY_TYPE_HASH
+      type: number
+    - name: DM_GAME_OBJECT_DDF__PROPERTY_TYPE_PROPERTY_TYPE_URL
+      type: number
+    - name: DM_GAME_OBJECT_DDF__PROPERTY_TYPE_PROPERTY_TYPE_VECTOR3
+      type: number
+    - name: DM_GAME_OBJECT_DDF__PROPERTY_TYPE_PROPERTY_TYPE_VECTOR4
+      type: number
+    - name: DM_GAME_OBJECT_DDF__PROPERTY_TYPE_PROPERTY_TYPE_QUAT
+      type: number
+    - name: DM_GAME_OBJECT_DDF__PROPERTY_TYPE_PROPERTY_TYPE_BOOLEAN
+      type: number
+    - name: DM_GAME_OBJECT_DDF__PROPERTY_TYPE_PROPERTY_TYPE_MATRIX4
+      type: number
+    - name: DM_GAME_OBJECT_DDF__PROPERTY_TYPE_PROPERTY_TYPE_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__EMITTER_TYPE_EMITTER_TYPE_CIRCLE
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_TYPE_EMITTER_TYPE_2DCONE
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_TYPE_EMITTER_TYPE_BOX
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_TYPE_EMITTER_TYPE_SPHERE
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_TYPE_EMITTER_TYPE_CONE
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__PLAY_MODE_PLAY_MODE_ONCE
+      type: number
+    - name: DM_PARTICLE_DDF__PLAY_MODE_PLAY_MODE_LOOP
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__EMISSION_SPACE_EMISSION_SPACE_WORLD
+      type: number
+    - name: DM_PARTICLE_DDF__EMISSION_SPACE_EMISSION_SPACE_EMITTER
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_SPAWN_RATE
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_SIZE_X
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_SIZE_Y
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_SIZE_Z
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_LIFE_TIME
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_SPEED
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_SIZE
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_RED
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_GREEN
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_BLUE
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_ALPHA
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_ROTATION
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_STRETCH_FACTOR_X
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_STRETCH_FACTOR_Y
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_PARTICLE_ANGULAR_VELOCITY
+      type: number
+    - name: DM_PARTICLE_DDF__EMITTER_KEY_EMITTER_KEY_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_SCALE
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_RED
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_GREEN
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_BLUE
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_ALPHA
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_ROTATION
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_STRETCH_FACTOR_X
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_STRETCH_FACTOR_Y
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_ANGULAR_VELOCITY
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_KEY_PARTICLE_KEY_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__MODIFIER_TYPE_MODIFIER_TYPE_ACCELERATION
+      type: number
+    - name: DM_PARTICLE_DDF__MODIFIER_TYPE_MODIFIER_TYPE_DRAG
+      type: number
+    - name: DM_PARTICLE_DDF__MODIFIER_TYPE_MODIFIER_TYPE_RADIAL
+      type: number
+    - name: DM_PARTICLE_DDF__MODIFIER_TYPE_MODIFIER_TYPE_VORTEX
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__MODIFIER_KEY_MODIFIER_KEY_MAGNITUDE
+      type: number
+    - name: DM_PARTICLE_DDF__MODIFIER_KEY_MODIFIER_KEY_MAX_DISTANCE
+      type: number
+    - name: DM_PARTICLE_DDF__MODIFIER_KEY_MODIFIER_KEY_COUNT
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_ALPHA
+      type: number
+    - name: DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_ADD
+      type: number
+    - name: DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_ADD_ALPHA
+      type: number
+    - name: DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_MULT
+      type: number
+    - name: DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_SCREEN
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__SIZE_MODE_SIZE_MODE_MANUAL
+      type: number
+    - name: DM_PARTICLE_DDF__SIZE_MODE_SIZE_MODE_AUTO
+      type: number
+
+#*****************************************************************************************************
+
+    - name: DM_PARTICLE_DDF__PARTICLE_ORIENTATION_PARTICLE_ORIENTATION_DEFAULT
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_ORIENTATION_PARTICLE_ORIENTATION_INITIAL_DIRECTION
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_ORIENTATION_PARTICLE_ORIENTATION_MOVEMENT_DIRECTION
+      type: number
+    - name: DM_PARTICLE_DDF__PARTICLE_ORIENTATION_PARTICLE_ORIENTATION_ANGULAR_VELOCITY
+      type: number
