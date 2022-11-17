@@ -1,0 +1,12 @@
+### Message encode/decode
+{{#messages}}
+* `local str = encode_{{package_lower}}_{{name_lower}}(tbl)`
+* `local tbl = decode_{{package_lower}}_{{name_lower}}(str)`
+{{/messages}}
+
+### Enums
+{{#enums}}
+{{#values}}
+* `{{type_cpp_upper}}_{{name}}`
+{{/values}}
+{{/enums}}

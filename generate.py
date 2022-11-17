@@ -22,6 +22,8 @@ EXTENSION_PROTO_JSON = EXTENSION_DIR_ROOT + "/json/proto.json"
 EXTENSION_PROTO_CPP = EXTENSION_DIR_SRC + "/proto.cpp"
 EXTENSION_PROTO_API = EXTENSION_DIR_ROOT + "/api/ddf.script_api"
 
+EXTENSION_PROTO_MD = BASE_DIR + "/api.md"
+
 PLUGINS_DIR = BASE_DIR + "/plugins"
 PROTO_DIR = "./proto"
 
@@ -129,7 +131,7 @@ def generate_proto_cpp():
 			f.write(html.unescape(result))
 
 def generate_proto_api():
-	print("Generating extension docs")
+	print("Generating extension script API")
 	with open("extension-proto.script_api.mtl", 'r') as f:
 		proto_json = json.load(open(EXTENSION_PROTO_JSON))
 		extension_proto_mtl = f.read()
@@ -137,7 +139,17 @@ def generate_proto_api():
 		with codecs.open(EXTENSION_PROTO_API, "wb", encoding="utf-8") as f:
 			f.write(html.unescape(result))
 
+def generate_proto_md():
+	print("Generating extension docs Markdown")
+	with open("extension-proto.md.mtl", 'r') as f:
+		proto_json = json.load(open(EXTENSION_PROTO_JSON))
+		extension_proto_mtl = f.read()
+		result = pystache.render(extension_proto_mtl, proto_json)
+		with codecs.open(EXTENSION_PROTO_MD, "wb", encoding="utf-8") as f:
+			f.write(html.unescape(result))
+
 generate_json()
 generate_c()
 generate_proto_cpp()
 generate_proto_api()
+generate_proto_md()
