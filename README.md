@@ -3,1442 +3,4427 @@ This extension provides Lua bindings to encode and decode the Defold Data Format
 
 ## Message encode/decode
 ##### `local str = ddf.encode_dmmath_point3(tbl)`
-* `x` (`number`) (optional)
-* `y` (`number`) (optional)
-* `z` (`number`) (optional)
-* `d` (`number`) (optional)
+Encode point3 message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `x` (`number`) (optional)
+  * `y` (`number`) (optional)
+  * `z` (`number`) (optional)
+  * `d` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmath_point3(str)`
+Decocde point3 message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmath_vector3(tbl)`
-* `x` (`number`) (optional)
-* `y` (`number`) (optional)
-* `z` (`number`) (optional)
-* `d` (`number`) (optional)
+Encode vector3 message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `x` (`number`) (optional)
+  * `y` (`number`) (optional)
+  * `z` (`number`) (optional)
+  * `d` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmath_vector3(str)`
+Decocde vector3 message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmath_vector4(tbl)`
-* `x` (`number`) (optional)
-* `y` (`number`) (optional)
-* `z` (`number`) (optional)
-* `w` (`number`) (optional)
+Encode vector4 message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `x` (`number`) (optional)
+  * `y` (`number`) (optional)
+  * `z` (`number`) (optional)
+  * `w` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmath_vector4(str)`
+Decocde vector4 message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmath_quat(tbl)`
-* `x` (`number`) (optional)
-* `y` (`number`) (optional)
-* `z` (`number`) (optional)
-* `w` (`number`) (optional)
+Encode quat message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `x` (`number`) (optional)
+  * `y` (`number`) (optional)
+  * `z` (`number`) (optional)
+  * `w` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmath_quat(str)`
+Decocde quat message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmath_transform(tbl)`
-* `rotation` (`dm_math__quat`) (optional)
-* `translation` (`dm_math__vector3`) (optional)
-* `scale` (`dm_math__vector3`) (optional)
+Encode transform message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `rotation` (`dm_math__quat`) (optional)
+  * `translation` (`dm_math__vector3`) (optional)
+  * `scale` (`dm_math__vector3`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmath_transform(str)`
+Decocde transform message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmath_matrix4(tbl)`
-* `m00` (`number`) (optional)
-* `m01` (`number`) (optional)
-* `m02` (`number`) (optional)
-* `m03` (`number`) (optional)
-* `m10` (`number`) (optional)
-* `m11` (`number`) (optional)
-* `m12` (`number`) (optional)
-* `m13` (`number`) (optional)
-* `m20` (`number`) (optional)
-* `m21` (`number`) (optional)
-* `m22` (`number`) (optional)
-* `m23` (`number`) (optional)
-* `m30` (`number`) (optional)
-* `m31` (`number`) (optional)
-* `m32` (`number`) (optional)
-* `m33` (`number`) (optional)
+Encode matrix4 message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `m00` (`number`) (optional)
+  * `m01` (`number`) (optional)
+  * `m02` (`number`) (optional)
+  * `m03` (`number`) (optional)
+  * `m10` (`number`) (optional)
+  * `m11` (`number`) (optional)
+  * `m12` (`number`) (optional)
+  * `m13` (`number`) (optional)
+  * `m20` (`number`) (optional)
+  * `m21` (`number`) (optional)
+  * `m22` (`number`) (optional)
+  * `m23` (`number`) (optional)
+  * `m30` (`number`) (optional)
+  * `m31` (`number`) (optional)
+  * `m32` (`number`) (optional)
+  * `m33` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmath_matrix4(str)`
+Decocde matrix4 message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_gamepadmodifier_t(tbl)`
-* `mod` (`number`)
+Encode gamepadmodifier_t message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `mod` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_gamepadmodifier_t(str)`
+Decocde gamepadmodifier_t message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_gamepadmapentry(tbl)`
-* `input` (`number`)
-* `type` (`number`)
-* `index` (`number`)
-* `mod` (array of `dm_input_ddf__gamepad_modifier_t`)
-* `hat_mask` (`number`) (optional)
+Encode gamepadmapentry message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `input` (`number`)
+  * `type` (`number`)
+  * `index` (`number`)
+  * `mod` (array of `dm_input_ddf__gamepad_modifier_t`)
+  * `hat_mask` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_gamepadmapentry(str)`
+Decocde gamepadmapentry message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_gamepadmap(tbl)`
-* `device` (`string`)
-* `platform` (`string`)
-* `dead_zone` (`number`)
-* `map` (array of `dm_input_ddf__gamepad_map_entry`)
+Encode gamepadmap message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `device` (`string`)
+  * `platform` (`string`)
+  * `dead_zone` (`number`)
+  * `map` (array of `dm_input_ddf__gamepad_map_entry`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_gamepadmap(str)`
+Decocde gamepadmap message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_gamepadmaps(tbl)`
-* `driver` (array of `dm_input_ddf__gamepad_map`)
+Encode gamepadmaps message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `driver` (array of `dm_input_ddf__gamepad_map`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_gamepadmaps(str)`
+Decocde gamepadmaps message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_keytrigger(tbl)`
-* `input` (`number`)
-* `action` (`string`)
+Encode keytrigger message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `input` (`number`)
+  * `action` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_keytrigger(str)`
+Decocde keytrigger message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_mousetrigger(tbl)`
-* `input` (`number`)
-* `action` (`string`)
+Encode mousetrigger message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `input` (`number`)
+  * `action` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_mousetrigger(str)`
+Decocde mousetrigger message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_gamepadtrigger(tbl)`
-* `input` (`number`)
-* `action` (`string`)
+Encode gamepadtrigger message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `input` (`number`)
+  * `action` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_gamepadtrigger(str)`
+Decocde gamepadtrigger message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_touchtrigger(tbl)`
-* `input` (`number`)
-* `action` (`string`)
+Encode touchtrigger message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `input` (`number`)
+  * `action` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_touchtrigger(str)`
+Decocde touchtrigger message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_texttrigger(tbl)`
-* `input` (`number`)
-* `action` (`string`)
+Encode texttrigger message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `input` (`number`)
+  * `action` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_texttrigger(str)`
+Decocde texttrigger message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dminputddf_inputbinding(tbl)`
-* `key_trigger` (array of `dm_input_ddf__key_trigger`)
-* `mouse_trigger` (array of `dm_input_ddf__mouse_trigger`)
-* `gamepad_trigger` (array of `dm_input_ddf__gamepad_trigger`)
-* `touch_trigger` (array of `dm_input_ddf__touch_trigger`)
-* `text_trigger` (array of `dm_input_ddf__text_trigger`)
+Encode inputbinding message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `key_trigger` (array of `dm_input_ddf__key_trigger`)
+  * `mouse_trigger` (array of `dm_input_ddf__mouse_trigger`)
+  * `gamepad_trigger` (array of `dm_input_ddf__gamepad_trigger`)
+  * `touch_trigger` (array of `dm_input_ddf__touch_trigger`)
+  * `text_trigger` (array of `dm_input_ddf__text_trigger`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dminputddf_inputbinding(str)`
+Decocde inputbinding message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_renderprototypedesc(tbl)`
-* `script` (`string`)
-* `materials` (array of `dm_render_ddf__render_prototype_desc__material_desc`)
+Encode renderprototypedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `script` (`string`)
+  * `materials` (array of `dm_render_ddf__render_prototype_desc__material_desc`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_renderprototypedesc(str)`
+Decocde renderprototypedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf.renderprototypedesc_materialdesc(tbl)`
-* `name` (`string`)
-* `material` (`string`)
+Encode materialdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `material` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf.renderprototypedesc_materialdesc(str)`
+Decocde materialdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_drawtext(tbl)`
-* `position` (`dm_math__point3`)
-* `text` (`string`)
+Encode drawtext message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `position` (`dm_math__point3`)
+  * `text` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_drawtext(str)`
+Decocde drawtext message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_drawdebugtext(tbl)`
-* `position` (`dm_math__point3`)
-* `text` (`string`)
-* `color` (`dm_math__vector4`)
+Encode drawdebugtext message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `position` (`dm_math__point3`)
+  * `text` (`string`)
+  * `color` (`dm_math__vector4`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_drawdebugtext(str)`
+Decocde drawdebugtext message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_drawline(tbl)`
-* `start_point` (`dm_math__point3`)
-* `end_point` (`dm_math__point3`)
-* `color` (`dm_math__vector4`)
+Encode drawline message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `start_point` (`dm_math__point3`)
+  * `end_point` (`dm_math__point3`)
+  * `color` (`dm_math__vector4`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_drawline(str)`
+Decocde drawline message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_windowresized(tbl)`
-* `width` (`number`)
-* `height` (`number`)
+Encode windowresized message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `width` (`number`)
+  * `height` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_windowresized(str)`
+Decocde windowresized message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_resize(tbl)`
-* `width` (`number`)
-* `height` (`number`)
+Encode resize message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `width` (`number`)
+  * `height` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_resize(str)`
+Decocde resize message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_clearcolor(tbl)`
-* `color` (`dm_math__vector4`)
+Encode clearcolor message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `color` (`dm_math__vector4`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_clearcolor(str)`
+Decocde clearcolor message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_displayprofilequalifier(tbl)`
-* `width` (`number`)
-* `height` (`number`)
-* `device_models` (array of `string`)
+Encode displayprofilequalifier message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `width` (`number`)
+  * `height` (`number`)
+  * `device_models` (array of `string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_displayprofilequalifier(str)`
+Decocde displayprofilequalifier message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_displayprofile(tbl)`
-* `name` (`string`)
-* `qualifiers` (array of `dm_render_ddf__display_profile_qualifier`)
+Encode displayprofile message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `qualifiers` (array of `dm_render_ddf__display_profile_qualifier`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_displayprofile(str)`
+Decocde displayprofile message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_displayprofiles(tbl)`
-* `profiles` (array of `dm_render_ddf__display_profile`)
+Encode displayprofiles message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `profiles` (array of `dm_render_ddf__display_profile`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_displayprofiles(str)`
+Decocde displayprofiles message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_fontdesc(tbl)`
-* `font` (`string`)
-* `material` (`string`)
-* `size` (`number`)
-* `antialias` (`number`) (optional)
-* `alpha` (`number`) (optional)
-* `outline_alpha` (`number`) (optional)
-* `outline_width` (`number`) (optional)
-* `shadow_alpha` (`number`) (optional)
-* `shadow_blur` (`number`) (optional)
-* `shadow_x` (`number`) (optional)
-* `shadow_y` (`number`) (optional)
-* `extra_characters` (`string`) (optional)
-* `output_format` (`number`) (optional)
-* `all_chars` (`boolean`) (optional)
-* `cache_width` (`number`) (optional)
-* `cache_height` (`number`) (optional)
-* `render_mode` (`number`) (optional)
+Encode fontdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `font` (`string`)
+  * `material` (`string`)
+  * `size` (`number`)
+  * `antialias` (`number`) (optional)
+  * `alpha` (`number`) (optional)
+  * `outline_alpha` (`number`) (optional)
+  * `outline_width` (`number`) (optional)
+  * `shadow_alpha` (`number`) (optional)
+  * `shadow_blur` (`number`) (optional)
+  * `shadow_x` (`number`) (optional)
+  * `shadow_y` (`number`) (optional)
+  * `extra_characters` (`string`) (optional)
+  * `output_format` (`number`) (optional)
+  * `all_chars` (`boolean`) (optional)
+  * `cache_width` (`number`) (optional)
+  * `cache_height` (`number`) (optional)
+  * `render_mode` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_fontdesc(str)`
+Decocde fontdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_fontmap(tbl)`
-* `glyphs` (array of `dm_render_ddf__font_map__glyph`)
-* `material` (`string`)
-* `shadow_x` (`number`) (optional)
-* `shadow_y` (`number`) (optional)
-* `max_ascent` (`number`)
-* `max_descent` (`number`)
-* `image_format` (`number`) (optional)
-* `sdf_spread` (`number`) (optional)
-* `sdf_offset` (`number`) (optional)
-* `sdf_outline` (`number`) (optional)
-* `sdf_shadow` (`number`) (optional)
-* `cache_width` (`number`) (optional)
-* `cache_height` (`number`) (optional)
-* `glyph_padding` (`number`) (optional)
-* `cache_cell_width` (`number`) (optional)
-* `cache_cell_height` (`number`) (optional)
-* `glyph_channels` (`number`) (optional)
-* `glyph_data` (`ProtobufCBinaryData`) (optional)
-* `alpha` (`number`) (optional)
-* `outline_alpha` (`number`) (optional)
-* `shadow_alpha` (`number`) (optional)
-* `cache_cell_max_ascent` (`number`) (optional)
-* `layer_mask` (`number`) (optional)
+Encode fontmap message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `glyphs` (array of `dm_render_ddf__font_map__glyph`)
+  * `material` (`string`)
+  * `shadow_x` (`number`) (optional)
+  * `shadow_y` (`number`) (optional)
+  * `max_ascent` (`number`)
+  * `max_descent` (`number`)
+  * `image_format` (`number`) (optional)
+  * `sdf_spread` (`number`) (optional)
+  * `sdf_offset` (`number`) (optional)
+  * `sdf_outline` (`number`) (optional)
+  * `sdf_shadow` (`number`) (optional)
+  * `cache_width` (`number`) (optional)
+  * `cache_height` (`number`) (optional)
+  * `glyph_padding` (`number`) (optional)
+  * `cache_cell_width` (`number`) (optional)
+  * `cache_cell_height` (`number`) (optional)
+  * `glyph_channels` (`number`) (optional)
+  * `glyph_data` (`ProtobufCBinaryData`) (optional)
+  * `alpha` (`number`) (optional)
+  * `outline_alpha` (`number`) (optional)
+  * `shadow_alpha` (`number`) (optional)
+  * `cache_cell_max_ascent` (`number`) (optional)
+  * `layer_mask` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_fontmap(str)`
+Decocde fontmap message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf.fontmap_glyph(tbl)`
-* `character` (`number`)
-* `width` (`number`) (optional)
-* `advance` (`number`) (optional)
-* `left_bearing` (`number`) (optional)
-* `ascent` (`number`) (optional)
-* `descent` (`number`) (optional)
-* `x` (`number`) (optional)
-* `y` (`number`) (optional)
-* `glyph_data_offset` (`number`) (optional)
-* `glyph_data_size` (`number`) (optional)
+Encode glyph message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `character` (`number`)
+  * `width` (`number`) (optional)
+  * `advance` (`number`) (optional)
+  * `left_bearing` (`number`) (optional)
+  * `ascent` (`number`) (optional)
+  * `descent` (`number`) (optional)
+  * `x` (`number`) (optional)
+  * `y` (`number`) (optional)
+  * `glyph_data_offset` (`number`) (optional)
+  * `glyph_data_size` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf.fontmap_glyph(str)`
+Decocde glyph message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf_materialdesc(tbl)`
-* `name` (`string`)
-* `tags` (array of `string`)
-* `vertex_program` (`string`)
-* `fragment_program` (`string`)
-* `vertex_space` (`number`) (optional)
-* `vertex_constants` (array of `dm_render_ddf__material_desc__constant`)
-* `fragment_constants` (array of `dm_render_ddf__material_desc__constant`)
-* `textures` (array of `string`)
-* `samplers` (array of `dm_render_ddf__material_desc__sampler`)
+Encode materialdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `tags` (array of `string`)
+  * `vertex_program` (`string`)
+  * `fragment_program` (`string`)
+  * `vertex_space` (`number`) (optional)
+  * `vertex_constants` (array of `dm_render_ddf__material_desc__constant`)
+  * `fragment_constants` (array of `dm_render_ddf__material_desc__constant`)
+  * `textures` (array of `string`)
+  * `samplers` (array of `dm_render_ddf__material_desc__sampler`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf_materialdesc(str)`
+Decocde materialdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf.materialdesc_constant(tbl)`
-* `name` (`string`)
-* `type` (`number`)
-* `value` (array of `dm_math__vector4`)
+Encode constant message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `type` (`number`)
+  * `value` (array of `dm_math__vector4`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf.materialdesc_constant(str)`
+Decocde constant message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrenderddf.materialdesc_sampler(tbl)`
-* `name` (`string`)
-* `wrap_u` (`number`)
-* `wrap_v` (`number`)
-* `filter_min` (`number`)
-* `filter_mag` (`number`)
-* `max_anisotropy` (`number`) (optional)
+Encode sampler message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `wrap_u` (`number`)
+  * `wrap_v` (`number`)
+  * `filter_min` (`number`)
+  * `filter_mag` (`number`)
+  * `max_anisotropy` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrenderddf.materialdesc_sampler(str)`
+Decocde sampler message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmscriptddf_luaref(tbl)`
-* `ref` (`number`)
-* `context_table_ref` (`number`)
+Encode luaref message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `ref` (`number`)
+  * `context_table_ref` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmscriptddf_luaref(str)`
+Decocde luaref message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmsystemddf_exit(tbl)`
-* `code` (`number`)
+Encode exit message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `code` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmsystemddf_exit(str)`
+Decocde exit message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmsystemddf_toggleprofile(tbl)`
+Encode toggleprofile message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmsystemddf_toggleprofile(str)`
+Decocde toggleprofile message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmsystemddf_togglephysicsdebug(tbl)`
+Encode togglephysicsdebug message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmsystemddf_togglephysicsdebug(str)`
+Decocde togglephysicsdebug message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmsystemddf_startrecord(tbl)`
-* `file_name` (`string`)
-* `frame_period` (`number`) (optional)
-* `fps` (`number`) (optional)
+Encode startrecord message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `file_name` (`string`)
+  * `frame_period` (`number`) (optional)
+  * `fps` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmsystemddf_startrecord(str)`
+Decocde startrecord message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmsystemddf_stoprecord(tbl)`
+Encode stoprecord message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmsystemddf_stoprecord(str)`
+Decocde stoprecord message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmsystemddf_reboot(tbl)`
-* `arg1` (`string`) (optional)
-* `arg2` (`string`) (optional)
-* `arg3` (`string`) (optional)
-* `arg4` (`string`) (optional)
-* `arg5` (`string`) (optional)
-* `arg6` (`string`) (optional)
+Encode reboot message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `arg1` (`string`) (optional)
+  * `arg2` (`string`) (optional)
+  * `arg3` (`string`) (optional)
+  * `arg4` (`string`) (optional)
+  * `arg5` (`string`) (optional)
+  * `arg6` (`string`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmsystemddf_reboot(str)`
+Decocde reboot message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmsystemddf_setvsync(tbl)`
-* `swap_interval` (`number`)
+Encode setvsync message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `swap_interval` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmsystemddf_setvsync(str)`
+Decocde setvsync message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmsystemddf_setupdatefrequency(tbl)`
-* `frequency` (`number`)
+Encode setupdatefrequency message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `frequency` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmsystemddf_setupdatefrequency(str)`
+Decocde setupdatefrequency message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmscriptdoc_parameter(tbl)`
-* `name` (`string`)
-* `doc` (`string`)
-* `types` (array of `string`)
+Encode parameter message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `doc` (`string`)
+  * `types` (array of `string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmscriptdoc_parameter(str)`
+Decocde parameter message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmscriptdoc_member(tbl)`
-* `name` (`string`)
-* `doc` (`string`)
-* `type` (`string`)
+Encode member message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `doc` (`string`)
+  * `type` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmscriptdoc_member(str)`
+Decocde member message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmscriptdoc_returnvalue(tbl)`
-* `name` (`string`)
-* `doc` (`string`)
-* `types` (array of `string`)
+Encode returnvalue message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `doc` (`string`)
+  * `types` (array of `string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmscriptdoc_returnvalue(str)`
+Decocde returnvalue message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmscriptdoc_element(tbl)`
-* `type` (`number`)
-* `name` (`string`)
-* `brief` (`string`)
-* `description` (`string`)
-* `returnvalues` (array of `dm_script_doc__return_value`)
-* `parameters` (array of `dm_script_doc__parameter`)
-* `examples` (`string`) (optional)
-* `replaces` (`string`) (optional)
-* `error` (`string`) (optional)
-* `tparams` (array of `dm_script_doc__member`)
-* `members` (array of `dm_script_doc__member`)
-* `notes` (array of `string`)
+Encode element message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `type` (`number`)
+  * `name` (`string`)
+  * `brief` (`string`)
+  * `description` (`string`)
+  * `returnvalues` (array of `dm_script_doc__return_value`)
+  * `parameters` (array of `dm_script_doc__parameter`)
+  * `examples` (`string`) (optional)
+  * `replaces` (`string`) (optional)
+  * `error` (`string`) (optional)
+  * `tparams` (array of `dm_script_doc__member`)
+  * `members` (array of `dm_script_doc__member`)
+  * `notes` (array of `string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmscriptdoc_element(str)`
+Decocde element message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmscriptdoc_info(tbl)`
-* `namespace` (`string`)
-* `name` (`string`)
-* `brief` (`string`)
-* `description` (`string`)
-* `path` (`string`)
-* `file` (`string`)
+Encode info message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `namespace` (`string`)
+  * `name` (`string`)
+  * `brief` (`string`)
+  * `description` (`string`)
+  * `path` (`string`)
+  * `file` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmscriptdoc_info(str)`
+Decocde info message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmscriptdoc_document(tbl)`
-* `elements` (array of `dm_script_doc__element`)
-* `info` (`dm_script_doc__info`) (optional)
+Encode document message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `elements` (array of `dm_script_doc__element`)
+  * `info` (`dm_script_doc__info`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmscriptdoc_document(str)`
+Decocde document message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmhttpddf_stophttp(tbl)`
+Encode stophttp message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmhttpddf_stophttp(str)`
+Decocde stophttp message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmhttpddf_httprequest(tbl)`
-* `method` (`string`)
-* `url` (`string`)
-* `headers` (`number`)
-* `headers_length` (`number`)
-* `request` (`number`)
-* `request_length` (`number`)
-* `timeout` (`number`) (optional)
-* `path` (`string`) (optional)
-* `ignore_cache` (`boolean`) (optional)
-* `chunked_transfer` (`boolean`) (optional)
+Encode httprequest message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `method` (`string`)
+  * `url` (`string`)
+  * `headers` (`number`)
+  * `headers_length` (`number`)
+  * `request` (`number`)
+  * `request_length` (`number`)
+  * `timeout` (`number`) (optional)
+  * `path` (`string`) (optional)
+  * `ignore_cache` (`boolean`) (optional)
+  * `chunked_transfer` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmhttpddf_httprequest(str)`
+Decocde httprequest message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmhttpddf_httpresponse(tbl)`
-* `status` (`number`)
-* `headers` (`number`)
-* `headers_length` (`number`)
-* `response` (`number`)
-* `response_length` (`number`)
-* `path` (`string`)
+Encode httpresponse message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `status` (`number`)
+  * `headers` (`number`)
+  * `headers_length` (`number`)
+  * `response` (`number`)
+  * `response_length` (`number`)
+  * `path` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmhttpddf_httpresponse(str)`
+Decocde httpresponse message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmluaddf_luasource(tbl)`
-* `script` (`ProtobufCBinaryData`) (optional)
-* `filename` (`string`)
-* `bytecode` (`ProtobufCBinaryData`) (optional)
-* `delta` (`ProtobufCBinaryData`) (optional)
-* `bytecode_32` (`ProtobufCBinaryData`) (optional)
-* `bytecode_64` (`ProtobufCBinaryData`) (optional)
+Encode luasource message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `script` (`ProtobufCBinaryData`) (optional)
+  * `filename` (`string`)
+  * `bytecode` (`ProtobufCBinaryData`) (optional)
+  * `delta` (`ProtobufCBinaryData`) (optional)
+  * `bytecode_32` (`ProtobufCBinaryData`) (optional)
+  * `bytecode_64` (`ProtobufCBinaryData`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmluaddf_luasource(str)`
+Decocde luasource message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_bone(tbl)`
-* `parent` (`number`)
-* `id` (`number`)
-* `name` (`string`)
-* `local` (`dm_math__transform`)
-* `world` (`dm_math__transform`)
-* `inverse_bind_pose` (`dm_math__transform`)
-* `length` (`number`) (optional)
+Encode bone message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `parent` (`number`)
+  * `id` (`number`)
+  * `name` (`string`)
+  * `local` (`dm_math__transform`)
+  * `world` (`dm_math__transform`)
+  * `inverse_bind_pose` (`dm_math__transform`)
+  * `length` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_bone(str)`
+Decocde bone message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_ik(tbl)`
-* `id` (`number`)
-* `parent` (`number`)
-* `child` (`number`)
-* `target` (`number`)
-* `positive` (`boolean`) (optional)
-* `mix` (`number`) (optional)
+Encode ik message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`number`)
+  * `parent` (`number`)
+  * `child` (`number`)
+  * `target` (`number`)
+  * `positive` (`boolean`) (optional)
+  * `mix` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_ik(str)`
+Decocde ik message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_skeleton(tbl)`
-* `bones` (array of `dm_rig_ddf__bone`)
-* `iks` (array of `dm_rig_ddf__ik`)
+Encode skeleton message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `bones` (array of `dm_rig_ddf__bone`)
+  * `iks` (array of `dm_rig_ddf__ik`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_skeleton(str)`
+Decocde skeleton message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_animationtrack(tbl)`
-* `bone_index` (`number`)
-* `positions` (array of `number`)
-* `rotations` (array of `number`)
-* `scale` (array of `number`)
+Encode animationtrack message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `bone_index` (`number`)
+  * `positions` (array of `number`)
+  * `rotations` (array of `number`)
+  * `scale` (array of `number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_animationtrack(str)`
+Decocde animationtrack message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_eventkey(tbl)`
-* `t` (`number`)
-* `integer` (`number`) (optional)
-* `float` (`number`) (optional)
-* `string` (`number`) (optional)
+Encode eventkey message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `t` (`number`)
+  * `integer` (`number`) (optional)
+  * `float` (`number`) (optional)
+  * `string` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_eventkey(str)`
+Decocde eventkey message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_eventtrack(tbl)`
-* `event_id` (`number`)
-* `keys` (array of `dm_rig_ddf__event_key`)
+Encode eventtrack message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `event_id` (`number`)
+  * `keys` (array of `dm_rig_ddf__event_key`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_eventtrack(str)`
+Decocde eventtrack message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_riganimation(tbl)`
-* `id` (`number`)
-* `duration` (`number`)
-* `sample_rate` (`number`)
-* `tracks` (array of `dm_rig_ddf__animation_track`)
-* `event_tracks` (array of `dm_rig_ddf__event_track`)
+Encode riganimation message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`number`)
+  * `duration` (`number`)
+  * `sample_rate` (`number`)
+  * `tracks` (array of `dm_rig_ddf__animation_track`)
+  * `event_tracks` (array of `dm_rig_ddf__event_track`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_riganimation(str)`
+Decocde riganimation message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_animationset(tbl)`
-* `animations` (array of `dm_rig_ddf__rig_animation`)
-* `bone_list` (array of `number`)
+Encode animationset message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `animations` (array of `dm_rig_ddf__rig_animation`)
+  * `bone_list` (array of `number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_animationset(str)`
+Decocde animationset message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_animationinstancedesc(tbl)`
-* `animation` (`string`)
+Encode animationinstancedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `animation` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_animationinstancedesc(str)`
+Decocde animationinstancedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_animationsetdesc(tbl)`
-* `animations` (array of `dm_rig_ddf__animation_instance_desc`)
-* `skeleton` (`string`) (optional)
+Encode animationsetdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `animations` (array of `dm_rig_ddf__animation_instance_desc`)
+  * `skeleton` (`string`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_animationsetdesc(str)`
+Decocde animationsetdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_mesh(tbl)`
-* `positions` (array of `number`)
-* `normals` (array of `number`)
-* `tangents` (array of `number`)
-* `colors` (array of `number`)
-* `texcoord0` (array of `number`)
-* `num_texcoord0_components` (`number`) (optional)
-* `texcoord1` (array of `number`)
-* `num_texcoord1_components` (`number`) (optional)
-* `indices` (`ProtobufCBinaryData`) (optional)
-* `indices_format` (`number`) (optional)
-* `weights` (array of `number`)
-* `bone_indices` (array of `number`)
-* `material_index` (`number`) (optional)
+Encode mesh message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `positions` (array of `number`)
+  * `normals` (array of `number`)
+  * `tangents` (array of `number`)
+  * `colors` (array of `number`)
+  * `texcoord0` (array of `number`)
+  * `num_texcoord0_components` (`number`) (optional)
+  * `texcoord1` (array of `number`)
+  * `num_texcoord1_components` (`number`) (optional)
+  * `indices` (`ProtobufCBinaryData`) (optional)
+  * `indices_format` (`number`) (optional)
+  * `weights` (array of `number`)
+  * `bone_indices` (array of `number`)
+  * `material_index` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_mesh(str)`
+Decocde mesh message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_model(tbl)`
-* `local` (`dm_math__transform`)
-* `id` (`number`)
-* `meshes` (array of `dm_rig_ddf__mesh`)
+Encode model message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `local` (`dm_math__transform`)
+  * `id` (`number`)
+  * `meshes` (array of `dm_rig_ddf__mesh`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_model(str)`
+Decocde model message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_meshset(tbl)`
-* `models` (array of `dm_rig_ddf__model`)
-* `materials` (array of `string`)
-* `bone_list` (array of `number`)
-* `max_bone_count` (`number`) (optional)
+Encode meshset message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `models` (array of `dm_rig_ddf__model`)
+  * `materials` (array of `string`)
+  * `bone_list` (array of `number`)
+  * `max_bone_count` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_meshset(str)`
+Decocde meshset message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmrigddf_rigscene(tbl)`
-* `skeleton` (`string`) (optional)
-* `animation_set` (`string`) (optional)
-* `mesh_set` (`string`)
-* `texture_set` (`string`) (optional)
+Encode rigscene message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `skeleton` (`string`) (optional)
+  * `animation_set` (`string`) (optional)
+  * `mesh_set` (`string`)
+  * `texture_set` (`string`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmrigddf_rigscene(str)`
+Decocde rigscene message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmodelddf_modeldesc(tbl)`
-* `mesh` (`string`)
-* `material` (`string`)
-* `textures` (array of `string`)
-* `skeleton` (`string`) (optional)
-* `animations` (`string`) (optional)
-* `default_animation` (`string`) (optional)
-* `name` (`string`) (optional)
+Encode modeldesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `mesh` (`string`)
+  * `material` (`string`)
+  * `textures` (array of `string`)
+  * `skeleton` (`string`) (optional)
+  * `animations` (`string`) (optional)
+  * `default_animation` (`string`) (optional)
+  * `name` (`string`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmodelddf_modeldesc(str)`
+Decocde modeldesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmodelddf_model(tbl)`
-* `rig_scene` (`string`)
-* `material` (`string`)
-* `textures` (array of `string`)
-* `default_animation` (`string`) (optional)
+Encode model message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `rig_scene` (`string`)
+  * `material` (`string`)
+  * `textures` (array of `string`)
+  * `default_animation` (`string`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmodelddf_model(str)`
+Decocde model message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmodelddf_resetconstant(tbl)`
-* `name_hash` (`number`)
+Encode resetconstant message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name_hash` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmodelddf_resetconstant(str)`
+Decocde resetconstant message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmodelddf_settexture(tbl)`
-* `texture_hash` (`number`)
-* `texture_unit` (`number`)
+Encode settexture message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `texture_hash` (`number`)
+  * `texture_unit` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmodelddf_settexture(str)`
+Decocde settexture message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmodelddf_modelplayanimation(tbl)`
-* `animation_id` (`number`)
-* `playback` (`number`)
-* `blend_duration` (`number`) (optional)
-* `offset` (`number`) (optional)
-* `playback_rate` (`number`) (optional)
+Encode modelplayanimation message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `animation_id` (`number`)
+  * `playback` (`number`)
+  * `blend_duration` (`number`) (optional)
+  * `offset` (`number`) (optional)
+  * `playback_rate` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmodelddf_modelplayanimation(str)`
+Decocde modelplayanimation message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmodelddf_modelcancelanimation(tbl)`
+Encode modelcancelanimation message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmodelddf_modelcancelanimation(str)`
+Decocde modelcancelanimation message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmodelddf_modelanimationdone(tbl)`
-* `animation_id` (`number`)
-* `playback` (`number`)
+Encode modelanimationdone message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `animation_id` (`number`)
+  * `playback` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmodelddf_modelanimationdone(str)`
+Decocde modelanimationdone message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmmeshddf_meshdesc(tbl)`
-* `material` (`string`)
-* `vertices` (`string`)
-* `textures` (array of `string`)
-* `primitive_type` (`number`) (optional)
-* `position_stream` (`string`) (optional)
-* `normal_stream` (`string`) (optional)
+Encode meshdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `material` (`string`)
+  * `vertices` (`string`)
+  * `textures` (array of `string`)
+  * `primitive_type` (`number`) (optional)
+  * `position_stream` (`string`) (optional)
+  * `normal_stream` (`string`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmmeshddf_meshdesc(str)`
+Decocde meshdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_labeldesc(tbl)`
-* `size` (`dm_math__vector4`)
-* `scale` (`dm_math__vector4`) (optional)
-* `color` (`dm_math__vector4`)
-* `outline` (`dm_math__vector4`)
-* `shadow` (`dm_math__vector4`)
-* `leading` (`number`)
-* `tracking` (`number`)
-* `pivot` (`number`)
-* `blend_mode` (`number`)
-* `line_break` (`boolean`)
-* `text` (`string`)
-* `font` (`string`)
-* `material` (`string`)
+Encode labeldesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `size` (`dm_math__vector4`)
+  * `scale` (`dm_math__vector4`) (optional)
+  * `color` (`dm_math__vector4`)
+  * `outline` (`dm_math__vector4`)
+  * `shadow` (`dm_math__vector4`)
+  * `leading` (`number`)
+  * `tracking` (`number`)
+  * `pivot` (`number`)
+  * `blend_mode` (`number`)
+  * `line_break` (`boolean`)
+  * `text` (`string`)
+  * `font` (`string`)
+  * `material` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_labeldesc(str)`
+Decocde labeldesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_settext(tbl)`
-* `text` (`string`)
+Encode settext message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `text` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_settext(str)`
+Decocde settext message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_convexhull(tbl)`
-* `index` (`number`)
-* `count` (`number`)
-* `collision_group` (`string`)
+Encode convexhull message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `index` (`number`)
+  * `count` (`number`)
+  * `collision_group` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_convexhull(str)`
+Decocde convexhull message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_cue(tbl)`
-* `id` (`string`)
-* `frame` (`number`)
-* `value` (`number`) (optional)
+Encode cue message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `frame` (`number`)
+  * `value` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_cue(str)`
+Decocde cue message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_animation(tbl)`
-* `id` (`string`)
-* `start_tile` (`number`)
-* `end_tile` (`number`)
-* `playback` (`number`) (optional)
-* `fps` (`number`) (optional)
-* `flip_horizontal` (`number`) (optional)
-* `flip_vertical` (`number`) (optional)
-* `cues` (array of `dm_game_system_ddf__cue`)
+Encode animation message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `start_tile` (`number`)
+  * `end_tile` (`number`)
+  * `playback` (`number`) (optional)
+  * `fps` (`number`) (optional)
+  * `flip_horizontal` (`number`) (optional)
+  * `flip_vertical` (`number`) (optional)
+  * `cues` (array of `dm_game_system_ddf__cue`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_animation(str)`
+Decocde animation message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_tileset(tbl)`
-* `image` (`string`)
-* `tile_width` (`number`)
-* `tile_height` (`number`)
-* `tile_margin` (`number`)
-* `tile_spacing` (`number`)
-* `collision` (`string`) (optional)
-* `material_tag` (`string`)
-* `convex_hulls` (array of `dm_game_system_ddf__convex_hull`)
-* `convex_hull_points` (array of `number`)
-* `collision_groups` (array of `string`)
-* `animations` (array of `dm_game_system_ddf__animation`)
-* `extrude_borders` (`number`) (optional)
-* `inner_padding` (`number`) (optional)
-* `sprite_trim_mode` (`number`) (optional)
+Encode tileset message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `image` (`string`)
+  * `tile_width` (`number`)
+  * `tile_height` (`number`)
+  * `tile_margin` (`number`)
+  * `tile_spacing` (`number`)
+  * `collision` (`string`) (optional)
+  * `material_tag` (`string`)
+  * `convex_hulls` (array of `dm_game_system_ddf__convex_hull`)
+  * `convex_hull_points` (array of `number`)
+  * `collision_groups` (array of `string`)
+  * `animations` (array of `dm_game_system_ddf__animation`)
+  * `extrude_borders` (`number`) (optional)
+  * `inner_padding` (`number`) (optional)
+  * `sprite_trim_mode` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_tileset(str)`
+Decocde tileset message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_tilecell(tbl)`
-* `x` (`number`)
-* `y` (`number`)
-* `tile` (`number`)
-* `h_flip` (`number`) (optional)
-* `v_flip` (`number`) (optional)
-* `rotate90` (`number`) (optional)
+Encode tilecell message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `x` (`number`)
+  * `y` (`number`)
+  * `tile` (`number`)
+  * `h_flip` (`number`) (optional)
+  * `v_flip` (`number`) (optional)
+  * `rotate90` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_tilecell(str)`
+Decocde tilecell message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_tilelayer(tbl)`
-* `id` (`string`)
-* `z` (`number`)
-* `is_visible` (`number`)
-* `id_hash` (`number`) (optional)
-* `cell` (array of `dm_game_system_ddf__tile_cell`)
+Encode tilelayer message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `z` (`number`)
+  * `is_visible` (`number`)
+  * `id_hash` (`number`) (optional)
+  * `cell` (array of `dm_game_system_ddf__tile_cell`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_tilelayer(str)`
+Decocde tilelayer message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_tilegrid(tbl)`
-* `tile_set` (`string`)
-* `layers` (array of `dm_game_system_ddf__tile_layer`)
-* `material` (`string`) (optional)
-* `blend_mode` (`number`) (optional)
+Encode tilegrid message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `tile_set` (`string`)
+  * `layers` (array of `dm_game_system_ddf__tile_layer`)
+  * `material` (`string`) (optional)
+  * `blend_mode` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_tilegrid(str)`
+Decocde tilegrid message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_settile(tbl)`
-* `layer_id` (`number`)
-* `position` (`dm_math__point3`)
-* `tile` (`number`) (optional)
-* `dx` (`number`) (optional)
-* `dy` (`number`) (optional)
+Encode settile message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `layer_id` (`number`)
+  * `position` (`dm_math__point3`)
+  * `tile` (`number`) (optional)
+  * `dx` (`number`) (optional)
+  * `dy` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_settile(str)`
+Decocde settile message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setconstanttilemap(tbl)`
-* `name_hash` (`number`)
-* `value` (`dm_math__vector4`)
+Encode setconstanttilemap message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name_hash` (`number`)
+  * `value` (`dm_math__vector4`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setconstanttilemap(str)`
+Decocde setconstanttilemap message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_resetconstanttilemap(tbl)`
-* `name_hash` (`number`)
+Encode resetconstanttilemap message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name_hash` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_resetconstanttilemap(str)`
+Decocde resetconstanttilemap message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_atlasimage(tbl)`
-* `image` (`string`)
-* `sprite_trim_mode` (`number`) (optional)
+Encode atlasimage message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `image` (`string`)
+  * `sprite_trim_mode` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_atlasimage(str)`
+Decocde atlasimage message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_atlasanimation(tbl)`
-* `id` (`string`)
-* `images` (array of `dm_game_system_ddf__atlas_image`)
-* `playback` (`number`) (optional)
-* `fps` (`number`) (optional)
-* `flip_horizontal` (`number`) (optional)
-* `flip_vertical` (`number`) (optional)
+Encode atlasanimation message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `images` (array of `dm_game_system_ddf__atlas_image`)
+  * `playback` (`number`) (optional)
+  * `fps` (`number`) (optional)
+  * `flip_horizontal` (`number`) (optional)
+  * `flip_vertical` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_atlasanimation(str)`
+Decocde atlasanimation message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_atlas(tbl)`
-* `images` (array of `dm_game_system_ddf__atlas_image`)
-* `animations` (array of `dm_game_system_ddf__atlas_animation`)
-* `margin` (`number`) (optional)
-* `extrude_borders` (`number`) (optional)
-* `inner_padding` (`number`) (optional)
+Encode atlas message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `images` (array of `dm_game_system_ddf__atlas_image`)
+  * `animations` (array of `dm_game_system_ddf__atlas_animation`)
+  * `margin` (`number`) (optional)
+  * `extrude_borders` (`number`) (optional)
+  * `inner_padding` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_atlas(str)`
+Decocde atlas message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmbufferddf_streamdesc(tbl)`
-* `name` (`string`)
-* `value_type` (`number`)
-* `value_count` (`number`)
-* `ui` (array of `number`)
-* `i` (array of `number`)
-* `ui64` (array of `number`)
-* `i64` (array of `number`)
-* `f` (array of `number`)
+Encode streamdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `value_type` (`number`)
+  * `value_count` (`number`)
+  * `ui` (array of `number`)
+  * `i` (array of `number`)
+  * `ui64` (array of `number`)
+  * `i64` (array of `number`)
+  * `f` (array of `number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmbufferddf_streamdesc(str)`
+Decocde streamdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmbufferddf_bufferdesc(tbl)`
-* `streams` (array of `dm_buffer_ddf__stream_desc`)
+Encode bufferdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `streams` (array of `dm_buffer_ddf__stream_desc`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmbufferddf_bufferdesc(str)`
+Decocde bufferdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmsoundddf_sounddesc(tbl)`
-* `sound` (`string`)
-* `looping` (`number`) (optional)
-* `group` (`string`) (optional)
-* `gain` (`number`) (optional)
-* `pan` (`number`) (optional)
-* `speed` (`number`) (optional)
-* `loopcount` (`number`) (optional)
+Encode sounddesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `sound` (`string`)
+  * `looping` (`number`) (optional)
+  * `group` (`string`) (optional)
+  * `gain` (`number`) (optional)
+  * `pan` (`number`) (optional)
+  * `speed` (`number`) (optional)
+  * `loopcount` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmsoundddf_sounddesc(str)`
+Decocde sounddesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesysddf_cameradesc(tbl)`
-* `aspect_ratio` (`number`)
-* `fov` (`number`)
-* `near_z` (`number`)
-* `far_z` (`number`)
-* `auto_aspect_ratio` (`number`) (optional)
-* `orthographic_projection` (`number`) (optional)
-* `orthographic_zoom` (`number`) (optional)
+Encode cameradesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `aspect_ratio` (`number`)
+  * `fov` (`number`)
+  * `near_z` (`number`)
+  * `far_z` (`number`)
+  * `auto_aspect_ratio` (`number`) (optional)
+  * `orthographic_projection` (`number`) (optional)
+  * `orthographic_zoom` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesysddf_cameradesc(str)`
+Decocde cameradesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesysddf_setcamera(tbl)`
-* `aspect_ratio` (`number`)
-* `fov` (`number`)
-* `near_z` (`number`)
-* `far_z` (`number`)
-* `orthographic_projection` (`number`) (optional)
-* `orthographic_zoom` (`number`) (optional)
+Encode setcamera message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `aspect_ratio` (`number`)
+  * `fov` (`number`)
+  * `near_z` (`number`)
+  * `far_z` (`number`)
+  * `orthographic_projection` (`number`) (optional)
+  * `orthographic_zoom` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesysddf_setcamera(str)`
+Decocde setcamera message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesysddf_acquirecamerafocus(tbl)`
+Encode acquirecamerafocus message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesysddf_acquirecamerafocus(str)`
+Decocde acquirecamerafocus message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesysddf_releasecamerafocus(tbl)`
+Encode releasecamerafocus message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesysddf_releasecamerafocus(str)`
+Decocde releasecamerafocus message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_spritedesc(tbl)`
-* `tile_set` (`string`)
-* `default_animation` (`string`)
-* `material` (`string`) (optional)
-* `blend_mode` (`number`) (optional)
-* `slice9` (`dm_math__vector4`) (optional)
-* `size` (`dm_math__vector4`) (optional)
-* `size_mode` (`number`) (optional)
+Encode spritedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `tile_set` (`string`)
+  * `default_animation` (`string`)
+  * `material` (`string`) (optional)
+  * `blend_mode` (`number`) (optional)
+  * `slice9` (`dm_math__vector4`) (optional)
+  * `size` (`dm_math__vector4`) (optional)
+  * `size_mode` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_spritedesc(str)`
+Decocde spritedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_playanimation(tbl)`
-* `id` (`number`)
-* `offset` (`number`) (optional)
-* `playback_rate` (`number`) (optional)
+Encode playanimation message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`number`)
+  * `offset` (`number`) (optional)
+  * `playback_rate` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_playanimation(str)`
+Decocde playanimation message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_animationdone(tbl)`
-* `current_tile` (`number`)
-* `id` (`number`)
+Encode animationdone message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `current_tile` (`number`)
+  * `id` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_animationdone(str)`
+Decocde animationdone message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setfliphorizontal(tbl)`
-* `flip` (`number`)
+Encode setfliphorizontal message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `flip` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setfliphorizontal(str)`
+Decocde setfliphorizontal message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setflipvertical(tbl)`
-* `flip` (`number`)
+Encode setflipvertical message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `flip` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setflipvertical(str)`
+Decocde setflipvertical message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_texturesetanimation(tbl)`
-* `id` (`string`)
-* `width` (`number`)
-* `height` (`number`)
-* `start` (`number`)
-* `end` (`number`)
-* `fps` (`number`) (optional)
-* `playback` (`number`) (optional)
-* `flip_horizontal` (`number`) (optional)
-* `flip_vertical` (`number`) (optional)
-* `is_animation` (`number`) (optional)
+Encode texturesetanimation message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `width` (`number`)
+  * `height` (`number`)
+  * `start` (`number`)
+  * `end` (`number`)
+  * `fps` (`number`) (optional)
+  * `playback` (`number`) (optional)
+  * `flip_horizontal` (`number`) (optional)
+  * `flip_vertical` (`number`) (optional)
+  * `is_animation` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_texturesetanimation(str)`
+Decocde texturesetanimation message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_spritegeometry(tbl)`
-* `width` (`number`)
-* `height` (`number`)
-* `vertices` (array of `number`)
-* `uvs` (array of `number`)
-* `indices` (array of `number`)
+Encode spritegeometry message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `width` (`number`)
+  * `height` (`number`)
+  * `vertices` (array of `number`)
+  * `uvs` (array of `number`)
+  * `indices` (array of `number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_spritegeometry(str)`
+Decocde spritegeometry message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_textureset(tbl)`
-* `texture` (`string`)
-* `animations` (array of `dm_game_system_ddf__texture_set_animation`)
-* `convex_hulls` (array of `dm_game_system_ddf__convex_hull`)
-* `tile_width` (`number`) (optional)
-* `tile_height` (`number`) (optional)
-* `tile_count` (`number`) (optional)
-* `collision_hull_points` (array of `number`)
-* `collision_groups` (array of `string`)
-* `tex_coords` (`ProtobufCBinaryData`)
-* `tex_dims` (`ProtobufCBinaryData`) (optional)
-* `geometries` (array of `dm_game_system_ddf__sprite_geometry`)
-* `use_geometries` (`number`) (optional)
-* `frame_indices` (array of `number`)
+Encode textureset message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `texture` (`string`)
+  * `animations` (array of `dm_game_system_ddf__texture_set_animation`)
+  * `convex_hulls` (array of `dm_game_system_ddf__convex_hull`)
+  * `tile_width` (`number`) (optional)
+  * `tile_height` (`number`) (optional)
+  * `tile_count` (`number`) (optional)
+  * `collision_hull_points` (array of `number`)
+  * `collision_groups` (array of `string`)
+  * `tex_coords` (`ProtobufCBinaryData`)
+  * `tex_dims` (`ProtobufCBinaryData`) (optional)
+  * `geometries` (array of `dm_game_system_ddf__sprite_geometry`)
+  * `use_geometries` (`number`) (optional)
+  * `frame_indices` (array of `number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_textureset(str)`
+Decocde textureset message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_convexshape(tbl)`
-* `shape_type` (`number`)
-* `data` (array of `number`)
+Encode convexshape message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `shape_type` (`number`)
+  * `data` (array of `number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_convexshape(str)`
+Decocde convexshape message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_collisionshape(tbl)`
-* `shapes` (array of `dm_physics_ddf__collision_shape__shape`)
-* `data` (array of `number`)
+Encode collisionshape message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `shapes` (array of `dm_physics_ddf__collision_shape__shape`)
+  * `data` (array of `number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_collisionshape(str)`
+Decocde collisionshape message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf.collisionshape_shape(tbl)`
-* `shape_type` (`number`)
-* `position` (`dm_math__point3`)
-* `rotation` (`dm_math__quat`)
-* `index` (`number`)
-* `count` (`number`)
+Encode shape message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `shape_type` (`number`)
+  * `position` (`dm_math__point3`)
+  * `rotation` (`dm_math__quat`)
+  * `index` (`number`)
+  * `count` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf.collisionshape_shape(str)`
+Decocde shape message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_collisionobjectdesc(tbl)`
-* `collision_shape` (`string`) (optional)
-* `type` (`number`)
-* `mass` (`number`)
-* `friction` (`number`)
-* `restitution` (`number`)
-* `group` (`string`)
-* `mask` (array of `string`)
-* `embedded_collision_shape` (`dm_physics_ddf__collision_shape`) (optional)
-* `linear_damping` (`number`) (optional)
-* `angular_damping` (`number`) (optional)
-* `locked_rotation` (`boolean`) (optional)
-* `bullet` (`boolean`) (optional)
+Encode collisionobjectdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `collision_shape` (`string`) (optional)
+  * `type` (`number`)
+  * `mass` (`number`)
+  * `friction` (`number`)
+  * `restitution` (`number`)
+  * `group` (`string`)
+  * `mask` (array of `string`)
+  * `embedded_collision_shape` (`dm_physics_ddf__collision_shape`) (optional)
+  * `linear_damping` (`number`) (optional)
+  * `angular_damping` (`number`) (optional)
+  * `locked_rotation` (`boolean`) (optional)
+  * `bullet` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_collisionobjectdesc(str)`
+Decocde collisionobjectdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_applyforce(tbl)`
-* `force` (`dm_math__vector3`)
-* `position` (`dm_math__point3`)
+Encode applyforce message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `force` (`dm_math__vector3`)
+  * `position` (`dm_math__point3`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_applyforce(str)`
+Decocde applyforce message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_collisionresponse(tbl)`
-* `other_id` (`number`)
-* `group` (`number`)
-* `other_position` (`dm_math__point3`)
-* `other_group` (`number`)
-* `own_group` (`number`)
+Encode collisionresponse message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `other_id` (`number`)
+  * `group` (`number`)
+  * `other_position` (`dm_math__point3`)
+  * `other_group` (`number`)
+  * `own_group` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_collisionresponse(str)`
+Decocde collisionresponse message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_contactpointresponse(tbl)`
-* `position` (`dm_math__point3`)
-* `normal` (`dm_math__vector3`)
-* `relative_velocity` (`dm_math__vector3`)
-* `distance` (`number`)
-* `applied_impulse` (`number`)
-* `life_time` (`number`)
-* `mass` (`number`)
-* `other_mass` (`number`)
-* `other_id` (`number`)
-* `other_position` (`dm_math__point3`)
-* `group` (`number`)
-* `other_group` (`number`)
-* `own_group` (`number`)
+Encode contactpointresponse message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `position` (`dm_math__point3`)
+  * `normal` (`dm_math__vector3`)
+  * `relative_velocity` (`dm_math__vector3`)
+  * `distance` (`number`)
+  * `applied_impulse` (`number`)
+  * `life_time` (`number`)
+  * `mass` (`number`)
+  * `other_mass` (`number`)
+  * `other_id` (`number`)
+  * `other_position` (`dm_math__point3`)
+  * `group` (`number`)
+  * `other_group` (`number`)
+  * `own_group` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_contactpointresponse(str)`
+Decocde contactpointresponse message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_triggerresponse(tbl)`
-* `other_id` (`number`)
-* `enter` (`boolean`)
-* `group` (`number`)
-* `other_group` (`number`)
-* `own_group` (`number`)
+Encode triggerresponse message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `other_id` (`number`)
+  * `enter` (`boolean`)
+  * `group` (`number`)
+  * `other_group` (`number`)
+  * `own_group` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_triggerresponse(str)`
+Decocde triggerresponse message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_requestraycast(tbl)`
-* `from` (`dm_math__point3`)
-* `to` (`dm_math__point3`)
-* `mask` (`number`)
-* `request_id` (`number`)
+Encode requestraycast message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `from` (`dm_math__point3`)
+  * `to` (`dm_math__point3`)
+  * `mask` (`number`)
+  * `request_id` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_requestraycast(str)`
+Decocde requestraycast message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_raycastresponse(tbl)`
-* `fraction` (`number`)
-* `position` (`dm_math__point3`)
-* `normal` (`dm_math__vector3`)
-* `id` (`number`)
-* `group` (`number`)
-* `request_id` (`number`)
+Encode raycastresponse message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `fraction` (`number`)
+  * `position` (`dm_math__point3`)
+  * `normal` (`dm_math__vector3`)
+  * `id` (`number`)
+  * `group` (`number`)
+  * `request_id` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_raycastresponse(str)`
+Decocde raycastresponse message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_raycastmissed(tbl)`
-* `request_id` (`number`)
+Encode raycastmissed message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `request_id` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_raycastmissed(str)`
+Decocde raycastmissed message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_requestvelocity(tbl)`
+Encode requestvelocity message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_requestvelocity(str)`
+Decocde requestvelocity message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_velocityresponse(tbl)`
-* `linear_velocity` (`dm_math__vector3`)
-* `angular_velocity` (`dm_math__vector3`)
+Encode velocityresponse message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `linear_velocity` (`dm_math__vector3`)
+  * `angular_velocity` (`dm_math__vector3`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_velocityresponse(str)`
+Decocde velocityresponse message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_setgridshapehull(tbl)`
-* `shape` (`number`)
-* `row` (`number`)
-* `column` (`number`)
-* `hull` (`number`)
-* `flip_horizontal` (`number`)
-* `flip_vertical` (`number`)
-* `rotate90` (`number`)
+Encode setgridshapehull message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `shape` (`number`)
+  * `row` (`number`)
+  * `column` (`number`)
+  * `hull` (`number`)
+  * `flip_horizontal` (`number`)
+  * `flip_vertical` (`number`)
+  * `rotate90` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_setgridshapehull(str)`
+Decocde setgridshapehull message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmphysicsddf_enablegridshapelayer(tbl)`
-* `shape` (`number`)
-* `enable` (`number`)
+Encode enablegridshapelayer message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `shape` (`number`)
+  * `enable` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmphysicsddf_enablegridshapelayer(str)`
+Decocde enablegridshapelayer message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_factorydesc(tbl)`
-* `prototype` (`string`)
-* `load_dynamically` (`boolean`) (optional)
+Encode factorydesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `prototype` (`string`)
+  * `load_dynamically` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_factorydesc(str)`
+Decocde factorydesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_collectionfactorydesc(tbl)`
-* `prototype` (`string`)
-* `load_dynamically` (`boolean`) (optional)
+Encode collectionfactorydesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `prototype` (`string`)
+  * `load_dynamically` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_collectionfactorydesc(str)`
+Decocde collectionfactorydesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_create(tbl)`
-* `position` (`dm_math__point3`)
-* `rotation` (`dm_math__quat`)
-* `id` (`number`) (optional)
-* `scale` (`number`) (optional)
-* `scale3` (`dm_math__vector3`) (optional)
-* `index` (`number`) (optional)
+Encode create message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `position` (`dm_math__point3`)
+  * `rotation` (`dm_math__quat`)
+  * `id` (`number`) (optional)
+  * `scale` (`number`) (optional)
+  * `scale3` (`dm_math__vector3`) (optional)
+  * `index` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_create(str)`
+Decocde create message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_collectionproxydesc(tbl)`
-* `collection` (`string`)
-* `exclude` (`boolean`) (optional)
+Encode collectionproxydesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `collection` (`string`)
+  * `exclude` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_collectionproxydesc(str)`
+Decocde collectionproxydesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_settimestep(tbl)`
-* `factor` (`number`)
-* `mode` (`number`)
+Encode settimestep message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `factor` (`number`)
+  * `mode` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_settimestep(str)`
+Decocde settimestep message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_lightdesc(tbl)`
-* `id` (`string`)
-* `type` (`number`)
-* `intensity` (`number`)
-* `color` (`dm_math__vector3`)
-* `range` (`number`)
-* `decay` (`number`)
-* `cone_angle` (`number`) (optional)
-* `penumbra_angle` (`number`) (optional)
-* `drop_off` (`number`) (optional)
+Encode lightdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `type` (`number`)
+  * `intensity` (`number`)
+  * `color` (`dm_math__vector3`)
+  * `range` (`number`)
+  * `decay` (`number`)
+  * `cone_angle` (`number`) (optional)
+  * `penumbra_angle` (`number`) (optional)
+  * `drop_off` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_lightdesc(str)`
+Decocde lightdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setlight(tbl)`
-* `position` (`dm_math__point3`)
-* `rotation` (`dm_math__quat`)
-* `light` (`dm_game_system_ddf__light_desc`)
+Encode setlight message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `position` (`dm_math__point3`)
+  * `rotation` (`dm_math__quat`)
+  * `light` (`dm_game_system_ddf__light_desc`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setlight(str)`
+Decocde setlight message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setviewprojection(tbl)`
-* `id` (`number`)
-* `view` (`dm_math__matrix4`)
-* `projection` (`dm_math__matrix4`)
+Encode setviewprojection message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`number`)
+  * `view` (`dm_math__matrix4`)
+  * `projection` (`dm_math__matrix4`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setviewprojection(str)`
+Decocde setviewprojection message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_playsound(tbl)`
-* `delay` (`number`) (optional)
-* `gain` (`number`) (optional)
-* `pan` (`number`) (optional)
-* `speed` (`number`) (optional)
-* `play_id` (`number`) (optional)
+Encode playsound message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `delay` (`number`) (optional)
+  * `gain` (`number`) (optional)
+  * `pan` (`number`) (optional)
+  * `speed` (`number`) (optional)
+  * `play_id` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_playsound(str)`
+Decocde playsound message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_stopsound(tbl)`
+Encode stopsound message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_stopsound(str)`
+Decocde stopsound message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_pausesound(tbl)`
-* `pause` (`boolean`) (optional)
+Encode pausesound message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `pause` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_pausesound(str)`
+Decocde pausesound message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_sounddone(tbl)`
-* `play_id` (`number`) (optional)
+Encode sounddone message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `play_id` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_sounddone(str)`
+Decocde sounddone message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setgain(tbl)`
-* `gain` (`number`) (optional)
+Encode setgain message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `gain` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setgain(str)`
+Decocde setgain message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setpan(tbl)`
-* `pan` (`number`) (optional)
+Encode setpan message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `pan` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setpan(str)`
+Decocde setpan message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setspeed(tbl)`
-* `speed` (`number`) (optional)
+Encode setspeed message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `speed` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setspeed(str)`
+Decocde setspeed message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_playparticlefx(tbl)`
+Encode playparticlefx message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_playparticlefx(str)`
+Decocde playparticlefx message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_stopparticlefx(tbl)`
-* `clear_particles` (`boolean`) (optional)
+Encode stopparticlefx message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `clear_particles` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_stopparticlefx(str)`
+Decocde stopparticlefx message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setconstantparticlefx(tbl)`
-* `emitter_id` (`number`)
-* `name_hash` (`number`)
-* `value` (`dm_math__matrix4`)
-* `is_matrix4` (`boolean`) (optional)
+Encode setconstantparticlefx message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `emitter_id` (`number`)
+  * `name_hash` (`number`)
+  * `value` (`dm_math__matrix4`)
+  * `is_matrix4` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setconstantparticlefx(str)`
+Decocde setconstantparticlefx message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_resetconstantparticlefx(tbl)`
-* `emitter_id` (`number`)
-* `name_hash` (`number`)
+Encode resetconstantparticlefx message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `emitter_id` (`number`)
+  * `name_hash` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_resetconstantparticlefx(str)`
+Decocde resetconstantparticlefx message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setconstant(tbl)`
-* `name_hash` (`number`)
-* `value` (`dm_math__vector4`)
-* `index` (`number`) (optional)
+Encode setconstant message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name_hash` (`number`)
+  * `value` (`dm_math__vector4`)
+  * `index` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setconstant(str)`
+Decocde setconstant message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_resetconstant(tbl)`
-* `name_hash` (`number`)
+Encode resetconstant message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name_hash` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_resetconstant(str)`
+Decocde resetconstant message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgamesystemddf_setscale(tbl)`
-* `scale` (`dm_math__vector3`)
+Encode setscale message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `scale` (`dm_math__vector3`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgamesystemddf_setscale(str)`
+Decocde setscale message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf_nodedesc(tbl)`
-* `position` (`dm_math__vector4`) (optional)
-* `rotation` (`dm_math__vector4`) (optional)
-* `scale` (`dm_math__vector4`) (optional)
-* `size` (`dm_math__vector4`) (optional)
-* `color` (`dm_math__vector4`) (optional)
-* `type` (`number`) (optional)
-* `blend_mode` (`number`) (optional)
-* `text` (`string`) (optional)
-* `texture` (`string`) (optional)
-* `font` (`string`) (optional)
-* `id` (`string`) (optional)
-* `xanchor` (`number`) (optional)
-* `yanchor` (`number`) (optional)
-* `pivot` (`number`) (optional)
-* `outline` (`dm_math__vector4`) (optional)
-* `shadow` (`dm_math__vector4`) (optional)
-* `adjust_mode` (`number`) (optional)
-* `line_break` (`boolean`) (optional)
-* `parent` (`string`) (optional)
-* `layer` (`string`) (optional)
-* `inherit_alpha` (`boolean`) (optional)
-* `slice9` (`dm_math__vector4`) (optional)
-* `outerBounds` (`number`) (optional)
-* `innerRadius` (`number`) (optional)
-* `perimeterVertices` (`number`) (optional)
-* `pieFillAngle` (`number`) (optional)
-* `clipping_mode` (`number`) (optional)
-* `clipping_visible` (`boolean`) (optional)
-* `clipping_inverted` (`boolean`) (optional)
-* `alpha` (`number`) (optional)
-* `outline_alpha` (`number`) (optional)
-* `shadow_alpha` (`number`) (optional)
-* `overridden_fields` (array of `number`)
-* `template` (`string`) (optional)
-* `template_node_child` (`boolean`) (optional)
-* `text_leading` (`number`) (optional)
-* `text_tracking` (`number`) (optional)
-* `size_mode` (`number`) (optional)
-* `spine_scene` (`string`) (optional)
-* `spine_default_animation` (`string`) (optional)
-* `spine_skin` (`string`) (optional)
-* `spine_node_child` (`boolean`) (optional)
-* `particlefx` (`string`) (optional)
-* `custom_type` (`number`) (optional)
-* `enabled` (`boolean`) (optional)
-* `visible` (`boolean`) (optional)
+Encode nodedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `position` (`dm_math__vector4`) (optional)
+  * `rotation` (`dm_math__vector4`) (optional)
+  * `scale` (`dm_math__vector4`) (optional)
+  * `size` (`dm_math__vector4`) (optional)
+  * `color` (`dm_math__vector4`) (optional)
+  * `type` (`number`) (optional)
+  * `blend_mode` (`number`) (optional)
+  * `text` (`string`) (optional)
+  * `texture` (`string`) (optional)
+  * `font` (`string`) (optional)
+  * `id` (`string`) (optional)
+  * `xanchor` (`number`) (optional)
+  * `yanchor` (`number`) (optional)
+  * `pivot` (`number`) (optional)
+  * `outline` (`dm_math__vector4`) (optional)
+  * `shadow` (`dm_math__vector4`) (optional)
+  * `adjust_mode` (`number`) (optional)
+  * `line_break` (`boolean`) (optional)
+  * `parent` (`string`) (optional)
+  * `layer` (`string`) (optional)
+  * `inherit_alpha` (`boolean`) (optional)
+  * `slice9` (`dm_math__vector4`) (optional)
+  * `outerBounds` (`number`) (optional)
+  * `innerRadius` (`number`) (optional)
+  * `perimeterVertices` (`number`) (optional)
+  * `pieFillAngle` (`number`) (optional)
+  * `clipping_mode` (`number`) (optional)
+  * `clipping_visible` (`boolean`) (optional)
+  * `clipping_inverted` (`boolean`) (optional)
+  * `alpha` (`number`) (optional)
+  * `outline_alpha` (`number`) (optional)
+  * `shadow_alpha` (`number`) (optional)
+  * `overridden_fields` (array of `number`)
+  * `template` (`string`) (optional)
+  * `template_node_child` (`boolean`) (optional)
+  * `text_leading` (`number`) (optional)
+  * `text_tracking` (`number`) (optional)
+  * `size_mode` (`number`) (optional)
+  * `spine_scene` (`string`) (optional)
+  * `spine_default_animation` (`string`) (optional)
+  * `spine_skin` (`string`) (optional)
+  * `spine_node_child` (`boolean`) (optional)
+  * `particlefx` (`string`) (optional)
+  * `custom_type` (`number`) (optional)
+  * `enabled` (`boolean`) (optional)
+  * `visible` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf_nodedesc(str)`
+Decocde nodedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf_scenedesc(tbl)`
-* `script` (`string`)
-* `fonts` (array of `dm_gui_ddf__scene_desc__font_desc`)
-* `textures` (array of `dm_gui_ddf__scene_desc__texture_desc`)
-* `background_color` (`dm_math__vector4`) (optional)
-* `nodes` (array of `dm_gui_ddf__node_desc`)
-* `layers` (array of `dm_gui_ddf__scene_desc__layer_desc`)
-* `material` (`string`) (optional)
-* `layouts` (array of `dm_gui_ddf__scene_desc__layout_desc`)
-* `adjust_reference` (`number`) (optional)
-* `max_nodes` (`number`) (optional)
-* `spine_scenes` (array of `dm_gui_ddf__scene_desc__spine_scene_desc`)
-* `particlefxs` (array of `dm_gui_ddf__scene_desc__particle_fxdesc`)
-* `resources` (array of `dm_gui_ddf__scene_desc__resource_desc`)
+Encode scenedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `script` (`string`)
+  * `fonts` (array of `dm_gui_ddf__scene_desc__font_desc`)
+  * `textures` (array of `dm_gui_ddf__scene_desc__texture_desc`)
+  * `background_color` (`dm_math__vector4`) (optional)
+  * `nodes` (array of `dm_gui_ddf__node_desc`)
+  * `layers` (array of `dm_gui_ddf__scene_desc__layer_desc`)
+  * `material` (`string`) (optional)
+  * `layouts` (array of `dm_gui_ddf__scene_desc__layout_desc`)
+  * `adjust_reference` (`number`) (optional)
+  * `max_nodes` (`number`) (optional)
+  * `spine_scenes` (array of `dm_gui_ddf__scene_desc__spine_scene_desc`)
+  * `particlefxs` (array of `dm_gui_ddf__scene_desc__particle_fxdesc`)
+  * `resources` (array of `dm_gui_ddf__scene_desc__resource_desc`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf_scenedesc(str)`
+Decocde scenedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf.scenedesc_fontdesc(tbl)`
-* `name` (`string`)
-* `font` (`string`)
+Encode fontdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `font` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf.scenedesc_fontdesc(str)`
+Decocde fontdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf.scenedesc_texturedesc(tbl)`
-* `name` (`string`)
-* `texture` (`string`)
+Encode texturedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `texture` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf.scenedesc_texturedesc(str)`
+Decocde texturedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf.scenedesc_layerdesc(tbl)`
-* `name` (`string`)
+Encode layerdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf.scenedesc_layerdesc(str)`
+Decocde layerdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf.scenedesc_layoutdesc(tbl)`
-* `name` (`string`)
-* `nodes` (array of `dm_gui_ddf__node_desc`)
+Encode layoutdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `nodes` (array of `dm_gui_ddf__node_desc`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf.scenedesc_layoutdesc(str)`
+Decocde layoutdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf.scenedesc_spinescenedesc(tbl)`
-* `name` (`string`)
-* `spine_scene` (`string`)
+Encode spinescenedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `spine_scene` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf.scenedesc_spinescenedesc(str)`
+Decocde spinescenedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf.scenedesc_resourcedesc(tbl)`
-* `name` (`string`)
-* `path` (`string`)
+Encode resourcedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `path` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf.scenedesc_resourcedesc(str)`
+Decocde resourcedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf.scenedesc_particlefxdesc(tbl)`
-* `name` (`string`)
-* `particlefx` (`string`)
+Encode particlefxdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `particlefx` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf.scenedesc_particlefxdesc(str)`
+Decocde particlefxdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmguiddf_layoutchanged(tbl)`
-* `id` (`number`)
-* `previous_id` (`number`)
+Encode layoutchanged message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`number`)
+  * `previous_id` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmguiddf_layoutchanged(str)`
+Decocde layoutchanged message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmliveupdateddf_hashdigest(tbl)`
-* `data` (`ProtobufCBinaryData`)
+Encode hashdigest message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `data` (`ProtobufCBinaryData`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmliveupdateddf_hashdigest(str)`
+Decocde hashdigest message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmliveupdateddf_manifestheader(tbl)`
-* `magic_number` (`number`)
-* `version` (`number`)
-* `resource_hash_algorithm` (`number`)
-* `signature_hash_algorithm` (`number`)
-* `signature_sign_algorithm` (`number`)
-* `project_identifier` (`dm_live_update_ddf__hash_digest`)
+Encode manifestheader message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `magic_number` (`number`)
+  * `version` (`number`)
+  * `resource_hash_algorithm` (`number`)
+  * `signature_hash_algorithm` (`number`)
+  * `signature_sign_algorithm` (`number`)
+  * `project_identifier` (`dm_live_update_ddf__hash_digest`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmliveupdateddf_manifestheader(str)`
+Decocde manifestheader message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmliveupdateddf_resourceentry(tbl)`
-* `url` (`string`)
-* `url_hash` (`number`)
-* `hash` (`dm_live_update_ddf__hash_digest`)
-* `dependants` (array of `number`)
-* `flags` (`number`)
+Encode resourceentry message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `url` (`string`)
+  * `url_hash` (`number`)
+  * `hash` (`dm_live_update_ddf__hash_digest`)
+  * `dependants` (array of `number`)
+  * `flags` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmliveupdateddf_resourceentry(str)`
+Decocde resourceentry message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmliveupdateddf_manifestdata(tbl)`
-* `header` (`dm_live_update_ddf__manifest_header`)
-* `engine_versions` (array of `dm_live_update_ddf__hash_digest`)
-* `resources` (array of `dm_live_update_ddf__resource_entry`)
+Encode manifestdata message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `header` (`dm_live_update_ddf__manifest_header`)
+  * `engine_versions` (array of `dm_live_update_ddf__hash_digest`)
+  * `resources` (array of `dm_live_update_ddf__resource_entry`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmliveupdateddf_manifestdata(str)`
+Decocde manifestdata message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmliveupdateddf_manifestfile(tbl)`
-* `data` (`ProtobufCBinaryData`)
-* `signature` (`ProtobufCBinaryData`)
-* `archive_identifier` (`ProtobufCBinaryData`)
+Encode manifestfile message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `data` (`ProtobufCBinaryData`)
+  * `signature` (`ProtobufCBinaryData`)
+  * `archive_identifier` (`ProtobufCBinaryData`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmliveupdateddf_manifestfile(str)`
+Decocde manifestfile message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmresourceddf_reload(tbl)`
-* `resources` (array of `string`)
+Encode reload message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `resources` (array of `string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmresourceddf_reload(str)`
+Decocde reload message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics_cubemap(tbl)`
-* `right` (`string`)
-* `left` (`string`)
-* `top` (`string`)
-* `bottom` (`string`)
-* `front` (`string`)
-* `back` (`string`)
+Encode cubemap message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `right` (`string`)
+  * `left` (`string`)
+  * `top` (`string`)
+  * `bottom` (`string`)
+  * `front` (`string`)
+  * `back` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics_cubemap(str)`
+Decocde cubemap message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics_textureimage(tbl)`
-* `alternatives` (array of `dm_graphics__texture_image__image`)
-* `type` (`number`)
-* `count` (`number`)
+Encode textureimage message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `alternatives` (array of `dm_graphics__texture_image__image`)
+  * `type` (`number`)
+  * `count` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics_textureimage(str)`
+Decocde textureimage message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics.textureimage_image(tbl)`
-* `width` (`number`)
-* `height` (`number`)
-* `original_width` (`number`)
-* `original_height` (`number`)
-* `format` (`number`)
-* `mip_map_offset` (array of `number`)
-* `mip_map_size` (array of `number`)
-* `data` (`ProtobufCBinaryData`)
-* `compression_type` (`number`) (optional)
-* `compression_flags` (`number`) (optional)
-* `mip_map_size_compressed` (array of `number`)
+Encode image message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `width` (`number`)
+  * `height` (`number`)
+  * `original_width` (`number`)
+  * `original_height` (`number`)
+  * `format` (`number`)
+  * `mip_map_offset` (array of `number`)
+  * `mip_map_size` (array of `number`)
+  * `data` (`ProtobufCBinaryData`)
+  * `compression_type` (`number`) (optional)
+  * `compression_flags` (`number`) (optional)
+  * `mip_map_size_compressed` (array of `number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics.textureimage_image(str)`
+Decocde image message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics_textureformatalternative(tbl)`
-* `format` (`number`)
-* `compression_level` (`number`)
-* `compression_type` (`number`) (optional)
+Encode textureformatalternative message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `format` (`number`)
+  * `compression_level` (`number`)
+  * `compression_type` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics_textureformatalternative(str)`
+Decocde textureformatalternative message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics_pathsettings(tbl)`
-* `path` (`string`)
-* `profile` (`string`)
+Encode pathsettings message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `path` (`string`)
+  * `profile` (`string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics_pathsettings(str)`
+Decocde pathsettings message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics_platformprofile(tbl)`
-* `os` (`number`)
-* `formats` (array of `dm_graphics__texture_format_alternative`)
-* `mipmaps` (`boolean`)
-* `max_texture_size` (`number`) (optional)
-* `premultiply_alpha` (`boolean`) (optional)
+Encode platformprofile message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `os` (`number`)
+  * `formats` (array of `dm_graphics__texture_format_alternative`)
+  * `mipmaps` (`boolean`)
+  * `max_texture_size` (`number`) (optional)
+  * `premultiply_alpha` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics_platformprofile(str)`
+Decocde platformprofile message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics_textureprofile(tbl)`
-* `name` (`string`)
-* `platforms` (array of `dm_graphics__platform_profile`)
+Encode textureprofile message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `platforms` (array of `dm_graphics__platform_profile`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics_textureprofile(str)`
+Decocde textureprofile message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics_textureprofiles(tbl)`
-* `path_settings` (array of `dm_graphics__path_settings`)
-* `profiles` (array of `dm_graphics__texture_profile`)
+Encode textureprofiles message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `path_settings` (array of `dm_graphics__path_settings`)
+  * `profiles` (array of `dm_graphics__texture_profile`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics_textureprofiles(str)`
+Decocde textureprofiles message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics_shaderdesc(tbl)`
-* `shaders` (array of `dm_graphics__shader_desc__shader`)
+Encode shaderdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `shaders` (array of `dm_graphics__shader_desc__shader`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics_shaderdesc(str)`
+Decocde shaderdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics.shaderdesc_resourcebinding(tbl)`
-* `name` (`string`)
-* `type` (`number`)
-* `element_count` (`number`) (optional)
-* `set` (`number`) (optional)
-* `binding` (`number`) (optional)
+Encode resourcebinding message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `type` (`number`)
+  * `element_count` (`number`) (optional)
+  * `set` (`number`) (optional)
+  * `binding` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics.shaderdesc_resourcebinding(str)`
+Decocde resourcebinding message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgraphics.shaderdesc_shader(tbl)`
-* `language` (`number`)
-* `source` (`ProtobufCBinaryData`) (optional)
-* `uniforms` (array of `dm_graphics__shader_desc__resource_binding`)
-* `attributes` (array of `dm_graphics__shader_desc__resource_binding`)
+Encode shader message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `language` (`number`)
+  * `source` (`ProtobufCBinaryData`) (optional)
+  * `uniforms` (array of `dm_graphics__shader_desc__resource_binding`)
+  * `attributes` (array of `dm_graphics__shader_desc__resource_binding`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgraphics.shaderdesc_shader(str)`
+Decocde shader message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmpropertiesddf_propertydeclarationentry(tbl)`
-* `key` (`string`)
-* `id` (`number`)
-* `index` (`number`)
-* `element_ids` (array of `number`)
+Encode propertydeclarationentry message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `key` (`string`)
+  * `id` (`number`)
+  * `index` (`number`)
+  * `element_ids` (array of `number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmpropertiesddf_propertydeclarationentry(str)`
+Decocde propertydeclarationentry message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmpropertiesddf_propertydeclarations(tbl)`
-* `number_entries` (array of `dm_properties_ddf__property_declaration_entry`)
-* `hash_entries` (array of `dm_properties_ddf__property_declaration_entry`)
-* `url_entries` (array of `dm_properties_ddf__property_declaration_entry`)
-* `vector3_entries` (array of `dm_properties_ddf__property_declaration_entry`)
-* `vector4_entries` (array of `dm_properties_ddf__property_declaration_entry`)
-* `quat_entries` (array of `dm_properties_ddf__property_declaration_entry`)
-* `bool_entries` (array of `dm_properties_ddf__property_declaration_entry`)
-* `float_values` (array of `number`)
-* `hash_values` (array of `number`)
-* `string_values` (array of `string`)
+Encode propertydeclarations message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `number_entries` (array of `dm_properties_ddf__property_declaration_entry`)
+  * `hash_entries` (array of `dm_properties_ddf__property_declaration_entry`)
+  * `url_entries` (array of `dm_properties_ddf__property_declaration_entry`)
+  * `vector3_entries` (array of `dm_properties_ddf__property_declaration_entry`)
+  * `vector4_entries` (array of `dm_properties_ddf__property_declaration_entry`)
+  * `quat_entries` (array of `dm_properties_ddf__property_declaration_entry`)
+  * `bool_entries` (array of `dm_properties_ddf__property_declaration_entry`)
+  * `float_values` (array of `number`)
+  * `hash_values` (array of `number`)
+  * `string_values` (array of `string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmpropertiesddf_propertydeclarations(str)`
+Decocde propertydeclarations message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_propertydesc(tbl)`
-* `id` (`string`)
-* `value` (`string`)
-* `type` (`number`)
+Encode propertydesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `value` (`string`)
+  * `type` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_propertydesc(str)`
+Decocde propertydesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_componentdesc(tbl)`
-* `id` (`string`)
-* `component` (`string`)
-* `position` (`dm_math__point3`) (optional)
-* `rotation` (`dm_math__quat`) (optional)
-* `properties` (array of `dm_game_object_ddf__property_desc`)
-* `property_decls` (`dm_properties_ddf__property_declarations`) (optional)
-* `scale` (`dm_math__vector3`) (optional)
+Encode componentdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `component` (`string`)
+  * `position` (`dm_math__point3`) (optional)
+  * `rotation` (`dm_math__quat`) (optional)
+  * `properties` (array of `dm_game_object_ddf__property_desc`)
+  * `property_decls` (`dm_properties_ddf__property_declarations`) (optional)
+  * `scale` (`dm_math__vector3`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_componentdesc(str)`
+Decocde componentdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_embeddedcomponentdesc(tbl)`
-* `id` (`string`)
-* `type` (`string`)
-* `data` (`string`)
-* `position` (`dm_math__point3`) (optional)
-* `rotation` (`dm_math__quat`) (optional)
-* `scale` (`dm_math__vector3`) (optional)
+Encode embeddedcomponentdesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `type` (`string`)
+  * `data` (`string`)
+  * `position` (`dm_math__point3`) (optional)
+  * `rotation` (`dm_math__quat`) (optional)
+  * `scale` (`dm_math__vector3`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_embeddedcomponentdesc(str)`
+Decocde embeddedcomponentdesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_prototypedesc(tbl)`
-* `components` (array of `dm_game_object_ddf__component_desc`)
-* `embedded_components` (array of `dm_game_object_ddf__embedded_component_desc`)
-* `property_resources` (array of `string`)
+Encode prototypedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `components` (array of `dm_game_object_ddf__component_desc`)
+  * `embedded_components` (array of `dm_game_object_ddf__embedded_component_desc`)
+  * `property_resources` (array of `string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_prototypedesc(str)`
+Decocde prototypedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_componentpropertydesc(tbl)`
-* `id` (`string`)
-* `properties` (array of `dm_game_object_ddf__property_desc`)
-* `property_decls` (`dm_properties_ddf__property_declarations`) (optional)
+Encode componentpropertydesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `properties` (array of `dm_game_object_ddf__property_desc`)
+  * `property_decls` (`dm_properties_ddf__property_declarations`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_componentpropertydesc(str)`
+Decocde componentpropertydesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_componentypedesc(tbl)`
-* `name_hash` (`number`)
-* `max_count` (`number`)
+Encode componentypedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name_hash` (`number`)
+  * `max_count` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_componentypedesc(str)`
+Decocde componentypedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_instancedesc(tbl)`
-* `id` (`string`)
-* `prototype` (`string`)
-* `children` (array of `string`)
-* `position` (`dm_math__point3`) (optional)
-* `rotation` (`dm_math__quat`) (optional)
-* `component_properties` (array of `dm_game_object_ddf__component_property_desc`)
-* `scale` (`number`) (optional)
-* `scale3` (`dm_math__vector3`) (optional)
+Encode instancedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `prototype` (`string`)
+  * `children` (array of `string`)
+  * `position` (`dm_math__point3`) (optional)
+  * `rotation` (`dm_math__quat`) (optional)
+  * `component_properties` (array of `dm_game_object_ddf__component_property_desc`)
+  * `scale` (`number`) (optional)
+  * `scale3` (`dm_math__vector3`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_instancedesc(str)`
+Decocde instancedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_embeddedinstancedesc(tbl)`
-* `id` (`string`)
-* `children` (array of `string`)
-* `data` (`string`)
-* `position` (`dm_math__point3`) (optional)
-* `rotation` (`dm_math__quat`) (optional)
-* `component_properties` (array of `dm_game_object_ddf__component_property_desc`)
-* `scale` (`number`) (optional)
-* `scale3` (`dm_math__vector3`) (optional)
+Encode embeddedinstancedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `children` (array of `string`)
+  * `data` (`string`)
+  * `position` (`dm_math__point3`) (optional)
+  * `rotation` (`dm_math__quat`) (optional)
+  * `component_properties` (array of `dm_game_object_ddf__component_property_desc`)
+  * `scale` (`number`) (optional)
+  * `scale3` (`dm_math__vector3`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_embeddedinstancedesc(str)`
+Decocde embeddedinstancedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_instancepropertydesc(tbl)`
-* `id` (`string`)
-* `properties` (array of `dm_game_object_ddf__component_property_desc`)
+Encode instancepropertydesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `properties` (array of `dm_game_object_ddf__component_property_desc`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_instancepropertydesc(str)`
+Decocde instancepropertydesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_collectioninstancedesc(tbl)`
-* `id` (`string`)
-* `collection` (`string`)
-* `position` (`dm_math__point3`) (optional)
-* `rotation` (`dm_math__quat`) (optional)
-* `scale` (`number`) (optional)
-* `scale3` (`dm_math__vector3`) (optional)
-* `instance_properties` (array of `dm_game_object_ddf__instance_property_desc`)
+Encode collectioninstancedesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`)
+  * `collection` (`string`)
+  * `position` (`dm_math__point3`) (optional)
+  * `rotation` (`dm_math__quat`) (optional)
+  * `scale` (`number`) (optional)
+  * `scale3` (`dm_math__vector3`) (optional)
+  * `instance_properties` (array of `dm_game_object_ddf__instance_property_desc`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_collectioninstancedesc(str)`
+Decocde collectioninstancedesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_collectiondesc(tbl)`
-* `name` (`string`)
-* `instances` (array of `dm_game_object_ddf__instance_desc`)
-* `collection_instances` (array of `dm_game_object_ddf__collection_instance_desc`)
-* `scale_along_z` (`number`) (optional)
-* `embedded_instances` (array of `dm_game_object_ddf__embedded_instance_desc`)
-* `property_resources` (array of `string`)
-* `component_types` (array of `dm_game_object_ddf__componen_type_desc`)
+Encode collectiondesc message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `name` (`string`)
+  * `instances` (array of `dm_game_object_ddf__instance_desc`)
+  * `collection_instances` (array of `dm_game_object_ddf__collection_instance_desc`)
+  * `scale_along_z` (`number`) (optional)
+  * `embedded_instances` (array of `dm_game_object_ddf__embedded_instance_desc`)
+  * `property_resources` (array of `string`)
+  * `component_types` (array of `dm_game_object_ddf__componen_type_desc`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_collectiondesc(str)`
+Decocde collectiondesc message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_acquireinputfocus(tbl)`
+Encode acquireinputfocus message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_acquireinputfocus(str)`
+Decocde acquireinputfocus message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_releaseinputfocus(tbl)`
+Encode releaseinputfocus message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_releaseinputfocus(str)`
+Decocde releaseinputfocus message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_requesttransform(tbl)`
+Encode requesttransform message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_requesttransform(str)`
+Decocde requesttransform message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_transformresponse(tbl)`
-* `position` (`dm_math__point3`)
-* `rotation` (`dm_math__quat`)
-* `world_position` (`dm_math__point3`)
-* `world_rotation` (`dm_math__quat`)
-* `scale` (`number`) (optional)
-* `scale3` (`dm_math__vector3`) (optional)
-* `world_scale` (`number`) (optional)
-* `world_scale3` (`dm_math__vector3`) (optional)
+Encode transformresponse message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `position` (`dm_math__point3`)
+  * `rotation` (`dm_math__quat`)
+  * `world_position` (`dm_math__point3`)
+  * `world_rotation` (`dm_math__quat`)
+  * `scale` (`number`) (optional)
+  * `scale3` (`dm_math__vector3`) (optional)
+  * `world_scale` (`number`) (optional)
+  * `world_scale3` (`dm_math__vector3`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_transformresponse(str)`
+Decocde transformresponse message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_setparent(tbl)`
-* `parent_id` (`number`) (optional)
-* `keep_world_transform` (`number`) (optional)
+Encode setparent message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `parent_id` (`number`) (optional)
+  * `keep_world_transform` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_setparent(str)`
+Decocde setparent message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_enable(tbl)`
+Encode enable message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_enable(str)`
+Decocde enable message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_disable(tbl)`
+Encode disable message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_disable(str)`
+Decocde disable message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmgameobjectddf_scriptmessage(tbl)`
-* `descriptor_hash` (`number`)
-* `payload_size` (`number`)
-* `function` (`number`) (optional)
-* `unref_function` (`boolean`) (optional)
+Encode scriptmessage message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `descriptor_hash` (`number`)
+  * `payload_size` (`number`)
+  * `function` (`number`) (optional)
+  * `unref_function` (`boolean`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmgameobjectddf_scriptmessage(str)`
+Decocde scriptmessage message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmluaddf_luamodule(tbl)`
-* `source` (`dm_lua_ddf__lua_source`)
-* `modules` (array of `string`)
-* `resources` (array of `string`)
-* `properties` (`dm_properties_ddf__property_declarations`) (optional)
-* `property_resources` (array of `string`)
+Encode luamodule message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `source` (`dm_lua_ddf__lua_source`)
+  * `modules` (array of `string`)
+  * `resources` (array of `string`)
+  * `properties` (`dm_properties_ddf__property_declarations`) (optional)
+  * `property_resources` (array of `string`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmluaddf_luamodule(str)`
+Decocde luamodule message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmengineddf_hideapp(tbl)`
+Encode hideapp message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmengineddf_hideapp(str)`
+Decocde hideapp message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmengineddf_runscript(tbl)`
-* `module` (`dm_lua_ddf__lua_module`)
+Encode runscript message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `module` (`dm_lua_ddf__lua_module`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmengineddf_runscript(str)`
+Decocde runscript message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmparticleddf_splinepoint(tbl)`
-* `x` (`number`)
-* `y` (`number`)
-* `t_x` (`number`)
-* `t_y` (`number`)
+Encode splinepoint message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `x` (`number`)
+  * `y` (`number`)
+  * `t_x` (`number`)
+  * `t_y` (`number`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmparticleddf_splinepoint(str)`
+Decocde splinepoint message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmparticleddf_modifier(tbl)`
-* `type` (`number`)
-* `use_direction` (`number`) (optional)
-* `position` (`dm_math__point3`) (optional)
-* `rotation` (`dm_math__quat`) (optional)
-* `properties` (array of `dm_particle_ddf__modifier__property`)
+Encode modifier message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `type` (`number`)
+  * `use_direction` (`number`) (optional)
+  * `position` (`dm_math__point3`) (optional)
+  * `rotation` (`dm_math__quat`) (optional)
+  * `properties` (array of `dm_particle_ddf__modifier__property`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmparticleddf_modifier(str)`
+Decocde modifier message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmparticleddf.modifier_property(tbl)`
-* `key` (`number`)
-* `points` (array of `dm_particle_ddf__spline_point`)
-* `spread` (`number`) (optional)
+Encode property message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `key` (`number`)
+  * `points` (array of `dm_particle_ddf__spline_point`)
+  * `spread` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmparticleddf.modifier_property(str)`
+Decocde property message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmparticleddf_emitter(tbl)`
-* `id` (`string`) (optional)
-* `mode` (`number`)
-* `duration` (`number`) (optional)
-* `space` (`number`)
-* `position` (`dm_math__point3`)
-* `rotation` (`dm_math__quat`)
-* `tile_source` (`string`)
-* `animation` (`string`)
-* `material` (`string`)
-* `blend_mode` (`number`) (optional)
-* `particle_orientation` (`number`) (optional)
-* `inherit_velocity` (`number`) (optional)
-* `max_particle_count` (`number`)
-* `type` (`number`)
-* `start_delay` (`number`) (optional)
-* `properties` (array of `dm_particle_ddf__emitter__property`)
-* `particle_properties` (array of `dm_particle_ddf__emitter__particle_property`)
-* `modifiers` (array of `dm_particle_ddf__modifier`)
-* `size_mode` (`number`) (optional)
-* `start_delay_spread` (`number`) (optional)
-* `duration_spread` (`number`) (optional)
-* `stretch_with_velocity` (`boolean`) (optional)
-* `start_offset` (`number`) (optional)
-* `pivot` (`dm_math__point3`) (optional)
+Encode emitter message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `id` (`string`) (optional)
+  * `mode` (`number`)
+  * `duration` (`number`) (optional)
+  * `space` (`number`)
+  * `position` (`dm_math__point3`)
+  * `rotation` (`dm_math__quat`)
+  * `tile_source` (`string`)
+  * `animation` (`string`)
+  * `material` (`string`)
+  * `blend_mode` (`number`) (optional)
+  * `particle_orientation` (`number`) (optional)
+  * `inherit_velocity` (`number`) (optional)
+  * `max_particle_count` (`number`)
+  * `type` (`number`)
+  * `start_delay` (`number`) (optional)
+  * `properties` (array of `dm_particle_ddf__emitter__property`)
+  * `particle_properties` (array of `dm_particle_ddf__emitter__particle_property`)
+  * `modifiers` (array of `dm_particle_ddf__modifier`)
+  * `size_mode` (`number`) (optional)
+  * `start_delay_spread` (`number`) (optional)
+  * `duration_spread` (`number`) (optional)
+  * `stretch_with_velocity` (`boolean`) (optional)
+  * `start_offset` (`number`) (optional)
+  * `pivot` (`dm_math__point3`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmparticleddf_emitter(str)`
+Decocde emitter message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmparticleddf.emitter_property(tbl)`
-* `key` (`number`)
-* `points` (array of `dm_particle_ddf__spline_point`)
-* `spread` (`number`) (optional)
+Encode property message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `key` (`number`)
+  * `points` (array of `dm_particle_ddf__spline_point`)
+  * `spread` (`number`) (optional)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmparticleddf.emitter_property(str)`
+Decocde property message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmparticleddf.emitter_particleproperty(tbl)`
-* `key` (`number`)
-* `points` (array of `dm_particle_ddf__spline_point`)
+Encode particleproperty message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `key` (`number`)
+  * `points` (array of `dm_particle_ddf__spline_point`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmparticleddf.emitter_particleproperty(str)`
+Decocde particleproperty message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 ##### `local str = ddf.encode_dmparticleddf_particlefx(tbl)`
-* `emitters` (array of `dm_particle_ddf__emitter`)
-* `modifiers` (array of `dm_particle_ddf__modifier`)
+Encode particlefx message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+  * `emitters` (array of `dm_particle_ddf__emitter`)
+  * `modifiers` (array of `dm_particle_ddf__modifier`)
+
+__Returns__
+* `str` (`string`) - Encoded message
+
 ##### `local tbl = ddf.decode_dmparticleddf_particlefx(str)`
+Decocde particlefx message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
 
 
 ## Enums
