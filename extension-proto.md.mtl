@@ -1,12 +1,39 @@
-### Message encode/decode
+## Message encode/decode
 {{#messages}}
-* `local str = ddf.encode_{{package_lower}}_{{name_lower}}(tbl)`
-* `local tbl = ddf.decode_{{package_lower}}_{{name_lower}}(str)`
+#### `ddf.encode_{{package_lower}}_{{name_lower}}(tbl)`
+Encode {{name_lower}} message to a binary string.
+
+__Arguments__
+* `tbl` (`table`) - The message to encode
+{{#properties}}
+{{#repeated}}
+  * `{{name}}` (array of `{{type_lua}}`)
+{{/repeated}}
+{{#required}}
+  * `{{name}}` (`{{type_lua}}`)
+{{/required}}
+{{#optional}}
+  * `{{name}}` (`{{type_lua}}`) (optional)
+{{/optional}}
+{{/properties}}
+
+__Returns__
+* `str` (`string`) - Encoded message
+
+#### `ddf.decode_{{package_lower}}_{{name_lower}}(str)`
+Decocde {{name_lower}} message to a Lua table.
+
+__Arguments__
+  * `str` (`string`) - Encoded message
+
+__Returns__
+* `tbl` (`table`) - Decoded message
+---
 {{/messages}}
 
-### Enums
+## Enums
 {{#enums}}
 {{#values}}
-* `ddf.{{type_cpp_upper}}_{{name}}`
+#### `ddf.{{type_cpp_upper}}_{{name}}`
 {{/values}}
 {{/enums}}
