@@ -23,7 +23,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmath_vector3(tbl)`
 Encode vector3 message to a binary string.
 
@@ -45,7 +45,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmath_vector4(tbl)`
 Encode vector4 message to a binary string.
 
@@ -67,7 +67,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmath_quat(tbl)`
 Encode quat message to a binary string.
 
@@ -89,7 +89,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmath_transform(tbl)`
 Encode transform message to a binary string.
 
@@ -110,7 +110,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmath_matrix4(tbl)`
 Encode matrix4 message to a binary string.
 
@@ -144,7 +144,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_gamepadmodifier_t(tbl)`
 Encode gamepadmodifier_t message to a binary string.
 
@@ -163,7 +163,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_gamepadmapentry(tbl)`
 Encode gamepadmapentry message to a binary string.
 
@@ -186,7 +186,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_gamepadmap(tbl)`
 Encode gamepadmap message to a binary string.
 
@@ -208,7 +208,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_gamepadmaps(tbl)`
 Encode gamepadmaps message to a binary string.
 
@@ -227,7 +227,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_keytrigger(tbl)`
 Encode keytrigger message to a binary string.
 
@@ -247,7 +247,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_mousetrigger(tbl)`
 Encode mousetrigger message to a binary string.
 
@@ -267,7 +267,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_gamepadtrigger(tbl)`
 Encode gamepadtrigger message to a binary string.
 
@@ -287,7 +287,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_touchtrigger(tbl)`
 Encode touchtrigger message to a binary string.
 
@@ -307,7 +307,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_texttrigger(tbl)`
 Encode texttrigger message to a binary string.
 
@@ -327,7 +327,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dminputddf_inputbinding(tbl)`
 Encode inputbinding message to a binary string.
 
@@ -350,7 +350,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_renderprototypedesc(tbl)`
 Encode renderprototypedesc message to a binary string.
 
@@ -370,7 +370,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf.renderprototypedesc_materialdesc(tbl)`
 Encode materialdesc message to a binary string.
 
@@ -390,7 +390,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_drawtext(tbl)`
 Encode drawtext message to a binary string.
 
@@ -410,7 +410,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_drawdebugtext(tbl)`
 Encode drawdebugtext message to a binary string.
 
@@ -431,7 +431,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_drawline(tbl)`
 Encode drawline message to a binary string.
 
@@ -452,7 +452,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_windowresized(tbl)`
 Encode windowresized message to a binary string.
 
@@ -472,7 +472,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_resize(tbl)`
 Encode resize message to a binary string.
 
@@ -492,7 +492,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_clearcolor(tbl)`
 Encode clearcolor message to a binary string.
 
@@ -511,7 +511,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_displayprofilequalifier(tbl)`
 Encode displayprofilequalifier message to a binary string.
 
@@ -532,7 +532,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_displayprofile(tbl)`
 Encode displayprofile message to a binary string.
 
@@ -552,7 +552,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_displayprofiles(tbl)`
 Encode displayprofiles message to a binary string.
 
@@ -571,7 +571,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_fontdesc(tbl)`
 Encode fontdesc message to a binary string.
 
@@ -606,7 +606,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_fontmap(tbl)`
 Encode fontmap message to a binary string.
 
@@ -647,7 +647,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf.fontmap_glyph(tbl)`
 Encode glyph message to a binary string.
 
@@ -675,7 +675,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf_materialdesc(tbl)`
 Encode materialdesc message to a binary string.
 
@@ -702,7 +702,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf.materialdesc_constant(tbl)`
 Encode constant message to a binary string.
 
@@ -723,7 +723,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrenderddf.materialdesc_sampler(tbl)`
 Encode sampler message to a binary string.
 
@@ -747,7 +747,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmscriptddf_luaref(tbl)`
 Encode luaref message to a binary string.
 
@@ -767,7 +767,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmsystemddf_exit(tbl)`
 Encode exit message to a binary string.
 
@@ -786,7 +786,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmsystemddf_toggleprofile(tbl)`
 Encode toggleprofile message to a binary string.
 
@@ -804,7 +804,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmsystemddf_togglephysicsdebug(tbl)`
 Encode togglephysicsdebug message to a binary string.
 
@@ -822,7 +822,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmsystemddf_startrecord(tbl)`
 Encode startrecord message to a binary string.
 
@@ -843,7 +843,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmsystemddf_stoprecord(tbl)`
 Encode stoprecord message to a binary string.
 
@@ -861,7 +861,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmsystemddf_reboot(tbl)`
 Encode reboot message to a binary string.
 
@@ -885,7 +885,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmsystemddf_setvsync(tbl)`
 Encode setvsync message to a binary string.
 
@@ -904,7 +904,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmsystemddf_setupdatefrequency(tbl)`
 Encode setupdatefrequency message to a binary string.
 
@@ -923,7 +923,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmscriptdoc_parameter(tbl)`
 Encode parameter message to a binary string.
 
@@ -944,7 +944,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmscriptdoc_member(tbl)`
 Encode member message to a binary string.
 
@@ -965,7 +965,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmscriptdoc_returnvalue(tbl)`
 Encode returnvalue message to a binary string.
 
@@ -986,7 +986,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmscriptdoc_element(tbl)`
 Encode element message to a binary string.
 
@@ -1016,7 +1016,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmscriptdoc_info(tbl)`
 Encode info message to a binary string.
 
@@ -1040,7 +1040,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmscriptdoc_document(tbl)`
 Encode document message to a binary string.
 
@@ -1060,7 +1060,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmhttpddf_stophttp(tbl)`
 Encode stophttp message to a binary string.
 
@@ -1078,7 +1078,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmhttpddf_httprequest(tbl)`
 Encode httprequest message to a binary string.
 
@@ -1106,7 +1106,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmhttpddf_httpresponse(tbl)`
 Encode httpresponse message to a binary string.
 
@@ -1130,7 +1130,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmluaddf_luasource(tbl)`
 Encode luasource message to a binary string.
 
@@ -1154,7 +1154,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_bone(tbl)`
 Encode bone message to a binary string.
 
@@ -1179,7 +1179,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_ik(tbl)`
 Encode ik message to a binary string.
 
@@ -1203,7 +1203,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_skeleton(tbl)`
 Encode skeleton message to a binary string.
 
@@ -1223,7 +1223,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_animationtrack(tbl)`
 Encode animationtrack message to a binary string.
 
@@ -1245,7 +1245,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_eventkey(tbl)`
 Encode eventkey message to a binary string.
 
@@ -1267,7 +1267,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_eventtrack(tbl)`
 Encode eventtrack message to a binary string.
 
@@ -1287,7 +1287,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_riganimation(tbl)`
 Encode riganimation message to a binary string.
 
@@ -1310,7 +1310,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_animationset(tbl)`
 Encode animationset message to a binary string.
 
@@ -1330,7 +1330,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_animationinstancedesc(tbl)`
 Encode animationinstancedesc message to a binary string.
 
@@ -1349,7 +1349,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_animationsetdesc(tbl)`
 Encode animationsetdesc message to a binary string.
 
@@ -1369,7 +1369,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_mesh(tbl)`
 Encode mesh message to a binary string.
 
@@ -1400,7 +1400,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_model(tbl)`
 Encode model message to a binary string.
 
@@ -1421,7 +1421,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_meshset(tbl)`
 Encode meshset message to a binary string.
 
@@ -1443,7 +1443,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmrigddf_rigscene(tbl)`
 Encode rigscene message to a binary string.
 
@@ -1465,7 +1465,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmodelddf_modeldesc(tbl)`
 Encode modeldesc message to a binary string.
 
@@ -1490,7 +1490,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmodelddf_model(tbl)`
 Encode model message to a binary string.
 
@@ -1512,7 +1512,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmodelddf_resetconstant(tbl)`
 Encode resetconstant message to a binary string.
 
@@ -1531,7 +1531,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmodelddf_settexture(tbl)`
 Encode settexture message to a binary string.
 
@@ -1551,7 +1551,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmodelddf_modelplayanimation(tbl)`
 Encode modelplayanimation message to a binary string.
 
@@ -1574,7 +1574,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmodelddf_modelcancelanimation(tbl)`
 Encode modelcancelanimation message to a binary string.
 
@@ -1592,7 +1592,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmodelddf_modelanimationdone(tbl)`
 Encode modelanimationdone message to a binary string.
 
@@ -1612,7 +1612,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmmeshddf_meshdesc(tbl)`
 Encode meshdesc message to a binary string.
 
@@ -1636,7 +1636,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_labeldesc(tbl)`
 Encode labeldesc message to a binary string.
 
@@ -1667,7 +1667,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_settext(tbl)`
 Encode settext message to a binary string.
 
@@ -1686,7 +1686,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_convexhull(tbl)`
 Encode convexhull message to a binary string.
 
@@ -1707,7 +1707,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_cue(tbl)`
 Encode cue message to a binary string.
 
@@ -1728,7 +1728,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_animation(tbl)`
 Encode animation message to a binary string.
 
@@ -1754,7 +1754,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_tileset(tbl)`
 Encode tileset message to a binary string.
 
@@ -1786,7 +1786,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_tilecell(tbl)`
 Encode tilecell message to a binary string.
 
@@ -1810,7 +1810,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_tilelayer(tbl)`
 Encode tilelayer message to a binary string.
 
@@ -1833,7 +1833,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_tilegrid(tbl)`
 Encode tilegrid message to a binary string.
 
@@ -1855,7 +1855,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_settile(tbl)`
 Encode settile message to a binary string.
 
@@ -1878,7 +1878,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setconstanttilemap(tbl)`
 Encode setconstanttilemap message to a binary string.
 
@@ -1898,7 +1898,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_resetconstanttilemap(tbl)`
 Encode resetconstanttilemap message to a binary string.
 
@@ -1917,7 +1917,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_atlasimage(tbl)`
 Encode atlasimage message to a binary string.
 
@@ -1937,7 +1937,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_atlasanimation(tbl)`
 Encode atlasanimation message to a binary string.
 
@@ -1961,7 +1961,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_atlas(tbl)`
 Encode atlas message to a binary string.
 
@@ -1984,7 +1984,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmbufferddf_streamdesc(tbl)`
 Encode streamdesc message to a binary string.
 
@@ -2010,7 +2010,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmbufferddf_bufferdesc(tbl)`
 Encode bufferdesc message to a binary string.
 
@@ -2029,7 +2029,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmsoundddf_sounddesc(tbl)`
 Encode sounddesc message to a binary string.
 
@@ -2054,7 +2054,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesysddf_cameradesc(tbl)`
 Encode cameradesc message to a binary string.
 
@@ -2079,7 +2079,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesysddf_setcamera(tbl)`
 Encode setcamera message to a binary string.
 
@@ -2103,7 +2103,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesysddf_acquirecamerafocus(tbl)`
 Encode acquirecamerafocus message to a binary string.
 
@@ -2121,7 +2121,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesysddf_releasecamerafocus(tbl)`
 Encode releasecamerafocus message to a binary string.
 
@@ -2139,7 +2139,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_spritedesc(tbl)`
 Encode spritedesc message to a binary string.
 
@@ -2164,7 +2164,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_playanimation(tbl)`
 Encode playanimation message to a binary string.
 
@@ -2185,7 +2185,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_animationdone(tbl)`
 Encode animationdone message to a binary string.
 
@@ -2205,7 +2205,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setfliphorizontal(tbl)`
 Encode setfliphorizontal message to a binary string.
 
@@ -2224,7 +2224,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setflipvertical(tbl)`
 Encode setflipvertical message to a binary string.
 
@@ -2243,7 +2243,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_texturesetanimation(tbl)`
 Encode texturesetanimation message to a binary string.
 
@@ -2271,7 +2271,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_spritegeometry(tbl)`
 Encode spritegeometry message to a binary string.
 
@@ -2294,7 +2294,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_textureset(tbl)`
 Encode textureset message to a binary string.
 
@@ -2325,7 +2325,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_convexshape(tbl)`
 Encode convexshape message to a binary string.
 
@@ -2345,7 +2345,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_collisionshape(tbl)`
 Encode collisionshape message to a binary string.
 
@@ -2365,7 +2365,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf.collisionshape_shape(tbl)`
 Encode shape message to a binary string.
 
@@ -2388,7 +2388,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_collisionobjectdesc(tbl)`
 Encode collisionobjectdesc message to a binary string.
 
@@ -2418,7 +2418,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_applyforce(tbl)`
 Encode applyforce message to a binary string.
 
@@ -2438,7 +2438,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_collisionresponse(tbl)`
 Encode collisionresponse message to a binary string.
 
@@ -2461,7 +2461,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_contactpointresponse(tbl)`
 Encode contactpointresponse message to a binary string.
 
@@ -2492,7 +2492,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_triggerresponse(tbl)`
 Encode triggerresponse message to a binary string.
 
@@ -2515,7 +2515,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_requestraycast(tbl)`
 Encode requestraycast message to a binary string.
 
@@ -2537,7 +2537,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_raycastresponse(tbl)`
 Encode raycastresponse message to a binary string.
 
@@ -2561,7 +2561,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_raycastmissed(tbl)`
 Encode raycastmissed message to a binary string.
 
@@ -2580,7 +2580,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_requestvelocity(tbl)`
 Encode requestvelocity message to a binary string.
 
@@ -2598,7 +2598,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_velocityresponse(tbl)`
 Encode velocityresponse message to a binary string.
 
@@ -2618,7 +2618,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_setgridshapehull(tbl)`
 Encode setgridshapehull message to a binary string.
 
@@ -2643,7 +2643,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmphysicsddf_enablegridshapelayer(tbl)`
 Encode enablegridshapelayer message to a binary string.
 
@@ -2663,7 +2663,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_factorydesc(tbl)`
 Encode factorydesc message to a binary string.
 
@@ -2683,7 +2683,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_collectionfactorydesc(tbl)`
 Encode collectionfactorydesc message to a binary string.
 
@@ -2703,7 +2703,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_create(tbl)`
 Encode create message to a binary string.
 
@@ -2727,7 +2727,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_collectionproxydesc(tbl)`
 Encode collectionproxydesc message to a binary string.
 
@@ -2747,7 +2747,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_settimestep(tbl)`
 Encode settimestep message to a binary string.
 
@@ -2767,7 +2767,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_lightdesc(tbl)`
 Encode lightdesc message to a binary string.
 
@@ -2794,7 +2794,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setlight(tbl)`
 Encode setlight message to a binary string.
 
@@ -2815,7 +2815,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setviewprojection(tbl)`
 Encode setviewprojection message to a binary string.
 
@@ -2836,7 +2836,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_playsound(tbl)`
 Encode playsound message to a binary string.
 
@@ -2859,7 +2859,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_stopsound(tbl)`
 Encode stopsound message to a binary string.
 
@@ -2877,7 +2877,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_pausesound(tbl)`
 Encode pausesound message to a binary string.
 
@@ -2896,7 +2896,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_sounddone(tbl)`
 Encode sounddone message to a binary string.
 
@@ -2915,7 +2915,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setgain(tbl)`
 Encode setgain message to a binary string.
 
@@ -2934,7 +2934,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setpan(tbl)`
 Encode setpan message to a binary string.
 
@@ -2953,7 +2953,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setspeed(tbl)`
 Encode setspeed message to a binary string.
 
@@ -2972,7 +2972,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_playparticlefx(tbl)`
 Encode playparticlefx message to a binary string.
 
@@ -2990,7 +2990,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_stopparticlefx(tbl)`
 Encode stopparticlefx message to a binary string.
 
@@ -3009,7 +3009,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setconstantparticlefx(tbl)`
 Encode setconstantparticlefx message to a binary string.
 
@@ -3031,7 +3031,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_resetconstantparticlefx(tbl)`
 Encode resetconstantparticlefx message to a binary string.
 
@@ -3051,7 +3051,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setconstant(tbl)`
 Encode setconstant message to a binary string.
 
@@ -3072,7 +3072,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_resetconstant(tbl)`
 Encode resetconstant message to a binary string.
 
@@ -3091,7 +3091,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgamesystemddf_setscale(tbl)`
 Encode setscale message to a binary string.
 
@@ -3110,7 +3110,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf_nodedesc(tbl)`
 Encode nodedesc message to a binary string.
 
@@ -3174,7 +3174,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf_scenedesc(tbl)`
 Encode scenedesc message to a binary string.
 
@@ -3205,7 +3205,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf.scenedesc_fontdesc(tbl)`
 Encode fontdesc message to a binary string.
 
@@ -3225,7 +3225,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf.scenedesc_texturedesc(tbl)`
 Encode texturedesc message to a binary string.
 
@@ -3245,7 +3245,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf.scenedesc_layerdesc(tbl)`
 Encode layerdesc message to a binary string.
 
@@ -3264,7 +3264,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf.scenedesc_layoutdesc(tbl)`
 Encode layoutdesc message to a binary string.
 
@@ -3284,7 +3284,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf.scenedesc_spinescenedesc(tbl)`
 Encode spinescenedesc message to a binary string.
 
@@ -3304,7 +3304,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf.scenedesc_resourcedesc(tbl)`
 Encode resourcedesc message to a binary string.
 
@@ -3324,7 +3324,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf.scenedesc_particlefxdesc(tbl)`
 Encode particlefxdesc message to a binary string.
 
@@ -3344,7 +3344,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmguiddf_layoutchanged(tbl)`
 Encode layoutchanged message to a binary string.
 
@@ -3364,7 +3364,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmliveupdateddf_hashdigest(tbl)`
 Encode hashdigest message to a binary string.
 
@@ -3383,7 +3383,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmliveupdateddf_manifestheader(tbl)`
 Encode manifestheader message to a binary string.
 
@@ -3407,7 +3407,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmliveupdateddf_resourceentry(tbl)`
 Encode resourceentry message to a binary string.
 
@@ -3430,7 +3430,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmliveupdateddf_manifestdata(tbl)`
 Encode manifestdata message to a binary string.
 
@@ -3451,7 +3451,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmliveupdateddf_manifestfile(tbl)`
 Encode manifestfile message to a binary string.
 
@@ -3472,7 +3472,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmresourceddf_reload(tbl)`
 Encode reload message to a binary string.
 
@@ -3491,7 +3491,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics_cubemap(tbl)`
 Encode cubemap message to a binary string.
 
@@ -3515,7 +3515,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics_textureimage(tbl)`
 Encode textureimage message to a binary string.
 
@@ -3536,7 +3536,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics.textureimage_image(tbl)`
 Encode image message to a binary string.
 
@@ -3565,7 +3565,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics_textureformatalternative(tbl)`
 Encode textureformatalternative message to a binary string.
 
@@ -3586,7 +3586,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics_pathsettings(tbl)`
 Encode pathsettings message to a binary string.
 
@@ -3606,7 +3606,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics_platformprofile(tbl)`
 Encode platformprofile message to a binary string.
 
@@ -3629,7 +3629,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics_textureprofile(tbl)`
 Encode textureprofile message to a binary string.
 
@@ -3649,7 +3649,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics_textureprofiles(tbl)`
 Encode textureprofiles message to a binary string.
 
@@ -3669,7 +3669,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics_shaderdesc(tbl)`
 Encode shaderdesc message to a binary string.
 
@@ -3688,7 +3688,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics.shaderdesc_resourcebinding(tbl)`
 Encode resourcebinding message to a binary string.
 
@@ -3711,7 +3711,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgraphics.shaderdesc_shader(tbl)`
 Encode shader message to a binary string.
 
@@ -3733,7 +3733,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmpropertiesddf_propertydeclarationentry(tbl)`
 Encode propertydeclarationentry message to a binary string.
 
@@ -3755,7 +3755,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmpropertiesddf_propertydeclarations(tbl)`
 Encode propertydeclarations message to a binary string.
 
@@ -3783,7 +3783,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_propertydesc(tbl)`
 Encode propertydesc message to a binary string.
 
@@ -3804,7 +3804,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_componentdesc(tbl)`
 Encode componentdesc message to a binary string.
 
@@ -3829,7 +3829,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_embeddedcomponentdesc(tbl)`
 Encode embeddedcomponentdesc message to a binary string.
 
@@ -3853,7 +3853,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_prototypedesc(tbl)`
 Encode prototypedesc message to a binary string.
 
@@ -3874,7 +3874,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_componentpropertydesc(tbl)`
 Encode componentpropertydesc message to a binary string.
 
@@ -3895,7 +3895,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_componentypedesc(tbl)`
 Encode componentypedesc message to a binary string.
 
@@ -3915,7 +3915,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_instancedesc(tbl)`
 Encode instancedesc message to a binary string.
 
@@ -3941,7 +3941,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_embeddedinstancedesc(tbl)`
 Encode embeddedinstancedesc message to a binary string.
 
@@ -3967,7 +3967,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_instancepropertydesc(tbl)`
 Encode instancepropertydesc message to a binary string.
 
@@ -3987,7 +3987,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_collectioninstancedesc(tbl)`
 Encode collectioninstancedesc message to a binary string.
 
@@ -4012,7 +4012,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_collectiondesc(tbl)`
 Encode collectiondesc message to a binary string.
 
@@ -4037,7 +4037,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_acquireinputfocus(tbl)`
 Encode acquireinputfocus message to a binary string.
 
@@ -4055,7 +4055,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_releaseinputfocus(tbl)`
 Encode releaseinputfocus message to a binary string.
 
@@ -4073,7 +4073,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_requesttransform(tbl)`
 Encode requesttransform message to a binary string.
 
@@ -4091,7 +4091,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_transformresponse(tbl)`
 Encode transformresponse message to a binary string.
 
@@ -4117,7 +4117,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_setparent(tbl)`
 Encode setparent message to a binary string.
 
@@ -4137,7 +4137,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_enable(tbl)`
 Encode enable message to a binary string.
 
@@ -4155,7 +4155,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_disable(tbl)`
 Encode disable message to a binary string.
 
@@ -4173,7 +4173,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmgameobjectddf_scriptmessage(tbl)`
 Encode scriptmessage message to a binary string.
 
@@ -4195,7 +4195,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmluaddf_luamodule(tbl)`
 Encode luamodule message to a binary string.
 
@@ -4218,7 +4218,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmengineddf_hideapp(tbl)`
 Encode hideapp message to a binary string.
 
@@ -4236,7 +4236,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmengineddf_runscript(tbl)`
 Encode runscript message to a binary string.
 
@@ -4255,7 +4255,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmparticleddf_splinepoint(tbl)`
 Encode splinepoint message to a binary string.
 
@@ -4277,7 +4277,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmparticleddf_modifier(tbl)`
 Encode modifier message to a binary string.
 
@@ -4300,7 +4300,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmparticleddf.modifier_property(tbl)`
 Encode property message to a binary string.
 
@@ -4321,7 +4321,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmparticleddf_emitter(tbl)`
 Encode emitter message to a binary string.
 
@@ -4363,7 +4363,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmparticleddf.emitter_property(tbl)`
 Encode property message to a binary string.
 
@@ -4384,7 +4384,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmparticleddf.emitter_particleproperty(tbl)`
 Encode particleproperty message to a binary string.
 
@@ -4404,7 +4404,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 #### `ddf.encode_dmparticleddf_particlefx(tbl)`
 Encode particlefx message to a binary string.
 
@@ -4424,7 +4424,7 @@ __Arguments__
 
 __Returns__
 * `tbl` (`table`) - Decoded message
-
+---
 
 ## Enums
 #### `ddf.DM_INPUT_DDF__KEY_KEY_SPACE`
@@ -4872,12 +4872,4 @@ __Returns__
 #### `ddf.DM_PARTICLE_DDF__MODIFIER_KEY_MODIFIER_KEY_COUNT`
 #### `ddf.DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_ALPHA`
 #### `ddf.DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_ADD`
-#### `ddf.DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_ADD_ALPHA`
-#### `ddf.DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_MULT`
-#### `ddf.DM_PARTICLE_DDF__BLEND_MODE_BLEND_MODE_SCREEN`
-#### `ddf.DM_PARTICLE_DDF__SIZE_MODE_SIZE_MODE_MANUAL`
-#### `ddf.DM_PARTICLE_DDF__SIZE_MODE_SIZE_MODE_AUTO`
-#### `ddf.DM_PARTICLE_DDF__PARTICLE_ORIENTATION_PARTICLE_ORIENTATION_DEFAULT`
-#### `ddf.DM_PARTICLE_DDF__PARTICLE_ORIENTATION_PARTICLE_ORIENTATION_INITIAL_DIRECTION`
-#### `ddf.DM_PARTICLE_DDF__PARTICLE_ORIENTATION_PARTICLE_ORIENTATION_MOVEMENT_DIRECTION`
-#### `ddf.DM_PARTICLE_DDF__PARTICLE_ORIENTATION_PARTICLE_ORIENTATION_ANGULAR_VELOCITY`
+#### `ddf.DM_PARTICLE_DDF
