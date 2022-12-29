@@ -1,6 +1,6 @@
-#define EXTENSION_NAME DDF
-#define LIB_NAME "DDF"
-#define MODULE_NAME "ddf"
+#define EXTENSION_NAME Proto
+#define LIB_NAME "Proto"
+#define MODULE_NAME "proto"
 
 #define DLIB_LOG_DOMAIN LIB_NAME
 #include <dmsdk/sdk.h>
@@ -25,12 +25,6 @@ static void lua_pushProtobufCBinaryData(lua_State* L, ProtobufCBinaryData binary
 {
     lua_pushlstring(L, (const char*)binarydata.data, binarydata.len);
 }
-
-static bool has_ProtobufCBinaryData(ProtobufCBinaryData binarydata) { return binarydata.data != 0; }
-static bool has_string(char* s) { return s != 0; }
-{{#messages}}
-static bool has_{{type_cpp_lower}}({{type_cpp}} *p) { return p != 0; }
-{{/messages}}
 
 {{#messages}}
 static void lua_push{{type_cpp_lower}}(lua_State* L, {{type_cpp}} *msg)
@@ -99,8 +93,7 @@ static ProtobufCBinaryData luaL_checkProtobufCBinaryData(lua_State* L, int narg)
 static {{type_cpp}}* luaL_check{{type_cpp_lower}}(lua_State* L, int narg)
 {
     if (!lua_istable(L, narg)) {
-        luaL_error(L, "Expected value at index %d to be a table", narg);
-        return 0;
+        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
     }
 
     {{type_cpp}} *msg = ({{type_cpp}}*)malloc(sizeof({{type_cpp}}));

@@ -25,7 +25,7 @@ EXTENSION_PROTO_API = EXTENSION_DIR_ROOT + "/api/ddf.script_api"
 EXTENSION_PROTO_MD = BASE_DIR + "/api.md"
 
 PLUGINS_DIR = BASE_DIR + "/plugins"
-PROTO_DIR = "./proto"
+PROTO_DIR = "./ddf/proto"
 
 
 def call(args):

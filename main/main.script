@@ -3,7 +3,7 @@ function init(self)
 		tile_set = "my tileset",
 		default_animation = "",
 		material = "",
-		slice9 = { x = 1, y = 1, z = 1, w = 1 },
+		slice9 = { x = 2, y = 1.5, z = 1, w = 1 },
 		blend_mode = ddf.DM_GAME_SYSTEM_DDF__SPRITE_DESC__BLEND_MODE_BLEND_MODE_ADD
 	}
 	pprint(spritedesc)

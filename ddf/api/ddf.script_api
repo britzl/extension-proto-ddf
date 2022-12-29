@@ -1,4 +1,4 @@
-- name: ddf
+- name: proto
   type: table
   desc: Compile and use protobuf messages from Lua
   members:
