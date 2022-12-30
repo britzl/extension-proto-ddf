@@ -719,8 +719,7 @@ message MethodOptions {
     NO_SIDE_EFFECTS = 1;  // implies idempotent
     IDEMPOTENT = 2;       // idempotent, but may have side effects
   }
-  optional IdempotencyLevel idempotency_level = 34
-      [default = IDEMPOTENCY_UNKNOWN];
+  optional IdempotencyLevel idempotency_level = 34 [default = IDEMPOTENCY_UNKNOWN];
 
   // The parser stores options it doesn't recognize here. See above.
   repeated UninterpretedOption uninterpreted_option = 999;
