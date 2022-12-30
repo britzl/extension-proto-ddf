@@ -1,6 +1,6 @@
-#define EXTENSION_NAME Proto
-#define LIB_NAME "Proto"
-#define MODULE_NAME "proto"
+#define EXTENSION_NAME DDF
+#define LIB_NAME "DDF"
+#define MODULE_NAME "ddf"
 
 #define DLIB_LOG_DOMAIN LIB_NAME
 #include <dmsdk/sdk.h>
@@ -92,8 +92,11 @@ static ProtobufCBinaryData luaL_checkProtobufCBinaryData(lua_State* L, int narg)
 {{#messages}}
 static {{type_cpp}}* luaL_check{{type_cpp_lower}}(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     {{type_cpp}} *msg = ({{type_cpp}}*)malloc(sizeof({{type_cpp}}));

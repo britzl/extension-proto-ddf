@@ -1,6 +1,6 @@
-#define EXTENSION_NAME Proto
-#define LIB_NAME "Proto"
-#define MODULE_NAME "proto"
+#define EXTENSION_NAME DDF
+#define LIB_NAME "DDF"
+#define MODULE_NAME "ddf"
 
 #define DLIB_LOG_DOMAIN LIB_NAME
 #include <dmsdk/sdk.h>
@@ -7647,8 +7647,11 @@ static ProtobufCBinaryData luaL_checkProtobufCBinaryData(lua_State* L, int narg)
 
 static DmMath__Point3* luaL_checkdm_math__point3(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmMath__Point3 *msg = (DmMath__Point3*)malloc(sizeof(DmMath__Point3));
@@ -7698,8 +7701,11 @@ static DmMath__Point3* luaL_checkdm_math__point3(lua_State* L, int narg)
 }
 static DmMath__Vector3* luaL_checkdm_math__vector3(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmMath__Vector3 *msg = (DmMath__Vector3*)malloc(sizeof(DmMath__Vector3));
@@ -7749,8 +7755,11 @@ static DmMath__Vector3* luaL_checkdm_math__vector3(lua_State* L, int narg)
 }
 static DmMath__Vector4* luaL_checkdm_math__vector4(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmMath__Vector4 *msg = (DmMath__Vector4*)malloc(sizeof(DmMath__Vector4));
@@ -7800,8 +7809,11 @@ static DmMath__Vector4* luaL_checkdm_math__vector4(lua_State* L, int narg)
 }
 static DmMath__Quat* luaL_checkdm_math__quat(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmMath__Quat *msg = (DmMath__Quat*)malloc(sizeof(DmMath__Quat));
@@ -7851,8 +7863,11 @@ static DmMath__Quat* luaL_checkdm_math__quat(lua_State* L, int narg)
 }
 static DmMath__Transform* luaL_checkdm_math__transform(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmMath__Transform *msg = (DmMath__Transform*)malloc(sizeof(DmMath__Transform));
@@ -7889,8 +7904,11 @@ static DmMath__Transform* luaL_checkdm_math__transform(lua_State* L, int narg)
 }
 static DmMath__Matrix4* luaL_checkdm_math__matrix4(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmMath__Matrix4 *msg = (DmMath__Matrix4*)malloc(sizeof(DmMath__Matrix4));
@@ -8060,8 +8078,11 @@ static DmMath__Matrix4* luaL_checkdm_math__matrix4(lua_State* L, int narg)
 }
 static DmInputDDF__GamepadModifierT* luaL_checkdm_input_ddf__gamepad_modifier_t(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__GamepadModifierT *msg = (DmInputDDF__GamepadModifierT*)malloc(sizeof(DmInputDDF__GamepadModifierT));
@@ -8077,8 +8098,11 @@ static DmInputDDF__GamepadModifierT* luaL_checkdm_input_ddf__gamepad_modifier_t(
 }
 static DmInputDDF__GamepadMapEntry* luaL_checkdm_input_ddf__gamepad_map_entry(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__GamepadMapEntry *msg = (DmInputDDF__GamepadMapEntry*)malloc(sizeof(DmInputDDF__GamepadMapEntry));
@@ -8132,8 +8156,11 @@ static DmInputDDF__GamepadMapEntry* luaL_checkdm_input_ddf__gamepad_map_entry(lu
 }
 static DmInputDDF__GamepadMap* luaL_checkdm_input_ddf__gamepad_map(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__GamepadMap *msg = (DmInputDDF__GamepadMap*)malloc(sizeof(DmInputDDF__GamepadMap));
@@ -8177,8 +8204,11 @@ static DmInputDDF__GamepadMap* luaL_checkdm_input_ddf__gamepad_map(lua_State* L,
 }
 static DmInputDDF__GamepadMaps* luaL_checkdm_input_ddf__gamepad_maps(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__GamepadMaps *msg = (DmInputDDF__GamepadMaps*)malloc(sizeof(DmInputDDF__GamepadMaps));
@@ -8204,8 +8234,11 @@ static DmInputDDF__GamepadMaps* luaL_checkdm_input_ddf__gamepad_maps(lua_State* 
 }
 static DmInputDDF__KeyTrigger* luaL_checkdm_input_ddf__key_trigger(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__KeyTrigger *msg = (DmInputDDF__KeyTrigger*)malloc(sizeof(DmInputDDF__KeyTrigger));
@@ -8227,8 +8260,11 @@ static DmInputDDF__KeyTrigger* luaL_checkdm_input_ddf__key_trigger(lua_State* L,
 }
 static DmInputDDF__MouseTrigger* luaL_checkdm_input_ddf__mouse_trigger(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__MouseTrigger *msg = (DmInputDDF__MouseTrigger*)malloc(sizeof(DmInputDDF__MouseTrigger));
@@ -8250,8 +8286,11 @@ static DmInputDDF__MouseTrigger* luaL_checkdm_input_ddf__mouse_trigger(lua_State
 }
 static DmInputDDF__GamepadTrigger* luaL_checkdm_input_ddf__gamepad_trigger(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__GamepadTrigger *msg = (DmInputDDF__GamepadTrigger*)malloc(sizeof(DmInputDDF__GamepadTrigger));
@@ -8273,8 +8312,11 @@ static DmInputDDF__GamepadTrigger* luaL_checkdm_input_ddf__gamepad_trigger(lua_S
 }
 static DmInputDDF__TouchTrigger* luaL_checkdm_input_ddf__touch_trigger(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__TouchTrigger *msg = (DmInputDDF__TouchTrigger*)malloc(sizeof(DmInputDDF__TouchTrigger));
@@ -8296,8 +8338,11 @@ static DmInputDDF__TouchTrigger* luaL_checkdm_input_ddf__touch_trigger(lua_State
 }
 static DmInputDDF__TextTrigger* luaL_checkdm_input_ddf__text_trigger(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__TextTrigger *msg = (DmInputDDF__TextTrigger*)malloc(sizeof(DmInputDDF__TextTrigger));
@@ -8319,8 +8364,11 @@ static DmInputDDF__TextTrigger* luaL_checkdm_input_ddf__text_trigger(lua_State* 
 }
 static DmInputDDF__InputBinding* luaL_checkdm_input_ddf__input_binding(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmInputDDF__InputBinding *msg = (DmInputDDF__InputBinding*)malloc(sizeof(DmInputDDF__InputBinding));
@@ -8410,8 +8458,11 @@ static DmInputDDF__InputBinding* luaL_checkdm_input_ddf__input_binding(lua_State
 }
 static DmRenderDDF__RenderPrototypeDesc* luaL_checkdm_render_ddf__render_prototype_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__RenderPrototypeDesc *msg = (DmRenderDDF__RenderPrototypeDesc*)malloc(sizeof(DmRenderDDF__RenderPrototypeDesc));
@@ -8443,8 +8494,11 @@ static DmRenderDDF__RenderPrototypeDesc* luaL_checkdm_render_ddf__render_prototy
 }
 static DmRenderDDF__RenderPrototypeDesc__MaterialDesc* luaL_checkdm_render_ddf__render_prototype_desc__material_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__RenderPrototypeDesc__MaterialDesc *msg = (DmRenderDDF__RenderPrototypeDesc__MaterialDesc*)malloc(sizeof(DmRenderDDF__RenderPrototypeDesc__MaterialDesc));
@@ -8466,8 +8520,11 @@ static DmRenderDDF__RenderPrototypeDesc__MaterialDesc* luaL_checkdm_render_ddf__
 }
 static DmRenderDDF__DrawText* luaL_checkdm_render_ddf__draw_text(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__DrawText *msg = (DmRenderDDF__DrawText*)malloc(sizeof(DmRenderDDF__DrawText));
@@ -8489,8 +8546,11 @@ static DmRenderDDF__DrawText* luaL_checkdm_render_ddf__draw_text(lua_State* L, i
 }
 static DmRenderDDF__DrawDebugText* luaL_checkdm_render_ddf__draw_debug_text(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__DrawDebugText *msg = (DmRenderDDF__DrawDebugText*)malloc(sizeof(DmRenderDDF__DrawDebugText));
@@ -8518,8 +8578,11 @@ static DmRenderDDF__DrawDebugText* luaL_checkdm_render_ddf__draw_debug_text(lua_
 }
 static DmRenderDDF__DrawLine* luaL_checkdm_render_ddf__draw_line(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__DrawLine *msg = (DmRenderDDF__DrawLine*)malloc(sizeof(DmRenderDDF__DrawLine));
@@ -8547,8 +8610,11 @@ static DmRenderDDF__DrawLine* luaL_checkdm_render_ddf__draw_line(lua_State* L, i
 }
 static DmRenderDDF__WindowResized* luaL_checkdm_render_ddf__window_resized(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__WindowResized *msg = (DmRenderDDF__WindowResized*)malloc(sizeof(DmRenderDDF__WindowResized));
@@ -8570,8 +8636,11 @@ static DmRenderDDF__WindowResized* luaL_checkdm_render_ddf__window_resized(lua_S
 }
 static DmRenderDDF__Resize* luaL_checkdm_render_ddf__resize(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__Resize *msg = (DmRenderDDF__Resize*)malloc(sizeof(DmRenderDDF__Resize));
@@ -8593,8 +8662,11 @@ static DmRenderDDF__Resize* luaL_checkdm_render_ddf__resize(lua_State* L, int na
 }
 static DmRenderDDF__ClearColor* luaL_checkdm_render_ddf__clear_color(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__ClearColor *msg = (DmRenderDDF__ClearColor*)malloc(sizeof(DmRenderDDF__ClearColor));
@@ -8610,8 +8682,11 @@ static DmRenderDDF__ClearColor* luaL_checkdm_render_ddf__clear_color(lua_State* 
 }
 static DmRenderDDF__DisplayProfileQualifier* luaL_checkdm_render_ddf__display_profile_qualifier(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__DisplayProfileQualifier *msg = (DmRenderDDF__DisplayProfileQualifier*)malloc(sizeof(DmRenderDDF__DisplayProfileQualifier));
@@ -8649,8 +8724,11 @@ static DmRenderDDF__DisplayProfileQualifier* luaL_checkdm_render_ddf__display_pr
 }
 static DmRenderDDF__DisplayProfile* luaL_checkdm_render_ddf__display_profile(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__DisplayProfile *msg = (DmRenderDDF__DisplayProfile*)malloc(sizeof(DmRenderDDF__DisplayProfile));
@@ -8682,8 +8760,11 @@ static DmRenderDDF__DisplayProfile* luaL_checkdm_render_ddf__display_profile(lua
 }
 static DmRenderDDF__DisplayProfiles* luaL_checkdm_render_ddf__display_profiles(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__DisplayProfiles *msg = (DmRenderDDF__DisplayProfiles*)malloc(sizeof(DmRenderDDF__DisplayProfiles));
@@ -8709,8 +8790,11 @@ static DmRenderDDF__DisplayProfiles* luaL_checkdm_render_ddf__display_profiles(l
 }
 static DmRenderDDF__FontDesc* luaL_checkdm_render_ddf__font_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__FontDesc *msg = (DmRenderDDF__FontDesc*)malloc(sizeof(DmRenderDDF__FontDesc));
@@ -8877,8 +8961,11 @@ static DmRenderDDF__FontDesc* luaL_checkdm_render_ddf__font_desc(lua_State* L, i
 }
 static DmRenderDDF__FontMap* luaL_checkdm_render_ddf__font_map(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__FontMap *msg = (DmRenderDDF__FontMap*)malloc(sizeof(DmRenderDDF__FontMap));
@@ -9111,8 +9198,11 @@ static DmRenderDDF__FontMap* luaL_checkdm_render_ddf__font_map(lua_State* L, int
 }
 static DmRenderDDF__FontMap__Glyph* luaL_checkdm_render_ddf__font_map__glyph(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__FontMap__Glyph *msg = (DmRenderDDF__FontMap__Glyph*)malloc(sizeof(DmRenderDDF__FontMap__Glyph));
@@ -9218,8 +9308,11 @@ static DmRenderDDF__FontMap__Glyph* luaL_checkdm_render_ddf__font_map__glyph(lua
 }
 static DmRenderDDF__MaterialDesc* luaL_checkdm_render_ddf__material_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__MaterialDesc *msg = (DmRenderDDF__MaterialDesc*)malloc(sizeof(DmRenderDDF__MaterialDesc));
@@ -9337,8 +9430,11 @@ static DmRenderDDF__MaterialDesc* luaL_checkdm_render_ddf__material_desc(lua_Sta
 }
 static DmRenderDDF__MaterialDesc__Constant* luaL_checkdm_render_ddf__material_desc__constant(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__MaterialDesc__Constant *msg = (DmRenderDDF__MaterialDesc__Constant*)malloc(sizeof(DmRenderDDF__MaterialDesc__Constant));
@@ -9376,8 +9472,11 @@ static DmRenderDDF__MaterialDesc__Constant* luaL_checkdm_render_ddf__material_de
 }
 static DmRenderDDF__MaterialDesc__Sampler* luaL_checkdm_render_ddf__material_desc__sampler(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRenderDDF__MaterialDesc__Sampler *msg = (DmRenderDDF__MaterialDesc__Sampler*)malloc(sizeof(DmRenderDDF__MaterialDesc__Sampler));
@@ -9427,8 +9526,11 @@ static DmRenderDDF__MaterialDesc__Sampler* luaL_checkdm_render_ddf__material_des
 }
 static DmScriptDDF__LuaRef* luaL_checkdm_script_ddf__lua_ref(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmScriptDDF__LuaRef *msg = (DmScriptDDF__LuaRef*)malloc(sizeof(DmScriptDDF__LuaRef));
@@ -9450,8 +9552,11 @@ static DmScriptDDF__LuaRef* luaL_checkdm_script_ddf__lua_ref(lua_State* L, int n
 }
 static DmSystemDDF__Exit* luaL_checkdm_system_ddf__exit(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmSystemDDF__Exit *msg = (DmSystemDDF__Exit*)malloc(sizeof(DmSystemDDF__Exit));
@@ -9467,8 +9572,11 @@ static DmSystemDDF__Exit* luaL_checkdm_system_ddf__exit(lua_State* L, int narg)
 }
 static DmSystemDDF__ToggleProfile* luaL_checkdm_system_ddf__toggle_profile(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmSystemDDF__ToggleProfile *msg = (DmSystemDDF__ToggleProfile*)malloc(sizeof(DmSystemDDF__ToggleProfile));
@@ -9478,8 +9586,11 @@ static DmSystemDDF__ToggleProfile* luaL_checkdm_system_ddf__toggle_profile(lua_S
 }
 static DmSystemDDF__TogglePhysicsDebug* luaL_checkdm_system_ddf__toggle_physics_debug(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmSystemDDF__TogglePhysicsDebug *msg = (DmSystemDDF__TogglePhysicsDebug*)malloc(sizeof(DmSystemDDF__TogglePhysicsDebug));
@@ -9489,8 +9600,11 @@ static DmSystemDDF__TogglePhysicsDebug* luaL_checkdm_system_ddf__toggle_physics_
 }
 static DmSystemDDF__StartRecord* luaL_checkdm_system_ddf__start_record(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmSystemDDF__StartRecord *msg = (DmSystemDDF__StartRecord*)malloc(sizeof(DmSystemDDF__StartRecord));
@@ -9526,8 +9640,11 @@ static DmSystemDDF__StartRecord* luaL_checkdm_system_ddf__start_record(lua_State
 }
 static DmSystemDDF__StopRecord* luaL_checkdm_system_ddf__stop_record(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmSystemDDF__StopRecord *msg = (DmSystemDDF__StopRecord*)malloc(sizeof(DmSystemDDF__StopRecord));
@@ -9537,8 +9654,11 @@ static DmSystemDDF__StopRecord* luaL_checkdm_system_ddf__stop_record(lua_State* 
 }
 static DmSystemDDF__Reboot* luaL_checkdm_system_ddf__reboot(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmSystemDDF__Reboot *msg = (DmSystemDDF__Reboot*)malloc(sizeof(DmSystemDDF__Reboot));
@@ -9602,8 +9722,11 @@ static DmSystemDDF__Reboot* luaL_checkdm_system_ddf__reboot(lua_State* L, int na
 }
 static DmSystemDDF__SetVsync* luaL_checkdm_system_ddf__set_vsync(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmSystemDDF__SetVsync *msg = (DmSystemDDF__SetVsync*)malloc(sizeof(DmSystemDDF__SetVsync));
@@ -9619,8 +9742,11 @@ static DmSystemDDF__SetVsync* luaL_checkdm_system_ddf__set_vsync(lua_State* L, i
 }
 static DmSystemDDF__SetUpdateFrequency* luaL_checkdm_system_ddf__set_update_frequency(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmSystemDDF__SetUpdateFrequency *msg = (DmSystemDDF__SetUpdateFrequency*)malloc(sizeof(DmSystemDDF__SetUpdateFrequency));
@@ -9636,8 +9762,11 @@ static DmSystemDDF__SetUpdateFrequency* luaL_checkdm_system_ddf__set_update_freq
 }
 static DmScriptDoc__Parameter* luaL_checkdm_script_doc__parameter(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmScriptDoc__Parameter *msg = (DmScriptDoc__Parameter*)malloc(sizeof(DmScriptDoc__Parameter));
@@ -9675,8 +9804,11 @@ static DmScriptDoc__Parameter* luaL_checkdm_script_doc__parameter(lua_State* L, 
 }
 static DmScriptDoc__Member* luaL_checkdm_script_doc__member(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmScriptDoc__Member *msg = (DmScriptDoc__Member*)malloc(sizeof(DmScriptDoc__Member));
@@ -9704,8 +9836,11 @@ static DmScriptDoc__Member* luaL_checkdm_script_doc__member(lua_State* L, int na
 }
 static DmScriptDoc__ReturnValue* luaL_checkdm_script_doc__return_value(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmScriptDoc__ReturnValue *msg = (DmScriptDoc__ReturnValue*)malloc(sizeof(DmScriptDoc__ReturnValue));
@@ -9743,8 +9878,11 @@ static DmScriptDoc__ReturnValue* luaL_checkdm_script_doc__return_value(lua_State
 }
 static DmScriptDoc__Element* luaL_checkdm_script_doc__element(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmScriptDoc__Element *msg = (DmScriptDoc__Element*)malloc(sizeof(DmScriptDoc__Element));
@@ -9885,8 +10023,11 @@ static DmScriptDoc__Element* luaL_checkdm_script_doc__element(lua_State* L, int 
 }
 static DmScriptDoc__Info* luaL_checkdm_script_doc__info(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmScriptDoc__Info *msg = (DmScriptDoc__Info*)malloc(sizeof(DmScriptDoc__Info));
@@ -9932,8 +10073,11 @@ static DmScriptDoc__Info* luaL_checkdm_script_doc__info(lua_State* L, int narg)
 }
 static DmScriptDoc__Document* luaL_checkdm_script_doc__document(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmScriptDoc__Document *msg = (DmScriptDoc__Document*)malloc(sizeof(DmScriptDoc__Document));
@@ -9968,8 +10112,11 @@ static DmScriptDoc__Document* luaL_checkdm_script_doc__document(lua_State* L, in
 }
 static DmHttpDDF__StopHttp* luaL_checkdm_http_ddf__stop_http(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmHttpDDF__StopHttp *msg = (DmHttpDDF__StopHttp*)malloc(sizeof(DmHttpDDF__StopHttp));
@@ -9979,8 +10126,11 @@ static DmHttpDDF__StopHttp* luaL_checkdm_http_ddf__stop_http(lua_State* L, int n
 }
 static DmHttpDDF__HttpRequest* luaL_checkdm_http_ddf__http_request(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmHttpDDF__HttpRequest *msg = (DmHttpDDF__HttpRequest*)malloc(sizeof(DmHttpDDF__HttpRequest));
@@ -10065,8 +10215,11 @@ static DmHttpDDF__HttpRequest* luaL_checkdm_http_ddf__http_request(lua_State* L,
 }
 static DmHttpDDF__HttpResponse* luaL_checkdm_http_ddf__http_response(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmHttpDDF__HttpResponse *msg = (DmHttpDDF__HttpResponse*)malloc(sizeof(DmHttpDDF__HttpResponse));
@@ -10112,8 +10265,11 @@ static DmHttpDDF__HttpResponse* luaL_checkdm_http_ddf__http_response(lua_State* 
 }
 static DmLuaDDF__LuaSource* luaL_checkdm_lua_ddf__lua_source(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmLuaDDF__LuaSource *msg = (DmLuaDDF__LuaSource*)malloc(sizeof(DmLuaDDF__LuaSource));
@@ -10174,8 +10330,11 @@ static DmLuaDDF__LuaSource* luaL_checkdm_lua_ddf__lua_source(lua_State* L, int n
 }
 static DmRigDDF__Bone* luaL_checkdm_rig_ddf__bone(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__Bone *msg = (DmRigDDF__Bone*)malloc(sizeof(DmRigDDF__Bone));
@@ -10231,8 +10390,11 @@ static DmRigDDF__Bone* luaL_checkdm_rig_ddf__bone(lua_State* L, int narg)
 }
 static DmRigDDF__IK* luaL_checkdm_rig_ddf__ik(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__IK *msg = (DmRigDDF__IK*)malloc(sizeof(DmRigDDF__IK));
@@ -10286,8 +10448,11 @@ static DmRigDDF__IK* luaL_checkdm_rig_ddf__ik(lua_State* L, int narg)
 }
 static DmRigDDF__Skeleton* luaL_checkdm_rig_ddf__skeleton(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__Skeleton *msg = (DmRigDDF__Skeleton*)malloc(sizeof(DmRigDDF__Skeleton));
@@ -10329,8 +10494,11 @@ static DmRigDDF__Skeleton* luaL_checkdm_rig_ddf__skeleton(lua_State* L, int narg
 }
 static DmRigDDF__AnimationTrack* luaL_checkdm_rig_ddf__animation_track(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__AnimationTrack *msg = (DmRigDDF__AnimationTrack*)malloc(sizeof(DmRigDDF__AnimationTrack));
@@ -10394,8 +10562,11 @@ static DmRigDDF__AnimationTrack* luaL_checkdm_rig_ddf__animation_track(lua_State
 }
 static DmRigDDF__EventKey* luaL_checkdm_rig_ddf__event_key(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__EventKey *msg = (DmRigDDF__EventKey*)malloc(sizeof(DmRigDDF__EventKey));
@@ -10441,8 +10612,11 @@ static DmRigDDF__EventKey* luaL_checkdm_rig_ddf__event_key(lua_State* L, int nar
 }
 static DmRigDDF__EventTrack* luaL_checkdm_rig_ddf__event_track(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__EventTrack *msg = (DmRigDDF__EventTrack*)malloc(sizeof(DmRigDDF__EventTrack));
@@ -10474,8 +10648,11 @@ static DmRigDDF__EventTrack* luaL_checkdm_rig_ddf__event_track(lua_State* L, int
 }
 static DmRigDDF__RigAnimation* luaL_checkdm_rig_ddf__rig_animation(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__RigAnimation *msg = (DmRigDDF__RigAnimation*)malloc(sizeof(DmRigDDF__RigAnimation));
@@ -10535,8 +10712,11 @@ static DmRigDDF__RigAnimation* luaL_checkdm_rig_ddf__rig_animation(lua_State* L,
 }
 static DmRigDDF__AnimationSet* luaL_checkdm_rig_ddf__animation_set(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__AnimationSet *msg = (DmRigDDF__AnimationSet*)malloc(sizeof(DmRigDDF__AnimationSet));
@@ -10578,8 +10758,11 @@ static DmRigDDF__AnimationSet* luaL_checkdm_rig_ddf__animation_set(lua_State* L,
 }
 static DmRigDDF__AnimationInstanceDesc* luaL_checkdm_rig_ddf__animation_instance_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__AnimationInstanceDesc *msg = (DmRigDDF__AnimationInstanceDesc*)malloc(sizeof(DmRigDDF__AnimationInstanceDesc));
@@ -10595,8 +10778,11 @@ static DmRigDDF__AnimationInstanceDesc* luaL_checkdm_rig_ddf__animation_instance
 }
 static DmRigDDF__AnimationSetDesc* luaL_checkdm_rig_ddf__animation_set_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__AnimationSetDesc *msg = (DmRigDDF__AnimationSetDesc*)malloc(sizeof(DmRigDDF__AnimationSetDesc));
@@ -10631,8 +10817,11 @@ static DmRigDDF__AnimationSetDesc* luaL_checkdm_rig_ddf__animation_set_desc(lua_
 }
 static DmRigDDF__Mesh* luaL_checkdm_rig_ddf__mesh(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__Mesh *msg = (DmRigDDF__Mesh*)malloc(sizeof(DmRigDDF__Mesh));
@@ -10819,8 +11008,11 @@ static DmRigDDF__Mesh* luaL_checkdm_rig_ddf__mesh(lua_State* L, int narg)
 }
 static DmRigDDF__Model* luaL_checkdm_rig_ddf__model(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__Model *msg = (DmRigDDF__Model*)malloc(sizeof(DmRigDDF__Model));
@@ -10858,8 +11050,11 @@ static DmRigDDF__Model* luaL_checkdm_rig_ddf__model(lua_State* L, int narg)
 }
 static DmRigDDF__MeshSet* luaL_checkdm_rig_ddf__mesh_set(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__MeshSet *msg = (DmRigDDF__MeshSet*)malloc(sizeof(DmRigDDF__MeshSet));
@@ -10927,8 +11122,11 @@ static DmRigDDF__MeshSet* luaL_checkdm_rig_ddf__mesh_set(lua_State* L, int narg)
 }
 static DmRigDDF__RigScene* luaL_checkdm_rig_ddf__rig_scene(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmRigDDF__RigScene *msg = (DmRigDDF__RigScene*)malloc(sizeof(DmRigDDF__RigScene));
@@ -10971,8 +11169,11 @@ static DmRigDDF__RigScene* luaL_checkdm_rig_ddf__rig_scene(lua_State* L, int nar
 }
 static DmModelDDF__ModelDesc* luaL_checkdm_model_ddf__model_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmModelDDF__ModelDesc *msg = (DmModelDDF__ModelDesc*)malloc(sizeof(DmModelDDF__ModelDesc));
@@ -11046,8 +11247,11 @@ static DmModelDDF__ModelDesc* luaL_checkdm_model_ddf__model_desc(lua_State* L, i
 }
 static DmModelDDF__Model* luaL_checkdm_model_ddf__model(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmModelDDF__Model *msg = (DmModelDDF__Model*)malloc(sizeof(DmModelDDF__Model));
@@ -11094,8 +11298,11 @@ static DmModelDDF__Model* luaL_checkdm_model_ddf__model(lua_State* L, int narg)
 }
 static DmModelDDF__ResetConstant* luaL_checkdm_model_ddf__reset_constant(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmModelDDF__ResetConstant *msg = (DmModelDDF__ResetConstant*)malloc(sizeof(DmModelDDF__ResetConstant));
@@ -11111,8 +11318,11 @@ static DmModelDDF__ResetConstant* luaL_checkdm_model_ddf__reset_constant(lua_Sta
 }
 static DmModelDDF__SetTexture* luaL_checkdm_model_ddf__set_texture(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmModelDDF__SetTexture *msg = (DmModelDDF__SetTexture*)malloc(sizeof(DmModelDDF__SetTexture));
@@ -11134,8 +11344,11 @@ static DmModelDDF__SetTexture* luaL_checkdm_model_ddf__set_texture(lua_State* L,
 }
 static DmModelDDF__ModelPlayAnimation* luaL_checkdm_model_ddf__model_play_animation(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmModelDDF__ModelPlayAnimation *msg = (DmModelDDF__ModelPlayAnimation*)malloc(sizeof(DmModelDDF__ModelPlayAnimation));
@@ -11187,8 +11400,11 @@ static DmModelDDF__ModelPlayAnimation* luaL_checkdm_model_ddf__model_play_animat
 }
 static DmModelDDF__ModelCancelAnimation* luaL_checkdm_model_ddf__model_cancel_animation(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmModelDDF__ModelCancelAnimation *msg = (DmModelDDF__ModelCancelAnimation*)malloc(sizeof(DmModelDDF__ModelCancelAnimation));
@@ -11198,8 +11414,11 @@ static DmModelDDF__ModelCancelAnimation* luaL_checkdm_model_ddf__model_cancel_an
 }
 static DmModelDDF__ModelAnimationDone* luaL_checkdm_model_ddf__model_animation_done(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmModelDDF__ModelAnimationDone *msg = (DmModelDDF__ModelAnimationDone*)malloc(sizeof(DmModelDDF__ModelAnimationDone));
@@ -11221,8 +11440,11 @@ static DmModelDDF__ModelAnimationDone* luaL_checkdm_model_ddf__model_animation_d
 }
 static DmMeshDDF__MeshDesc* luaL_checkdm_mesh_ddf__mesh_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmMeshDDF__MeshDesc *msg = (DmMeshDDF__MeshDesc*)malloc(sizeof(DmMeshDDF__MeshDesc));
@@ -11288,8 +11510,11 @@ static DmMeshDDF__MeshDesc* luaL_checkdm_mesh_ddf__mesh_desc(lua_State* L, int n
 }
 static DmGameSystemDDF__LabelDesc* luaL_checkdm_game_system_ddf__label_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__LabelDesc *msg = (DmGameSystemDDF__LabelDesc*)malloc(sizeof(DmGameSystemDDF__LabelDesc));
@@ -11380,8 +11605,11 @@ static DmGameSystemDDF__LabelDesc* luaL_checkdm_game_system_ddf__label_desc(lua_
 }
 static DmGameSystemDDF__SetText* luaL_checkdm_game_system_ddf__set_text(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetText *msg = (DmGameSystemDDF__SetText*)malloc(sizeof(DmGameSystemDDF__SetText));
@@ -11397,8 +11625,11 @@ static DmGameSystemDDF__SetText* luaL_checkdm_game_system_ddf__set_text(lua_Stat
 }
 static DmGameSystemDDF__ConvexHull* luaL_checkdm_game_system_ddf__convex_hull(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__ConvexHull *msg = (DmGameSystemDDF__ConvexHull*)malloc(sizeof(DmGameSystemDDF__ConvexHull));
@@ -11426,8 +11657,11 @@ static DmGameSystemDDF__ConvexHull* luaL_checkdm_game_system_ddf__convex_hull(lu
 }
 static DmGameSystemDDF__Cue* luaL_checkdm_game_system_ddf__cue(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__Cue *msg = (DmGameSystemDDF__Cue*)malloc(sizeof(DmGameSystemDDF__Cue));
@@ -11459,8 +11693,11 @@ static DmGameSystemDDF__Cue* luaL_checkdm_game_system_ddf__cue(lua_State* L, int
 }
 static DmGameSystemDDF__Animation* luaL_checkdm_game_system_ddf__animation(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__Animation *msg = (DmGameSystemDDF__Animation*)malloc(sizeof(DmGameSystemDDF__Animation));
@@ -11544,8 +11781,11 @@ static DmGameSystemDDF__Animation* luaL_checkdm_game_system_ddf__animation(lua_S
 }
 static DmGameSystemDDF__TileSet* luaL_checkdm_game_system_ddf__tile_set(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__TileSet *msg = (DmGameSystemDDF__TileSet*)malloc(sizeof(DmGameSystemDDF__TileSet));
@@ -11694,8 +11934,11 @@ static DmGameSystemDDF__TileSet* luaL_checkdm_game_system_ddf__tile_set(lua_Stat
 }
 static DmGameSystemDDF__TileCell* luaL_checkdm_game_system_ddf__tile_cell(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__TileCell *msg = (DmGameSystemDDF__TileCell*)malloc(sizeof(DmGameSystemDDF__TileCell));
@@ -11753,8 +11996,11 @@ static DmGameSystemDDF__TileCell* luaL_checkdm_game_system_ddf__tile_cell(lua_St
 }
 static DmGameSystemDDF__TileLayer* luaL_checkdm_game_system_ddf__tile_layer(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__TileLayer *msg = (DmGameSystemDDF__TileLayer*)malloc(sizeof(DmGameSystemDDF__TileLayer));
@@ -11808,8 +12054,11 @@ static DmGameSystemDDF__TileLayer* luaL_checkdm_game_system_ddf__tile_layer(lua_
 }
 static DmGameSystemDDF__TileGrid* luaL_checkdm_game_system_ddf__tile_grid(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__TileGrid *msg = (DmGameSystemDDF__TileGrid*)malloc(sizeof(DmGameSystemDDF__TileGrid));
@@ -11860,8 +12109,11 @@ static DmGameSystemDDF__TileGrid* luaL_checkdm_game_system_ddf__tile_grid(lua_St
 }
 static DmGameSystemDDF__SetTile* luaL_checkdm_game_system_ddf__set_tile(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetTile *msg = (DmGameSystemDDF__SetTile*)malloc(sizeof(DmGameSystemDDF__SetTile));
@@ -11913,8 +12165,11 @@ static DmGameSystemDDF__SetTile* luaL_checkdm_game_system_ddf__set_tile(lua_Stat
 }
 static DmGameSystemDDF__SetConstantTileMap* luaL_checkdm_game_system_ddf__set_constant_tile_map(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetConstantTileMap *msg = (DmGameSystemDDF__SetConstantTileMap*)malloc(sizeof(DmGameSystemDDF__SetConstantTileMap));
@@ -11936,8 +12191,11 @@ static DmGameSystemDDF__SetConstantTileMap* luaL_checkdm_game_system_ddf__set_co
 }
 static DmGameSystemDDF__ResetConstantTileMap* luaL_checkdm_game_system_ddf__reset_constant_tile_map(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__ResetConstantTileMap *msg = (DmGameSystemDDF__ResetConstantTileMap*)malloc(sizeof(DmGameSystemDDF__ResetConstantTileMap));
@@ -11953,8 +12211,11 @@ static DmGameSystemDDF__ResetConstantTileMap* luaL_checkdm_game_system_ddf__rese
 }
 static DmGameSystemDDF__AtlasImage* luaL_checkdm_game_system_ddf__atlas_image(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__AtlasImage *msg = (DmGameSystemDDF__AtlasImage*)malloc(sizeof(DmGameSystemDDF__AtlasImage));
@@ -11980,8 +12241,11 @@ static DmGameSystemDDF__AtlasImage* luaL_checkdm_game_system_ddf__atlas_image(lu
 }
 static DmGameSystemDDF__AtlasAnimation* luaL_checkdm_game_system_ddf__atlas_animation(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__AtlasAnimation *msg = (DmGameSystemDDF__AtlasAnimation*)malloc(sizeof(DmGameSystemDDF__AtlasAnimation));
@@ -12053,8 +12317,11 @@ static DmGameSystemDDF__AtlasAnimation* luaL_checkdm_game_system_ddf__atlas_anim
 }
 static DmGameSystemDDF__Atlas* luaL_checkdm_game_system_ddf__atlas(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__Atlas *msg = (DmGameSystemDDF__Atlas*)malloc(sizeof(DmGameSystemDDF__Atlas));
@@ -12126,8 +12393,11 @@ static DmGameSystemDDF__Atlas* luaL_checkdm_game_system_ddf__atlas(lua_State* L,
 }
 static DmBufferDDF__StreamDesc* luaL_checkdm_buffer_ddf__stream_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmBufferDDF__StreamDesc *msg = (DmBufferDDF__StreamDesc*)malloc(sizeof(DmBufferDDF__StreamDesc));
@@ -12235,8 +12505,11 @@ static DmBufferDDF__StreamDesc* luaL_checkdm_buffer_ddf__stream_desc(lua_State* 
 }
 static DmBufferDDF__BufferDesc* luaL_checkdm_buffer_ddf__buffer_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmBufferDDF__BufferDesc *msg = (DmBufferDDF__BufferDesc*)malloc(sizeof(DmBufferDDF__BufferDesc));
@@ -12262,8 +12535,11 @@ static DmBufferDDF__BufferDesc* luaL_checkdm_buffer_ddf__buffer_desc(lua_State* 
 }
 static DmSoundDDF__SoundDesc* luaL_checkdm_sound_ddf__sound_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmSoundDDF__SoundDesc *msg = (DmSoundDDF__SoundDesc*)malloc(sizeof(DmSoundDDF__SoundDesc));
@@ -12338,8 +12614,11 @@ static DmSoundDDF__SoundDesc* luaL_checkdm_sound_ddf__sound_desc(lua_State* L, i
 }
 static DmGamesysDDF__CameraDesc* luaL_checkdm_gamesys_ddf__camera_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGamesysDDF__CameraDesc *msg = (DmGamesysDDF__CameraDesc*)malloc(sizeof(DmGamesysDDF__CameraDesc));
@@ -12403,8 +12682,11 @@ static DmGamesysDDF__CameraDesc* luaL_checkdm_gamesys_ddf__camera_desc(lua_State
 }
 static DmGamesysDDF__SetCamera* luaL_checkdm_gamesys_ddf__set_camera(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGamesysDDF__SetCamera *msg = (DmGamesysDDF__SetCamera*)malloc(sizeof(DmGamesysDDF__SetCamera));
@@ -12458,8 +12740,11 @@ static DmGamesysDDF__SetCamera* luaL_checkdm_gamesys_ddf__set_camera(lua_State* 
 }
 static DmGamesysDDF__AcquireCameraFocus* luaL_checkdm_gamesys_ddf__acquire_camera_focus(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGamesysDDF__AcquireCameraFocus *msg = (DmGamesysDDF__AcquireCameraFocus*)malloc(sizeof(DmGamesysDDF__AcquireCameraFocus));
@@ -12469,8 +12754,11 @@ static DmGamesysDDF__AcquireCameraFocus* luaL_checkdm_gamesys_ddf__acquire_camer
 }
 static DmGamesysDDF__ReleaseCameraFocus* luaL_checkdm_gamesys_ddf__release_camera_focus(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGamesysDDF__ReleaseCameraFocus *msg = (DmGamesysDDF__ReleaseCameraFocus*)malloc(sizeof(DmGamesysDDF__ReleaseCameraFocus));
@@ -12480,8 +12768,11 @@ static DmGamesysDDF__ReleaseCameraFocus* luaL_checkdm_gamesys_ddf__release_camer
 }
 static DmGameSystemDDF__SpriteDesc* luaL_checkdm_game_system_ddf__sprite_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SpriteDesc *msg = (DmGameSystemDDF__SpriteDesc*)malloc(sizeof(DmGameSystemDDF__SpriteDesc));
@@ -12550,8 +12841,11 @@ static DmGameSystemDDF__SpriteDesc* luaL_checkdm_game_system_ddf__sprite_desc(lu
 }
 static DmGameSystemDDF__PlayAnimation* luaL_checkdm_game_system_ddf__play_animation(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__PlayAnimation *msg = (DmGameSystemDDF__PlayAnimation*)malloc(sizeof(DmGameSystemDDF__PlayAnimation));
@@ -12587,8 +12881,11 @@ static DmGameSystemDDF__PlayAnimation* luaL_checkdm_game_system_ddf__play_animat
 }
 static DmGameSystemDDF__AnimationDone* luaL_checkdm_game_system_ddf__animation_done(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__AnimationDone *msg = (DmGameSystemDDF__AnimationDone*)malloc(sizeof(DmGameSystemDDF__AnimationDone));
@@ -12610,8 +12907,11 @@ static DmGameSystemDDF__AnimationDone* luaL_checkdm_game_system_ddf__animation_d
 }
 static DmGameSystemDDF__SetFlipHorizontal* luaL_checkdm_game_system_ddf__set_flip_horizontal(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetFlipHorizontal *msg = (DmGameSystemDDF__SetFlipHorizontal*)malloc(sizeof(DmGameSystemDDF__SetFlipHorizontal));
@@ -12627,8 +12927,11 @@ static DmGameSystemDDF__SetFlipHorizontal* luaL_checkdm_game_system_ddf__set_fli
 }
 static DmGameSystemDDF__SetFlipVertical* luaL_checkdm_game_system_ddf__set_flip_vertical(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetFlipVertical *msg = (DmGameSystemDDF__SetFlipVertical*)malloc(sizeof(DmGameSystemDDF__SetFlipVertical));
@@ -12644,8 +12947,11 @@ static DmGameSystemDDF__SetFlipVertical* luaL_checkdm_game_system_ddf__set_flip_
 }
 static DmGameSystemDDF__TextureSetAnimation* luaL_checkdm_game_system_ddf__texture_set_animation(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__TextureSetAnimation *msg = (DmGameSystemDDF__TextureSetAnimation*)malloc(sizeof(DmGameSystemDDF__TextureSetAnimation));
@@ -12735,8 +13041,11 @@ static DmGameSystemDDF__TextureSetAnimation* luaL_checkdm_game_system_ddf__textu
 }
 static DmGameSystemDDF__SpriteGeometry* luaL_checkdm_game_system_ddf__sprite_geometry(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SpriteGeometry *msg = (DmGameSystemDDF__SpriteGeometry*)malloc(sizeof(DmGameSystemDDF__SpriteGeometry));
@@ -12806,8 +13115,11 @@ static DmGameSystemDDF__SpriteGeometry* luaL_checkdm_game_system_ddf__sprite_geo
 }
 static DmGameSystemDDF__TextureSet* luaL_checkdm_game_system_ddf__texture_set(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__TextureSet *msg = (DmGameSystemDDF__TextureSet*)malloc(sizeof(DmGameSystemDDF__TextureSet));
@@ -12974,8 +13286,11 @@ static DmGameSystemDDF__TextureSet* luaL_checkdm_game_system_ddf__texture_set(lu
 }
 static DmPhysicsDDF__ConvexShape* luaL_checkdm_physics_ddf__convex_shape(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__ConvexShape *msg = (DmPhysicsDDF__ConvexShape*)malloc(sizeof(DmPhysicsDDF__ConvexShape));
@@ -13007,8 +13322,11 @@ static DmPhysicsDDF__ConvexShape* luaL_checkdm_physics_ddf__convex_shape(lua_Sta
 }
 static DmPhysicsDDF__CollisionShape* luaL_checkdm_physics_ddf__collision_shape(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__CollisionShape *msg = (DmPhysicsDDF__CollisionShape*)malloc(sizeof(DmPhysicsDDF__CollisionShape));
@@ -13050,8 +13368,11 @@ static DmPhysicsDDF__CollisionShape* luaL_checkdm_physics_ddf__collision_shape(l
 }
 static DmPhysicsDDF__CollisionShape__Shape* luaL_checkdm_physics_ddf__collision_shape__shape(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__CollisionShape__Shape *msg = (DmPhysicsDDF__CollisionShape__Shape*)malloc(sizeof(DmPhysicsDDF__CollisionShape__Shape));
@@ -13091,8 +13412,11 @@ static DmPhysicsDDF__CollisionShape__Shape* luaL_checkdm_physics_ddf__collision_
 }
 static DmPhysicsDDF__CollisionObjectDesc* luaL_checkdm_physics_ddf__collision_object_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__CollisionObjectDesc *msg = (DmPhysicsDDF__CollisionObjectDesc*)malloc(sizeof(DmPhysicsDDF__CollisionObjectDesc));
@@ -13206,8 +13530,11 @@ static DmPhysicsDDF__CollisionObjectDesc* luaL_checkdm_physics_ddf__collision_ob
 }
 static DmPhysicsDDF__ApplyForce* luaL_checkdm_physics_ddf__apply_force(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__ApplyForce *msg = (DmPhysicsDDF__ApplyForce*)malloc(sizeof(DmPhysicsDDF__ApplyForce));
@@ -13229,8 +13556,11 @@ static DmPhysicsDDF__ApplyForce* luaL_checkdm_physics_ddf__apply_force(lua_State
 }
 static DmPhysicsDDF__CollisionResponse* luaL_checkdm_physics_ddf__collision_response(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__CollisionResponse *msg = (DmPhysicsDDF__CollisionResponse*)malloc(sizeof(DmPhysicsDDF__CollisionResponse));
@@ -13270,8 +13600,11 @@ static DmPhysicsDDF__CollisionResponse* luaL_checkdm_physics_ddf__collision_resp
 }
 static DmPhysicsDDF__ContactPointResponse* luaL_checkdm_physics_ddf__contact_point_response(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__ContactPointResponse *msg = (DmPhysicsDDF__ContactPointResponse*)malloc(sizeof(DmPhysicsDDF__ContactPointResponse));
@@ -13359,8 +13692,11 @@ static DmPhysicsDDF__ContactPointResponse* luaL_checkdm_physics_ddf__contact_poi
 }
 static DmPhysicsDDF__TriggerResponse* luaL_checkdm_physics_ddf__trigger_response(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__TriggerResponse *msg = (DmPhysicsDDF__TriggerResponse*)malloc(sizeof(DmPhysicsDDF__TriggerResponse));
@@ -13400,8 +13736,11 @@ static DmPhysicsDDF__TriggerResponse* luaL_checkdm_physics_ddf__trigger_response
 }
 static DmPhysicsDDF__RequestRayCast* luaL_checkdm_physics_ddf__request_ray_cast(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__RequestRayCast *msg = (DmPhysicsDDF__RequestRayCast*)malloc(sizeof(DmPhysicsDDF__RequestRayCast));
@@ -13435,8 +13774,11 @@ static DmPhysicsDDF__RequestRayCast* luaL_checkdm_physics_ddf__request_ray_cast(
 }
 static DmPhysicsDDF__RayCastResponse* luaL_checkdm_physics_ddf__ray_cast_response(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__RayCastResponse *msg = (DmPhysicsDDF__RayCastResponse*)malloc(sizeof(DmPhysicsDDF__RayCastResponse));
@@ -13482,8 +13824,11 @@ static DmPhysicsDDF__RayCastResponse* luaL_checkdm_physics_ddf__ray_cast_respons
 }
 static DmPhysicsDDF__RayCastMissed* luaL_checkdm_physics_ddf__ray_cast_missed(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__RayCastMissed *msg = (DmPhysicsDDF__RayCastMissed*)malloc(sizeof(DmPhysicsDDF__RayCastMissed));
@@ -13499,8 +13844,11 @@ static DmPhysicsDDF__RayCastMissed* luaL_checkdm_physics_ddf__ray_cast_missed(lu
 }
 static DmPhysicsDDF__RequestVelocity* luaL_checkdm_physics_ddf__request_velocity(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__RequestVelocity *msg = (DmPhysicsDDF__RequestVelocity*)malloc(sizeof(DmPhysicsDDF__RequestVelocity));
@@ -13510,8 +13858,11 @@ static DmPhysicsDDF__RequestVelocity* luaL_checkdm_physics_ddf__request_velocity
 }
 static DmPhysicsDDF__VelocityResponse* luaL_checkdm_physics_ddf__velocity_response(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__VelocityResponse *msg = (DmPhysicsDDF__VelocityResponse*)malloc(sizeof(DmPhysicsDDF__VelocityResponse));
@@ -13533,8 +13884,11 @@ static DmPhysicsDDF__VelocityResponse* luaL_checkdm_physics_ddf__velocity_respon
 }
 static DmPhysicsDDF__SetGridShapeHull* luaL_checkdm_physics_ddf__set_grid_shape_hull(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__SetGridShapeHull *msg = (DmPhysicsDDF__SetGridShapeHull*)malloc(sizeof(DmPhysicsDDF__SetGridShapeHull));
@@ -13586,8 +13940,11 @@ static DmPhysicsDDF__SetGridShapeHull* luaL_checkdm_physics_ddf__set_grid_shape_
 }
 static DmPhysicsDDF__EnableGridShapeLayer* luaL_checkdm_physics_ddf__enable_grid_shape_layer(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPhysicsDDF__EnableGridShapeLayer *msg = (DmPhysicsDDF__EnableGridShapeLayer*)malloc(sizeof(DmPhysicsDDF__EnableGridShapeLayer));
@@ -13609,8 +13966,11 @@ static DmPhysicsDDF__EnableGridShapeLayer* luaL_checkdm_physics_ddf__enable_grid
 }
 static DmGameSystemDDF__FactoryDesc* luaL_checkdm_game_system_ddf__factory_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__FactoryDesc *msg = (DmGameSystemDDF__FactoryDesc*)malloc(sizeof(DmGameSystemDDF__FactoryDesc));
@@ -13636,8 +13996,11 @@ static DmGameSystemDDF__FactoryDesc* luaL_checkdm_game_system_ddf__factory_desc(
 }
 static DmGameSystemDDF__CollectionFactoryDesc* luaL_checkdm_game_system_ddf__collection_factory_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__CollectionFactoryDesc *msg = (DmGameSystemDDF__CollectionFactoryDesc*)malloc(sizeof(DmGameSystemDDF__CollectionFactoryDesc));
@@ -13663,8 +14026,11 @@ static DmGameSystemDDF__CollectionFactoryDesc* luaL_checkdm_game_system_ddf__col
 }
 static DmGameSystemDDF__Create* luaL_checkdm_game_system_ddf__create(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__Create *msg = (DmGameSystemDDF__Create*)malloc(sizeof(DmGameSystemDDF__Create));
@@ -13725,8 +14091,11 @@ static DmGameSystemDDF__Create* luaL_checkdm_game_system_ddf__create(lua_State* 
 }
 static DmGameSystemDDF__CollectionProxyDesc* luaL_checkdm_game_system_ddf__collection_proxy_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__CollectionProxyDesc *msg = (DmGameSystemDDF__CollectionProxyDesc*)malloc(sizeof(DmGameSystemDDF__CollectionProxyDesc));
@@ -13752,8 +14121,11 @@ static DmGameSystemDDF__CollectionProxyDesc* luaL_checkdm_game_system_ddf__colle
 }
 static DmGameSystemDDF__SetTimeStep* luaL_checkdm_game_system_ddf__set_time_step(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetTimeStep *msg = (DmGameSystemDDF__SetTimeStep*)malloc(sizeof(DmGameSystemDDF__SetTimeStep));
@@ -13775,8 +14147,11 @@ static DmGameSystemDDF__SetTimeStep* luaL_checkdm_game_system_ddf__set_time_step
 }
 static DmGameSystemDDF__LightDesc* luaL_checkdm_game_system_ddf__light_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__LightDesc *msg = (DmGameSystemDDF__LightDesc*)malloc(sizeof(DmGameSystemDDF__LightDesc));
@@ -13852,8 +14227,11 @@ static DmGameSystemDDF__LightDesc* luaL_checkdm_game_system_ddf__light_desc(lua_
 }
 static DmGameSystemDDF__SetLight* luaL_checkdm_game_system_ddf__set_light(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetLight *msg = (DmGameSystemDDF__SetLight*)malloc(sizeof(DmGameSystemDDF__SetLight));
@@ -13881,8 +14259,11 @@ static DmGameSystemDDF__SetLight* luaL_checkdm_game_system_ddf__set_light(lua_St
 }
 static DmGameSystemDDF__SetViewProjection* luaL_checkdm_game_system_ddf__set_view_projection(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetViewProjection *msg = (DmGameSystemDDF__SetViewProjection*)malloc(sizeof(DmGameSystemDDF__SetViewProjection));
@@ -13910,8 +14291,11 @@ static DmGameSystemDDF__SetViewProjection* luaL_checkdm_game_system_ddf__set_vie
 }
 static DmGameSystemDDF__PlaySound* luaL_checkdm_game_system_ddf__play_sound(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__PlaySound *msg = (DmGameSystemDDF__PlaySound*)malloc(sizeof(DmGameSystemDDF__PlaySound));
@@ -13971,8 +14355,11 @@ static DmGameSystemDDF__PlaySound* luaL_checkdm_game_system_ddf__play_sound(lua_
 }
 static DmGameSystemDDF__StopSound* luaL_checkdm_game_system_ddf__stop_sound(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__StopSound *msg = (DmGameSystemDDF__StopSound*)malloc(sizeof(DmGameSystemDDF__StopSound));
@@ -13982,8 +14369,11 @@ static DmGameSystemDDF__StopSound* luaL_checkdm_game_system_ddf__stop_sound(lua_
 }
 static DmGameSystemDDF__PauseSound* luaL_checkdm_game_system_ddf__pause_sound(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__PauseSound *msg = (DmGameSystemDDF__PauseSound*)malloc(sizeof(DmGameSystemDDF__PauseSound));
@@ -14003,8 +14393,11 @@ static DmGameSystemDDF__PauseSound* luaL_checkdm_game_system_ddf__pause_sound(lu
 }
 static DmGameSystemDDF__SoundDone* luaL_checkdm_game_system_ddf__sound_done(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SoundDone *msg = (DmGameSystemDDF__SoundDone*)malloc(sizeof(DmGameSystemDDF__SoundDone));
@@ -14024,8 +14417,11 @@ static DmGameSystemDDF__SoundDone* luaL_checkdm_game_system_ddf__sound_done(lua_
 }
 static DmGameSystemDDF__SetGain* luaL_checkdm_game_system_ddf__set_gain(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetGain *msg = (DmGameSystemDDF__SetGain*)malloc(sizeof(DmGameSystemDDF__SetGain));
@@ -14045,8 +14441,11 @@ static DmGameSystemDDF__SetGain* luaL_checkdm_game_system_ddf__set_gain(lua_Stat
 }
 static DmGameSystemDDF__SetPan* luaL_checkdm_game_system_ddf__set_pan(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetPan *msg = (DmGameSystemDDF__SetPan*)malloc(sizeof(DmGameSystemDDF__SetPan));
@@ -14066,8 +14465,11 @@ static DmGameSystemDDF__SetPan* luaL_checkdm_game_system_ddf__set_pan(lua_State*
 }
 static DmGameSystemDDF__SetSpeed* luaL_checkdm_game_system_ddf__set_speed(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetSpeed *msg = (DmGameSystemDDF__SetSpeed*)malloc(sizeof(DmGameSystemDDF__SetSpeed));
@@ -14087,8 +14489,11 @@ static DmGameSystemDDF__SetSpeed* luaL_checkdm_game_system_ddf__set_speed(lua_St
 }
 static DmGameSystemDDF__PlayParticleFX* luaL_checkdm_game_system_ddf__play_particle_fx(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__PlayParticleFX *msg = (DmGameSystemDDF__PlayParticleFX*)malloc(sizeof(DmGameSystemDDF__PlayParticleFX));
@@ -14098,8 +14503,11 @@ static DmGameSystemDDF__PlayParticleFX* luaL_checkdm_game_system_ddf__play_parti
 }
 static DmGameSystemDDF__StopParticleFX* luaL_checkdm_game_system_ddf__stop_particle_fx(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__StopParticleFX *msg = (DmGameSystemDDF__StopParticleFX*)malloc(sizeof(DmGameSystemDDF__StopParticleFX));
@@ -14119,8 +14527,11 @@ static DmGameSystemDDF__StopParticleFX* luaL_checkdm_game_system_ddf__stop_parti
 }
 static DmGameSystemDDF__SetConstantParticleFX* luaL_checkdm_game_system_ddf__set_constant_particle_fx(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetConstantParticleFX *msg = (DmGameSystemDDF__SetConstantParticleFX*)malloc(sizeof(DmGameSystemDDF__SetConstantParticleFX));
@@ -14158,8 +14569,11 @@ static DmGameSystemDDF__SetConstantParticleFX* luaL_checkdm_game_system_ddf__set
 }
 static DmGameSystemDDF__ResetConstantParticleFX* luaL_checkdm_game_system_ddf__reset_constant_particle_fx(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__ResetConstantParticleFX *msg = (DmGameSystemDDF__ResetConstantParticleFX*)malloc(sizeof(DmGameSystemDDF__ResetConstantParticleFX));
@@ -14181,8 +14595,11 @@ static DmGameSystemDDF__ResetConstantParticleFX* luaL_checkdm_game_system_ddf__r
 }
 static DmGameSystemDDF__SetConstant* luaL_checkdm_game_system_ddf__set_constant(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetConstant *msg = (DmGameSystemDDF__SetConstant*)malloc(sizeof(DmGameSystemDDF__SetConstant));
@@ -14214,8 +14631,11 @@ static DmGameSystemDDF__SetConstant* luaL_checkdm_game_system_ddf__set_constant(
 }
 static DmGameSystemDDF__ResetConstant* luaL_checkdm_game_system_ddf__reset_constant(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__ResetConstant *msg = (DmGameSystemDDF__ResetConstant*)malloc(sizeof(DmGameSystemDDF__ResetConstant));
@@ -14231,8 +14651,11 @@ static DmGameSystemDDF__ResetConstant* luaL_checkdm_game_system_ddf__reset_const
 }
 static DmGameSystemDDF__SetScale* luaL_checkdm_game_system_ddf__set_scale(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameSystemDDF__SetScale *msg = (DmGameSystemDDF__SetScale*)malloc(sizeof(DmGameSystemDDF__SetScale));
@@ -14248,8 +14671,11 @@ static DmGameSystemDDF__SetScale* luaL_checkdm_game_system_ddf__set_scale(lua_St
 }
 static DmGuiDDF__NodeDesc* luaL_checkdm_gui_ddf__node_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__NodeDesc *msg = (DmGuiDDF__NodeDesc*)malloc(sizeof(DmGuiDDF__NodeDesc));
@@ -14706,8 +15132,11 @@ static DmGuiDDF__NodeDesc* luaL_checkdm_gui_ddf__node_desc(lua_State* L, int nar
 }
 static DmGuiDDF__SceneDesc* luaL_checkdm_gui_ddf__scene_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__SceneDesc *msg = (DmGuiDDF__SceneDesc*)malloc(sizeof(DmGuiDDF__SceneDesc));
@@ -14889,8 +15318,11 @@ static DmGuiDDF__SceneDesc* luaL_checkdm_gui_ddf__scene_desc(lua_State* L, int n
 }
 static DmGuiDDF__SceneDesc__FontDesc* luaL_checkdm_gui_ddf__scene_desc__font_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__SceneDesc__FontDesc *msg = (DmGuiDDF__SceneDesc__FontDesc*)malloc(sizeof(DmGuiDDF__SceneDesc__FontDesc));
@@ -14912,8 +15344,11 @@ static DmGuiDDF__SceneDesc__FontDesc* luaL_checkdm_gui_ddf__scene_desc__font_des
 }
 static DmGuiDDF__SceneDesc__TextureDesc* luaL_checkdm_gui_ddf__scene_desc__texture_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__SceneDesc__TextureDesc *msg = (DmGuiDDF__SceneDesc__TextureDesc*)malloc(sizeof(DmGuiDDF__SceneDesc__TextureDesc));
@@ -14935,8 +15370,11 @@ static DmGuiDDF__SceneDesc__TextureDesc* luaL_checkdm_gui_ddf__scene_desc__textu
 }
 static DmGuiDDF__SceneDesc__LayerDesc* luaL_checkdm_gui_ddf__scene_desc__layer_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__SceneDesc__LayerDesc *msg = (DmGuiDDF__SceneDesc__LayerDesc*)malloc(sizeof(DmGuiDDF__SceneDesc__LayerDesc));
@@ -14952,8 +15390,11 @@ static DmGuiDDF__SceneDesc__LayerDesc* luaL_checkdm_gui_ddf__scene_desc__layer_d
 }
 static DmGuiDDF__SceneDesc__LayoutDesc* luaL_checkdm_gui_ddf__scene_desc__layout_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__SceneDesc__LayoutDesc *msg = (DmGuiDDF__SceneDesc__LayoutDesc*)malloc(sizeof(DmGuiDDF__SceneDesc__LayoutDesc));
@@ -14985,8 +15426,11 @@ static DmGuiDDF__SceneDesc__LayoutDesc* luaL_checkdm_gui_ddf__scene_desc__layout
 }
 static DmGuiDDF__SceneDesc__SpineSceneDesc* luaL_checkdm_gui_ddf__scene_desc__spine_scene_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__SceneDesc__SpineSceneDesc *msg = (DmGuiDDF__SceneDesc__SpineSceneDesc*)malloc(sizeof(DmGuiDDF__SceneDesc__SpineSceneDesc));
@@ -15008,8 +15452,11 @@ static DmGuiDDF__SceneDesc__SpineSceneDesc* luaL_checkdm_gui_ddf__scene_desc__sp
 }
 static DmGuiDDF__SceneDesc__ResourceDesc* luaL_checkdm_gui_ddf__scene_desc__resource_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__SceneDesc__ResourceDesc *msg = (DmGuiDDF__SceneDesc__ResourceDesc*)malloc(sizeof(DmGuiDDF__SceneDesc__ResourceDesc));
@@ -15031,8 +15478,11 @@ static DmGuiDDF__SceneDesc__ResourceDesc* luaL_checkdm_gui_ddf__scene_desc__reso
 }
 static DmGuiDDF__SceneDesc__ParticleFXDesc* luaL_checkdm_gui_ddf__scene_desc__particle_fxdesc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__SceneDesc__ParticleFXDesc *msg = (DmGuiDDF__SceneDesc__ParticleFXDesc*)malloc(sizeof(DmGuiDDF__SceneDesc__ParticleFXDesc));
@@ -15054,8 +15504,11 @@ static DmGuiDDF__SceneDesc__ParticleFXDesc* luaL_checkdm_gui_ddf__scene_desc__pa
 }
 static DmGuiDDF__LayoutChanged* luaL_checkdm_gui_ddf__layout_changed(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGuiDDF__LayoutChanged *msg = (DmGuiDDF__LayoutChanged*)malloc(sizeof(DmGuiDDF__LayoutChanged));
@@ -15077,8 +15530,11 @@ static DmGuiDDF__LayoutChanged* luaL_checkdm_gui_ddf__layout_changed(lua_State* 
 }
 static DmLiveUpdateDDF__HashDigest* luaL_checkdm_live_update_ddf__hash_digest(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmLiveUpdateDDF__HashDigest *msg = (DmLiveUpdateDDF__HashDigest*)malloc(sizeof(DmLiveUpdateDDF__HashDigest));
@@ -15094,8 +15550,11 @@ static DmLiveUpdateDDF__HashDigest* luaL_checkdm_live_update_ddf__hash_digest(lu
 }
 static DmLiveUpdateDDF__ManifestHeader* luaL_checkdm_live_update_ddf__manifest_header(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmLiveUpdateDDF__ManifestHeader *msg = (DmLiveUpdateDDF__ManifestHeader*)malloc(sizeof(DmLiveUpdateDDF__ManifestHeader));
@@ -15141,8 +15600,11 @@ static DmLiveUpdateDDF__ManifestHeader* luaL_checkdm_live_update_ddf__manifest_h
 }
 static DmLiveUpdateDDF__ResourceEntry* luaL_checkdm_live_update_ddf__resource_entry(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmLiveUpdateDDF__ResourceEntry *msg = (DmLiveUpdateDDF__ResourceEntry*)malloc(sizeof(DmLiveUpdateDDF__ResourceEntry));
@@ -15192,8 +15654,11 @@ static DmLiveUpdateDDF__ResourceEntry* luaL_checkdm_live_update_ddf__resource_en
 }
 static DmLiveUpdateDDF__ManifestData* luaL_checkdm_live_update_ddf__manifest_data(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmLiveUpdateDDF__ManifestData *msg = (DmLiveUpdateDDF__ManifestData*)malloc(sizeof(DmLiveUpdateDDF__ManifestData));
@@ -15241,8 +15706,11 @@ static DmLiveUpdateDDF__ManifestData* luaL_checkdm_live_update_ddf__manifest_dat
 }
 static DmLiveUpdateDDF__ManifestFile* luaL_checkdm_live_update_ddf__manifest_file(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmLiveUpdateDDF__ManifestFile *msg = (DmLiveUpdateDDF__ManifestFile*)malloc(sizeof(DmLiveUpdateDDF__ManifestFile));
@@ -15270,8 +15738,11 @@ static DmLiveUpdateDDF__ManifestFile* luaL_checkdm_live_update_ddf__manifest_fil
 }
 static DmResourceDDF__Reload* luaL_checkdm_resource_ddf__reload(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmResourceDDF__Reload *msg = (DmResourceDDF__Reload*)malloc(sizeof(DmResourceDDF__Reload));
@@ -15297,8 +15768,11 @@ static DmResourceDDF__Reload* luaL_checkdm_resource_ddf__reload(lua_State* L, in
 }
 static DmGraphics__Cubemap* luaL_checkdm_graphics__cubemap(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__Cubemap *msg = (DmGraphics__Cubemap*)malloc(sizeof(DmGraphics__Cubemap));
@@ -15344,8 +15818,11 @@ static DmGraphics__Cubemap* luaL_checkdm_graphics__cubemap(lua_State* L, int nar
 }
 static DmGraphics__TextureImage* luaL_checkdm_graphics__texture_image(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__TextureImage *msg = (DmGraphics__TextureImage*)malloc(sizeof(DmGraphics__TextureImage));
@@ -15383,8 +15860,11 @@ static DmGraphics__TextureImage* luaL_checkdm_graphics__texture_image(lua_State*
 }
 static DmGraphics__TextureImage__Image* luaL_checkdm_graphics__texture_image__image(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__TextureImage__Image *msg = (DmGraphics__TextureImage__Image*)malloc(sizeof(DmGraphics__TextureImage__Image));
@@ -15498,8 +15978,11 @@ static DmGraphics__TextureImage__Image* luaL_checkdm_graphics__texture_image__im
 }
 static DmGraphics__TextureFormatAlternative* luaL_checkdm_graphics__texture_format_alternative(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__TextureFormatAlternative *msg = (DmGraphics__TextureFormatAlternative*)malloc(sizeof(DmGraphics__TextureFormatAlternative));
@@ -15531,8 +16014,11 @@ static DmGraphics__TextureFormatAlternative* luaL_checkdm_graphics__texture_form
 }
 static DmGraphics__PathSettings* luaL_checkdm_graphics__path_settings(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__PathSettings *msg = (DmGraphics__PathSettings*)malloc(sizeof(DmGraphics__PathSettings));
@@ -15554,8 +16040,11 @@ static DmGraphics__PathSettings* luaL_checkdm_graphics__path_settings(lua_State*
 }
 static DmGraphics__PlatformProfile* luaL_checkdm_graphics__platform_profile(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__PlatformProfile *msg = (DmGraphics__PlatformProfile*)malloc(sizeof(DmGraphics__PlatformProfile));
@@ -15613,8 +16102,11 @@ static DmGraphics__PlatformProfile* luaL_checkdm_graphics__platform_profile(lua_
 }
 static DmGraphics__TextureProfile* luaL_checkdm_graphics__texture_profile(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__TextureProfile *msg = (DmGraphics__TextureProfile*)malloc(sizeof(DmGraphics__TextureProfile));
@@ -15646,8 +16138,11 @@ static DmGraphics__TextureProfile* luaL_checkdm_graphics__texture_profile(lua_St
 }
 static DmGraphics__TextureProfiles* luaL_checkdm_graphics__texture_profiles(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__TextureProfiles *msg = (DmGraphics__TextureProfiles*)malloc(sizeof(DmGraphics__TextureProfiles));
@@ -15689,8 +16184,11 @@ static DmGraphics__TextureProfiles* luaL_checkdm_graphics__texture_profiles(lua_
 }
 static DmGraphics__ShaderDesc* luaL_checkdm_graphics__shader_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__ShaderDesc *msg = (DmGraphics__ShaderDesc*)malloc(sizeof(DmGraphics__ShaderDesc));
@@ -15716,8 +16214,11 @@ static DmGraphics__ShaderDesc* luaL_checkdm_graphics__shader_desc(lua_State* L, 
 }
 static DmGraphics__ShaderDesc__ResourceBinding* luaL_checkdm_graphics__shader_desc__resource_binding(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__ShaderDesc__ResourceBinding *msg = (DmGraphics__ShaderDesc__ResourceBinding*)malloc(sizeof(DmGraphics__ShaderDesc__ResourceBinding));
@@ -15769,8 +16270,11 @@ static DmGraphics__ShaderDesc__ResourceBinding* luaL_checkdm_graphics__shader_de
 }
 static DmGraphics__ShaderDesc__Shader* luaL_checkdm_graphics__shader_desc__shader(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGraphics__ShaderDesc__Shader *msg = (DmGraphics__ShaderDesc__Shader*)malloc(sizeof(DmGraphics__ShaderDesc__Shader));
@@ -15827,8 +16331,11 @@ static DmGraphics__ShaderDesc__Shader* luaL_checkdm_graphics__shader_desc__shade
 }
 static DmPropertiesDDF__PropertyDeclarationEntry* luaL_checkdm_properties_ddf__property_declaration_entry(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPropertiesDDF__PropertyDeclarationEntry *msg = (DmPropertiesDDF__PropertyDeclarationEntry*)malloc(sizeof(DmPropertiesDDF__PropertyDeclarationEntry));
@@ -15872,8 +16379,11 @@ static DmPropertiesDDF__PropertyDeclarationEntry* luaL_checkdm_properties_ddf__p
 }
 static DmPropertiesDDF__PropertyDeclarations* luaL_checkdm_properties_ddf__property_declarations(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmPropertiesDDF__PropertyDeclarations *msg = (DmPropertiesDDF__PropertyDeclarations*)malloc(sizeof(DmPropertiesDDF__PropertyDeclarations));
@@ -16043,8 +16553,11 @@ static DmPropertiesDDF__PropertyDeclarations* luaL_checkdm_properties_ddf__prope
 }
 static DmGameObjectDDF__PropertyDesc* luaL_checkdm_game_object_ddf__property_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__PropertyDesc *msg = (DmGameObjectDDF__PropertyDesc*)malloc(sizeof(DmGameObjectDDF__PropertyDesc));
@@ -16072,8 +16585,11 @@ static DmGameObjectDDF__PropertyDesc* luaL_checkdm_game_object_ddf__property_des
 }
 static DmGameObjectDDF__ComponentDesc* luaL_checkdm_game_object_ddf__component_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__ComponentDesc *msg = (DmGameObjectDDF__ComponentDesc*)malloc(sizeof(DmGameObjectDDF__ComponentDesc));
@@ -16147,8 +16663,11 @@ static DmGameObjectDDF__ComponentDesc* luaL_checkdm_game_object_ddf__component_d
 }
 static DmGameObjectDDF__EmbeddedComponentDesc* luaL_checkdm_game_object_ddf__embedded_component_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__EmbeddedComponentDesc *msg = (DmGameObjectDDF__EmbeddedComponentDesc*)malloc(sizeof(DmGameObjectDDF__EmbeddedComponentDesc));
@@ -16203,8 +16722,11 @@ static DmGameObjectDDF__EmbeddedComponentDesc* luaL_checkdm_game_object_ddf__emb
 }
 static DmGameObjectDDF__PrototypeDesc* luaL_checkdm_game_object_ddf__prototype_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__PrototypeDesc *msg = (DmGameObjectDDF__PrototypeDesc*)malloc(sizeof(DmGameObjectDDF__PrototypeDesc));
@@ -16262,8 +16784,11 @@ static DmGameObjectDDF__PrototypeDesc* luaL_checkdm_game_object_ddf__prototype_d
 }
 static DmGameObjectDDF__ComponentPropertyDesc* luaL_checkdm_game_object_ddf__component_property_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__ComponentPropertyDesc *msg = (DmGameObjectDDF__ComponentPropertyDesc*)malloc(sizeof(DmGameObjectDDF__ComponentPropertyDesc));
@@ -16304,8 +16829,11 @@ static DmGameObjectDDF__ComponentPropertyDesc* luaL_checkdm_game_object_ddf__com
 }
 static DmGameObjectDDF__ComponenTypeDesc* luaL_checkdm_game_object_ddf__componen_type_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__ComponenTypeDesc *msg = (DmGameObjectDDF__ComponenTypeDesc*)malloc(sizeof(DmGameObjectDDF__ComponenTypeDesc));
@@ -16327,8 +16855,11 @@ static DmGameObjectDDF__ComponenTypeDesc* luaL_checkdm_game_object_ddf__componen
 }
 static DmGameObjectDDF__InstanceDesc* luaL_checkdm_game_object_ddf__instance_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__InstanceDesc *msg = (DmGameObjectDDF__InstanceDesc*)malloc(sizeof(DmGameObjectDDF__InstanceDesc));
@@ -16419,8 +16950,11 @@ static DmGameObjectDDF__InstanceDesc* luaL_checkdm_game_object_ddf__instance_des
 }
 static DmGameObjectDDF__EmbeddedInstanceDesc* luaL_checkdm_game_object_ddf__embedded_instance_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__EmbeddedInstanceDesc *msg = (DmGameObjectDDF__EmbeddedInstanceDesc*)malloc(sizeof(DmGameObjectDDF__EmbeddedInstanceDesc));
@@ -16511,8 +17045,11 @@ static DmGameObjectDDF__EmbeddedInstanceDesc* luaL_checkdm_game_object_ddf__embe
 }
 static DmGameObjectDDF__InstancePropertyDesc* luaL_checkdm_game_object_ddf__instance_property_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__InstancePropertyDesc *msg = (DmGameObjectDDF__InstancePropertyDesc*)malloc(sizeof(DmGameObjectDDF__InstancePropertyDesc));
@@ -16544,8 +17081,11 @@ static DmGameObjectDDF__InstancePropertyDesc* luaL_checkdm_game_object_ddf__inst
 }
 static DmGameObjectDDF__CollectionInstanceDesc* luaL_checkdm_game_object_ddf__collection_instance_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__CollectionInstanceDesc *msg = (DmGameObjectDDF__CollectionInstanceDesc*)malloc(sizeof(DmGameObjectDDF__CollectionInstanceDesc));
@@ -16620,8 +17160,11 @@ static DmGameObjectDDF__CollectionInstanceDesc* luaL_checkdm_game_object_ddf__co
 }
 static DmGameObjectDDF__CollectionDesc* luaL_checkdm_game_object_ddf__collection_desc(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__CollectionDesc *msg = (DmGameObjectDDF__CollectionDesc*)malloc(sizeof(DmGameObjectDDF__CollectionDesc));
@@ -16727,8 +17270,11 @@ static DmGameObjectDDF__CollectionDesc* luaL_checkdm_game_object_ddf__collection
 }
 static DmGameObjectDDF__AcquireInputFocus* luaL_checkdm_game_object_ddf__acquire_input_focus(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__AcquireInputFocus *msg = (DmGameObjectDDF__AcquireInputFocus*)malloc(sizeof(DmGameObjectDDF__AcquireInputFocus));
@@ -16738,8 +17284,11 @@ static DmGameObjectDDF__AcquireInputFocus* luaL_checkdm_game_object_ddf__acquire
 }
 static DmGameObjectDDF__ReleaseInputFocus* luaL_checkdm_game_object_ddf__release_input_focus(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__ReleaseInputFocus *msg = (DmGameObjectDDF__ReleaseInputFocus*)malloc(sizeof(DmGameObjectDDF__ReleaseInputFocus));
@@ -16749,8 +17298,11 @@ static DmGameObjectDDF__ReleaseInputFocus* luaL_checkdm_game_object_ddf__release
 }
 static DmGameObjectDDF__RequestTransform* luaL_checkdm_game_object_ddf__request_transform(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__RequestTransform *msg = (DmGameObjectDDF__RequestTransform*)malloc(sizeof(DmGameObjectDDF__RequestTransform));
@@ -16760,8 +17312,11 @@ static DmGameObjectDDF__RequestTransform* luaL_checkdm_game_object_ddf__request_
 }
 static DmGameObjectDDF__TransformResponse* luaL_checkdm_game_object_ddf__transform_response(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__TransformResponse *msg = (DmGameObjectDDF__TransformResponse*)malloc(sizeof(DmGameObjectDDF__TransformResponse));
@@ -16833,8 +17388,11 @@ static DmGameObjectDDF__TransformResponse* luaL_checkdm_game_object_ddf__transfo
 }
 static DmGameObjectDDF__SetParent* luaL_checkdm_game_object_ddf__set_parent(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__SetParent *msg = (DmGameObjectDDF__SetParent*)malloc(sizeof(DmGameObjectDDF__SetParent));
@@ -16864,8 +17422,11 @@ static DmGameObjectDDF__SetParent* luaL_checkdm_game_object_ddf__set_parent(lua_
 }
 static DmGameObjectDDF__Enable* luaL_checkdm_game_object_ddf__enable(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__Enable *msg = (DmGameObjectDDF__Enable*)malloc(sizeof(DmGameObjectDDF__Enable));
@@ -16875,8 +17436,11 @@ static DmGameObjectDDF__Enable* luaL_checkdm_game_object_ddf__enable(lua_State* 
 }
 static DmGameObjectDDF__Disable* luaL_checkdm_game_object_ddf__disable(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__Disable *msg = (DmGameObjectDDF__Disable*)malloc(sizeof(DmGameObjectDDF__Disable));
@@ -16886,8 +17450,11 @@ static DmGameObjectDDF__Disable* luaL_checkdm_game_object_ddf__disable(lua_State
 }
 static DmGameObjectDDF__ScriptMessage* luaL_checkdm_game_object_ddf__script_message(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmGameObjectDDF__ScriptMessage *msg = (DmGameObjectDDF__ScriptMessage*)malloc(sizeof(DmGameObjectDDF__ScriptMessage));
@@ -16929,8 +17496,11 @@ static DmGameObjectDDF__ScriptMessage* luaL_checkdm_game_object_ddf__script_mess
 }
 static DmLuaDDF__LuaModule* luaL_checkdm_lua_ddf__lua_module(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmLuaDDF__LuaModule *msg = (DmLuaDDF__LuaModule*)malloc(sizeof(DmLuaDDF__LuaModule));
@@ -17003,8 +17573,11 @@ static DmLuaDDF__LuaModule* luaL_checkdm_lua_ddf__lua_module(lua_State* L, int n
 }
 static DmEngineDDF__HideApp* luaL_checkdm_engine_ddf__hide_app(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmEngineDDF__HideApp *msg = (DmEngineDDF__HideApp*)malloc(sizeof(DmEngineDDF__HideApp));
@@ -17014,8 +17587,11 @@ static DmEngineDDF__HideApp* luaL_checkdm_engine_ddf__hide_app(lua_State* L, int
 }
 static DmEngineDDF__RunScript* luaL_checkdm_engine_ddf__run_script(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmEngineDDF__RunScript *msg = (DmEngineDDF__RunScript*)malloc(sizeof(DmEngineDDF__RunScript));
@@ -17031,8 +17607,11 @@ static DmEngineDDF__RunScript* luaL_checkdm_engine_ddf__run_script(lua_State* L,
 }
 static DmParticleDDF__SplinePoint* luaL_checkdm_particle_ddf__spline_point(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmParticleDDF__SplinePoint *msg = (DmParticleDDF__SplinePoint*)malloc(sizeof(DmParticleDDF__SplinePoint));
@@ -17066,8 +17645,11 @@ static DmParticleDDF__SplinePoint* luaL_checkdm_particle_ddf__spline_point(lua_S
 }
 static DmParticleDDF__Modifier* luaL_checkdm_particle_ddf__modifier(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmParticleDDF__Modifier *msg = (DmParticleDDF__Modifier*)malloc(sizeof(DmParticleDDF__Modifier));
@@ -17127,8 +17709,11 @@ static DmParticleDDF__Modifier* luaL_checkdm_particle_ddf__modifier(lua_State* L
 }
 static DmParticleDDF__Modifier__Property* luaL_checkdm_particle_ddf__modifier__property(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmParticleDDF__Modifier__Property *msg = (DmParticleDDF__Modifier__Property*)malloc(sizeof(DmParticleDDF__Modifier__Property));
@@ -17170,8 +17755,11 @@ static DmParticleDDF__Modifier__Property* luaL_checkdm_particle_ddf__modifier__p
 }
 static DmParticleDDF__Emitter* luaL_checkdm_particle_ddf__emitter(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmParticleDDF__Emitter *msg = (DmParticleDDF__Emitter*)malloc(sizeof(DmParticleDDF__Emitter));
@@ -17401,8 +17989,11 @@ static DmParticleDDF__Emitter* luaL_checkdm_particle_ddf__emitter(lua_State* L, 
 }
 static DmParticleDDF__Emitter__Property* luaL_checkdm_particle_ddf__emitter__property(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmParticleDDF__Emitter__Property *msg = (DmParticleDDF__Emitter__Property*)malloc(sizeof(DmParticleDDF__Emitter__Property));
@@ -17444,8 +18035,11 @@ static DmParticleDDF__Emitter__Property* luaL_checkdm_particle_ddf__emitter__pro
 }
 static DmParticleDDF__Emitter__ParticleProperty* luaL_checkdm_particle_ddf__emitter__particle_property(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmParticleDDF__Emitter__ParticleProperty *msg = (DmParticleDDF__Emitter__ParticleProperty*)malloc(sizeof(DmParticleDDF__Emitter__ParticleProperty));
@@ -17477,8 +18071,11 @@ static DmParticleDDF__Emitter__ParticleProperty* luaL_checkdm_particle_ddf__emit
 }
 static DmParticleDDF__ParticleFX* luaL_checkdm_particle_ddf__particle_fx(lua_State* L, int narg)
 {
+    DM_LUA_STACK_CHECK(L, 0);
+
     if (!lua_istable(L, narg)) {
-        return DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        DM_LUA_ERROR("Expected value at index %d to be a table", narg);
+        return 0;
     }
 
     DmParticleDDF__ParticleFX *msg = (DmParticleDDF__ParticleFX*)malloc(sizeof(DmParticleDDF__ParticleFX));
